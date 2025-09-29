@@ -36,12 +36,11 @@ Características selecionadas: **Eficiência** e **Portabilidade**.
 **Representação gráfica (simplificada):**  
 Qualidade do Produto
 ├── Eficiência
-│ ├── Desempenho (tempo de resposta, consumo de CPU/memória)
-│ └── Escalabilidade (múltiplas abas, uso de extensões)
+  ├── Desempenho (tempo de resposta, consumo de CPU/memória)
+  └── Escalabilidade (múltiplas abas, uso de extensões)
 └── Portabilidade
-├── Adaptabilidade (Windows, Linux, macOS, Android)
-├── Instalação/atualização
-└── Compatibilidade de extensões
+  |── Adaptabilidade (Windows, Linux, macOS, Android)
+ 
 
 
 ---
