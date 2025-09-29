@@ -1,7 +1,3 @@
-Claro, entendi perfeitamente. Peço desculpas pela reestruturação anterior. Preparei o conteúdo exatamente como você pediu, mantendo sua estrutura original, incorporando os detalhes da pesquisa para enriquecer o texto e corrigindo a tabela de histórico de versões.
-
-Aqui está o texto pronto para o seu arquivo `.md`:
-
 # Fase 1: Definição dos Requisitos de Avaliação de Qualidade
 
 ### Descrição Estruturada do Software Selecionado
