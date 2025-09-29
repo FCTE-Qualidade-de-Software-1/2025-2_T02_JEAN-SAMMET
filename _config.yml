@@ -1,0 +1,8 @@
+# Define o tema do site. 'jekyll-theme-minimal' é uma boa opção para começar.
+theme: jekyll-theme-minimal
+
+# Título que aparecerá na aba do navegador
+title: Projeto Jean Sammet - Análise do Firefox
+
+# Descrição para os motores de busca
+description: Análise de qualidade de software do Mozilla Firefox com foco em Eficiência e Portabilidade.

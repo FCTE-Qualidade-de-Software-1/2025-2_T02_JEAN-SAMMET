@@ -1,4 +1,4 @@
-# 2 FASE 1
+# Fase 1
 
 ### Descrição Estruturada do Software Selecionado
 O **Mozilla Firefox** é um navegador multiplataforma, de código aberto, amplamente utilizado em desktops e dispositivos móveis.  
@@ -69,5 +69,3 @@ Qualidade do Produto
 
 - **ODS 10 — Redução das Desigualdades:**  
   Avaliar portabilidade garante que o navegador funcione em hardware de baixo custo, promovendo inclusão digital e equidade no acesso à informação.  
-
-
