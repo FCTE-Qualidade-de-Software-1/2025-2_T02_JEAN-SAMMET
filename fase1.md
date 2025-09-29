@@ -86,17 +86,6 @@ Mozilla. **Firefox Source Docs.** Documentação oficial da arquitetura e compon
 
 ---
 
-## Tabela de Contribuição
-Esta tabela representa a atribuição inicial de tarefas para a elaboração deste documento. Outros integrantes serão adicionados conforme o avanço do projeto.
-
-| Nome | Contribuição Principal |
-| ----------------------------- | ---------------------------------------------------------------- |
-| João Filipe de Oliveira Souza | Definição do propósito e estrutura inicial do documento. |
-| Artur Mendonça Arruda | Definição dos requisitos, e pesquisa sobre o modelo de qualidade, ODS e elaboração da bibliografia. |
-| Lucas Mendonça Arruda | Definição do escopo, dos requisitos, e da classificação dos tipos |
-
----
-
 ## Histórico de Versões
 
 | Versão | Descrição | Autor(es) | Data | Revisor(es) | Data de Revisão |
