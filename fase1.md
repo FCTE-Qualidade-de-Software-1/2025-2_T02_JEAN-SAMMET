@@ -33,15 +33,14 @@ Características selecionadas: **Eficiência** e **Portabilidade**.
 - Eficiência assegura que o navegador responda de forma rápida e com baixo consumo de recursos.  
 - Portabilidade garante que esse desempenho seja mantido em diferentes sistemas operacionais e arquiteturas.  
 
-**Representação gráfica (simplificada):**  
-Qualidade do Produto
-├── Eficiência
-  ├── Desempenho (tempo de resposta, consumo de CPU/memória)
-  └── Escalabilidade (múltiplas abas, uso de extensões)
-└── Portabilidade
-  |── Adaptabilidade (Windows, Linux, macOS, Android)
- 
+**Estrutura do Modelo de Qualidade**  
+Qualidade do Produto:
+- Eficiência
+    - Desempenho (tempo de resposta, consumo de CPU/memória)
+    - Escalabilidade (múltiplas abas, uso de extensões)
 
+- Portabilidade
+    - Adaptabilidade (Windows, Linux, macOS, Android)
 
 ---
 

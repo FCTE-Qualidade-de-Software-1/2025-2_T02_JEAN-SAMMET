@@ -6,3 +6,7 @@ title: Projeto Jean Sammet - Análise do Firefox
 
 # Descrição para os motores de busca
 description: Análise de qualidade de software do Mozilla Firefox com foco em Eficiência e Portabilidade.
+
+# Plugins (opcional, mas recomendado)
+plugins:
+  - jekyll-relative-links
