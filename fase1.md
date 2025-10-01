@@ -1,5 +1,4 @@
-# Fase 1: Definição dos Requisitos de Avaliação de Qualidade
-
+# Fase 1: 
 
 ### Descrição Estrurada do Software Selecionado
 O **Mozilla Firefox** é um navegador web de código aberto, multiplataforma, desenvolvido e mantido pela Mozilla Foundation. É amplamente utilizado em desktops e dispositivos móveis, sendo uma peça fundamental da infraestrutura digital global.
@@ -12,7 +11,10 @@ A escolha do Firefox para esta avaliação se justifica por três pilares centra
 Do ponto de vista técnico, a arquitetura moderna do Firefox é baseada em um modelo **multi-processo**, que isola a interface do navegador dos conteúdos web.<a id="cite-3"></a>[[3]](#ref-3) Essa separação, que utiliza componentes como o motor de renderização **Gecko** e o motor JavaScript **SpiderMonkey**, é projetada para melhorar a estabilidade e a segurança, mas introduz um *trade-off* com o consumo de recursos.<a id="cite-4"></a>[[4]](#ref-4)
 
 
----
+
+### Requisitante Principal
+
+- **Mozilla**: Possui autoridade direta sobre o Firefox, garantindo financiamento, definição de prioridades e direção do projeto. É o requisitante principal, pois encomenda e supervisiona o projeto, buscando que o navegador seja eficiente e acessível para todos.
 
 ### Partes interessadas
 
@@ -30,7 +32,12 @@ Os usuários do navegador e a comunidade open source são as partes interessadas
 ### Classificação do Tipo de Produto
 O Firefox é um navegador de código aberto criado pela Mozilla Foundation, capaz de ser usado em diversas plataformas, como Windows, Linux e macOS. Trata-se de um software multiplataforma, distribuído e de código aberto, onde o domínio de atuação envolve o acesso à internet, produtividade e comunicação. O front-end do navegador é composto por XUL, HTML, CSS e JavaScript, enquanto o back-end utiliza linguagens como C++, Python e Rust.
 
-####  Módulos Principais
+
+#### Módulos Principais
+
+O código-fonte do Firefox é organizado em diferentes diretórios, que representam componentes fundamentais da sua arquitetura.  
+Os principais módulos do FireFox são:
+
 
 - **browser/**  
   Contém o código do front-end do Firefox para a versão desktop.
@@ -42,15 +49,13 @@ O Firefox é um navegador de código aberto criado pela Mozilla Foundation, capa
   Implementa a árvore de renderização, que define o tipo e a posição dos objetos na interface do usuário, além de gerenciar operações sobre essa árvore.
 
 - **js/src/**  
-  Também chamado de SpiderMonkey, é a engine de JavaScript e WebAssembly do Firefox.
+  Também chamado de SpiderMonkey, é o motor JavaScript do Firefox.
 
 - **netwerk/**  
   Conhecida como Necko, é a biblioteca de rede do Firefox dentro do motor de renderização Gecko, responsável por implementar os protocolos de rede da web.
 
 
 
-
----
 
 
 ### Modelo de Qualidade (Descrição e Representação Gráfica)
@@ -68,7 +73,7 @@ Qualidade do Produto:
 - Portabilidade
     - Adaptabilidade (Windows, Linux, macOS, Android)
 
----
+
 
 ### Lista das Características Escolhidas e Critérios de Priorização
 -   **Eficiência:**
@@ -79,14 +84,25 @@ Qualidade do Produto:
     -   **Critério:** Democratização do acesso, abrangência multiplataforma.
     -   **Aplicação:** Comparar instalação, atualização e compatibilidade em diferentes sistemas.
 
----
 
 ### Escopo, Profundidade e Objetos de Avaliação
 -   **Escopo:** Avaliação de eficiência e portabilidade do Firefox em **Windows, Linux, macOS e Android**.
 -   **Profundidade:** Métricas objetivas (tempo em milissegundos, uso percentual de CPU/memória, sucesso em instalação e atualização). Ferramentas como **Speedometer** e **JetStream** <a id="cite-5"></a>[[5]](#ref-5) serão usadas para benchmarks de desempenho, e utilitários de sistema (`typeperf` no Windows <a id="cite-6"></a>[[6]](#ref-6), `top` <a id="cite-7"></a>[[7]](#ref-7) e `vmstat` <a id="cite-8"></a>[[8]](#ref-8) no Linux) para monitoramento de recursos.
 -   **Objetos de avaliação:** Versão estável mais recente do Firefox em múltiplos ambientes, com e sem extensões.
 
----
+
+### Propósito da Avaliação e Uso Pretendido dos Resultados
+
+- **Propósito:** O nosso propósito é avaliar a qualidade do software Firefox, um navegador multiplataforma de código aberto, e analisar com foco nas características de eficiência e portabilidade levando em consideração seu uso em diferentes plataformas e cenários.  
+
+Os resultados dessa avaliação interessam toda a comunidade que utiliza o navegador Firefox, pois poderão ter acesso a informações relevantes sobre o desempenho da aplicação, sua capacidade de adaptação a diferentes sistemas operacionais e dispositivos, além de compreender possíveis limitações e oportunidades de melhoria. Dessa forma, a análise contribui tanto para usuários finais, que buscam uma experiência de navegação mais estável e otimizada, quanto para desenvolvedores e colaboradores do projeto, que poderão utilizar os resultados dessa avaliação para futuras evoluções do software.
+
+- **Uso dos resultados:**  
+  - **1. Apoiar melhorias de desempenho**: A avaliação da qualidade do Firefox permite identificar gargalos de processamento, uso de memória e tempo de resposta. Esses dados podem ser utilizados para otimizações futuras, garantindo que o navegador continue competitivo e adequado às necessidades dos usuários em diferentes dispositivos e sistemas operacionais. 
+  - **2. Garantir maior inclusão digital por meio do acesso a software livre de qualidade**: Como o Firefox é um navegador de código aberto e multiplataforma, sua melhoria contínua contribui para ampliar o acesso a ferramentas digitais estáveis, seguras e de qualidade, independentemente do poder aquisitivo ou da plataforma utilizada, promovendo assim a democratização da tecnologia.  
+  - **3. Estabelecer métricas auditáveis para comparações futuras**: A definição de critérios e métricas de eficiência e portabilidade permite acompanhar a evolução do navegador ao longo do tempo. Além disso, possibilita comparações transparentes com outros softwares similares, oferecendo um referencial técnico que apoia a tomada de decisões por parte da comunidade de desenvolvedores e usuários.  
+
+
 
 ### ODS Relacionados e Justificativa
 -   **ODS 9 — Indústria, Inovação e Infraestrutura:**
@@ -95,7 +111,7 @@ Qualidade do Produto:
 -   **ODS 10 — Redução das Desigualdades:**
     Avaliar a **portabilidade** garante que o navegador funcione em hardware de baixo custo, promovendo inclusão digital e equidade no acesso à informação, em conformidade com a Meta 10.2 de promover a inclusão social e econômica de todos.
 
----
+
 
 ## Bibliografia
 
@@ -132,3 +148,5 @@ ISO. **ISO/IEC 25023:2016 — Systems and software engineering — Systems and s
 | 1.2 | Reestruturação do documento  | [Artur Mendonça Arruda](https://github.com/ArtyMend07) e [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 29/09/2025 |  |  |
 | 1.3 | Adição de detalhes técnicos, relação entre as características, e da profundidade do projeto | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 30/09/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 30/09/2025 |
 | 1.4 | Adição de hyperlinks das fontes | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 30/09/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 30/09/2025 |
+| 1.5 |  |  | 30/09/2025 |  | 30/09/2025 |
+| 1.6 | Adição de partes interessadas e classificação do tipo do produto | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 01/10/2025 |  |  |
