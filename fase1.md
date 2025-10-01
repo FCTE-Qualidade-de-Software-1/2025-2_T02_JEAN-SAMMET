@@ -114,19 +114,27 @@ Os resultados dessa avaliação interessam toda a comunidade que utiliza o naveg
 
 ### ODS Relacionados e Justificativa
 
--   **ODS 9 — Indústria, Inovação e Infraestrutura:**
+**ODS 9 — Indústria, Inovação e Infraestrutura:**
     Avaliar a **eficiência** do Firefox contribui para compreender como a infraestrutura digital pode ser otimizada para inovação tecnológica inclusiva, alinhando-se à Meta 9.c de aumentar o acesso a tecnologias de informação.<a id="cite-9"></a>[[9]](#ref-9)
 
-    ![imagem da Meta 9.c](assets/referencia-9.c.png)
-    **Figura 1** – Meta 9.c do Objetivo de Desenvolvimento Sustentável 9.
-    **Fonte:** ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL, [s.d.].
 
--   **ODS 10 — Redução das Desigualdades:**
+    ![imagem da Meta 9.c](assets/referencia-9.c.png)
+
+**Figura 1** – Meta 9.c do Objetivo de Desenvolvimento Sustentável 9.
+
+**Fonte:** ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL, [s.d.].
+
+
+**ODS 10 — Redução das Desigualdades:**
     Avaliar a **portabilidade** garante que o navegador funcione em hardware de baixo custo, promovendo inclusão digital e equidade no acesso à informação, em conformidade com a Meta 10.2 de promover a inclusão social e econômica de todos.<a id="cite-10"></a>[[10]](#ref-10)
 
+
     ![imagem da Meta 10.2](assets/referencia-10.2.png)
-    **Figura 2** – Meta 10.2 do Objetivo de Desenvolvimento Sustentável 10.
-    **Fonte:** ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL, [s.d.].
+
+**Figura 2** – Meta 10.2 do Objetivo de Desenvolvimento Sustentável 10.
+
+**Fonte:** ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL, [s.d.].
+
 
 ## Bibliografia
 
@@ -135,10 +143,6 @@ ISO. **ISO/IEC 25000:2014 — Systems and software engineering — Systems and s
 ISO. **ISO/IEC 25010:2011 — Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models.** International Organization for Standardization, 2011. Disponível em: [https://www.iso.org/standard/35733.html](https://www.iso.org/standard/35733.html). Acesso em: 30 set. 2025.
 
 ISO. **ISO/IEC 25023:2016 — Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality.** International Organization for Standardization, 2016. Disponível em: [https://www.iso.org/standard/35746.html](https://www.iso.org/standard/35746.html). Acesso em: 30 set. 2025.
-
-ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL. **ODS 9: Indústria, Inovação e Infraestrutura**. Nações Unidas Brasil, [s.d.]. Disponível em: https://brasil.un.org/pt-br/sdgs/9. Acesso em: 1 out. 2025.
-
-ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL. **ODS 10: Redução das Desigualdades**. Nações Unidas Brasil, [s.d.]. Disponível em: https://brasil.un.org/pt-br/sdgs/10. Acesso em: 1 out. 2025.
 
 AGILE BUSINESS CONSORTIUM. *AgilePM® Agile Project Management Handbook v2*. Ashford: Agile Business Consortium, 2014. ISBN 978-1909864003.
 
@@ -158,6 +162,10 @@ AGILE BUSINESS CONSORTIUM. *AgilePM® Agile Project Management Handbook v2*. Ash
 <a id="ref-7"></a>[[7]](#cite-7) THE LINUX MAN-PAGES PROJECT. **top(1) — Linux manual page**. Disponível em: https://man7.org/linux/man-pages/man1/top.1.html. Acesso em: 30 set. 2025.
 
 <a id="ref-8"></a>[[8]](#cite-8) THE LINUX MAN-PAGES PROJECT. **vmstat(8) — Linux manual page**. Disponível em: https://man7.org/linux/man-pages/man8/vmstat.8.html. Acesso em: 30 set. 2025.
+
+<a id="ref-9"></a>[[9]](#cite-9) ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL. **ODS 9: Indústria, Inovação e Infraestrutura**. Nações Unidas Brasil, [s.d.]. Disponível em: https://brasil.un.org/pt-br/sdgs/9. Acesso em: 1 out. 2025.
+
+<a id="ref-10"></a>[[10]](#cite-10) ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL. **ODS 10: Redução das Desigualdades**. Nações Unidas Brasil, [s.d.]. Disponível em: https://brasil.un.org/pt-br/sdgs/10. Acesso em: 1 out. 2025.
 
 ## Histórico de Versões
 
