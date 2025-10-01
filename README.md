@@ -42,6 +42,12 @@ O Mozilla Firefox é um navegador multiplataforma, de código aberto, amplamente
         </a><br />
         <sub><b>João Filipe de Oliveira Souza</b></sub><br/>
       </td>
+      <td align="center">
+        <a href="https://github.com/Rodrigomfab88">
+          <img style="border-radius: 50%; border: 3px solid #4CAF50;" src="https://github.com/Rodrigomfab88.png" width="120px;" alt="Rodrigo Mattos"/>
+        </a><br />
+        <sub><b>Rodrigo Mattos de F. A. Bezerra</b></sub><br/>
+      </td>
     </tr>
   </table>
 </div>
