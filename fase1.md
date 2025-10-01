@@ -1,6 +1,8 @@
 # Fase 1
 
-### Descrição Estrurada do Software Selecionado
+## 1. Contextualização do Objeto de Avaliação
+
+### 1.1. Descrição Estruturada do Software Selecionado
 O **Mozilla Firefox** é um navegador web de código aberto, multiplataforma, desenvolvido e mantido pela Mozilla Foundation. É amplamente utilizado em desktops e dispositivos móveis, sendo uma peça fundamental da infraestrutura digital global.
 
 A escolha do Firefox para esta avaliação se justifica por três pilares centrais:
@@ -10,13 +12,8 @@ A escolha do Firefox para esta avaliação se justifica por três pilares centra
 
 Do ponto de vista técnico, a arquitetura moderna do Firefox é baseada em um modelo **multi-processo**, que isola a interface do navegador dos conteúdos web.<a id="cite-3"></a>[[3]](#ref-3) Essa separação, que utiliza componentes como o motor de renderização **Gecko** e o motor JavaScript **SpiderMonkey**, é projetada para melhorar a estabilidade e a segurança, mas introduz um *trade-off* com o consumo de recursos.<a id="cite-4"></a>[[4]](#ref-4)
 
-
-
-### Requisitante Principal
-
+### 1.2. Requisitante e Partes Interessadas
 - **Mozilla**: Possui autoridade direta sobre o Firefox, garantindo financiamento, definição de prioridades e direção do projeto. É o requisitante principal, pois encomenda e supervisiona o projeto, buscando que o navegador seja eficiente e acessível para todos.
-
-### Partes interessadas
 
 - **Usuários do navegador**: Impactam diretamente o desenvolvimento com feedback e uso contínuo. Esperam um navegador com um tempo de resposta curto, que consuma pouca memória e CPU e que funcione em diferentes dispositivos. Sua influência é preceptível nas decisões de desempenho e priorização de melhorias.  
 
@@ -28,10 +25,8 @@ Do ponto de vista técnico, a arquitetura moderna do Firefox é baseada em um mo
 
 Os usuários do navegador e a comunidade open source são as partes interessadas principais, pois influenciam diretamente no desenvolvimento e operação do produto, influenciando suas funcionalidades e qualidade. Já as instituições e parceiros comerciais influenciam de forma mais indireta, afetando decisões estratégicas, mas não o funcionamento em si do produto.
 
-
-### Classificação do Tipo de Produto
+### 1.3. Classificação e Arquitetura do Produto
 O Firefox é um navegador de código aberto criado pela Mozilla Foundation, capaz de ser usado em diversas plataformas, como Windows, Linux e macOS. Trata-se de um software multiplataforma, distribuído e de código aberto, onde o domínio de atuação envolve o acesso à internet, produtividade e comunicação. O front-end do navegador é composto por XUL, HTML, CSS e JavaScript, enquanto o back-end utiliza linguagens como C++, Python e Rust.
-
 
 #### Módulos Principais
 
@@ -52,13 +47,14 @@ Os principais módulos do FireFox são:
   Também chamado de SpiderMonkey, é o motor JavaScript do Firefox.
 
 - **netwerk/**  
-  Conhecida como Necko, é a biblioteca de rede do Firefox dentro do motor de renderização Gecko, responsável por implementar os protocolos de rede da web.
+  Conhecida como Necko, é η bibliotecа de rede do Firefox dentro do motor de renderização Gecko, responsável por implementar os protocolos de rede da web.
 
-### Modelo de Qualidade (Descrição e Representação Gráfrica)
+## 2. Planejamento da Avaliação de Qualidade
+
+### 2.1. Modelo de Qualidade de Referência
 O modelo de qualidade que servirá como base para esta avaliação é o da norma **ISO/IEC 25010**. Suas características de qualidade de produto fornecem uma visão abrangente que será priorizada na seção seguinte para definir o foco do trabalho.
 
-### Priorização das Características de Qualidade com o Método MoSCoW
-
+### 2.2. Priorização das Características com o Método MoSCoW
 Para garantir que o foco da avaliação de qualidade do Firefox estivesse alinhado com os objetivos do projeto e as necessidades das partes interessadas, foi utilizado um método de priorização estruturado. A abordagem escolhida foi o **MoSCoW**, um acrônimo que classifica os requisitos em quatro categorias, permitindo uma tomada de decisão clara sobre o que é essencial e o que pode ser deixado para avaliações futuras.
 
 O método MoSCoW organiza as características da seguinte forma:
@@ -73,14 +69,14 @@ A tabela a seguir apresenta a priorização de todas as características de qual
 
 | Característica de Qualidade | Prioridade (MoSCoW) |
 | :-------------------------- | :------------------ |
-| Eficiência de Desempenho    | **Must Have** |
-| Portabilidade               | **Must Have** |
-| Segurança                   | **Should Have** |
-| Confiabilidade              | **Should Have** |
-| Adequação Funcional         | **Should Have** |
-| Compatibilidade             | **Could Have** |
-| Manutenibilidade            | **Could Have** |
-| Usabilidade                 | **Won't Have** |
+| Eficiência de Desempenho    | **Must Have** |
+| Portabilidade               | **Must Have** |
+| Segurança                   | **Should Have** |
+| Confiabilidade              | **Should Have** |
+| Adequação Funcional         | **Should Have** |
+| Compatibilidade             | **Could Have** |
+| Manutenibilidade            | **Could Have** |
+| Usabilidade                 | **Won't Have** |
 
 ---
 #### Justificativa da Priorização
@@ -92,17 +88,18 @@ A classificação de cada característica foi definida a partir do contexto do M
 * **Could Have (Desejável):** **Compatibilidade** (coexistir com outros softwares) e **Manutenibilidade** (facilidade de modificar o código) são importantes, mas têm um impacto menos direto no usuário final, que é o foco da nossa avaliação. A manutenibilidade é uma grande preocupação para os desenvolvedores do projeto, mas uma avaliação externa como esta pode deixá-la em segundo plano para focar em características mais perceptíveis pelo público.
 * **Won't Have (Fora de Escopo):** A **Usabilidade** foi classificada aqui para cumprir as premissas obrigatórias do projeto, que proibiam explicitamente a escolha desta característica.
 
-### Escopo, Profundidade e Objetos de Avaliação
+### 2.3. Escopo e Profundidade da Avaliação
 -   **Escopo:** A avaliação focará nas características de **Eficiência** e **Portabilidade** do Firefox nos sistemas operacionais **Windows, Linux, macOS e Android**. A escolha destas características foi justificada pela priorização MoSCoW, que as identificou como cruciais para o projeto.
-    - O critério para focar em **Eficiência** é seu impacto direto na experiência do usuário, onde um navegador lento leva à frustração e abandono do produto.
-    - O critério para focar em **Portabilidade** é a democratização do acesso, garantindo que o software funcione em uma vasta gama de hardwares e sistemas.
+    - O critério para focar em **Eficiência** é seu impacto direto na experiência do usuário, onde um navegador lento leva à frustração e abandono do produto.
+    - O critério para focar em **Portabilidade** é a democratização do acesso, garantindo que o software funcione em uma vasta gama de hardwares e sistemas.
 -   **Profundidade:** A avaliação será realizada por meio de métricas objetivas (tempo em milissegundos, uso percentual de CPU/memória, sucesso em instalação/atualização).
-    - Para **Eficiência**, a aplicação consistirá em medir o tempo de carregamento, inicialização e uso de recursos em diferentes cenários, utilizando benchmarks como **Speedometer** e **JetStream** <a id="cite-5"></a>[[5]](#ref-5), e utilitários de sistema (`typeperf` no Windows <a id="cite-6"></a>[[6]](#ref-6), `top` <a id="cite-7"></a>[[7]](#ref-7) e `vmstat` <a id="cite-8"></a>[[8]](#ref-8) no Linux) para monitoramento de recursos.
-    - Para **Portabilidade**, a aplicação se dará pela comparação dos processos de instalação, atualização e compatibilidade nos diferentes sistemas.
+    - Para **Eficiência**, a aplicação consistirá em medir o tempo de carregamento, inicialização e uso de recursos em diferentes cenários, utilizando benchmarks como **Speedometer** e **JetStream** <a id="cite-5"></a>[[5]](#ref-5), e utilitários de sistema (`typeperf` no Windows <a id="cite-6"></a>[[6]](#ref-6), `top` <a id="cite-7"></a>[[7]](#ref-7) e `vmstat` <a id="cite-8"></a>[[8]](#ref-8) no Linux) para monitoramento de recursos.
+    - Para **Portabilidade**, a aplicação se dará pela comparação dos processos de instalação, atualização e compatibilidade nos diferentes sistemas.
 -   **Objetos de avaliação:** Versão estável mais recente do Firefox em múltiplos ambientes, com e sem extensões.
 
-### Propósito da Avaliação e Uso Pretendido dos Resultados
+## 3. Propósito e Relevância da Avaliação
 
+### 3.1. Propósito e Uso dos Resultados
 - **Propósito:** O nosso propósito é avaliar a qualidade do software Firefox, um navegador multiplataforma de código aberto, e analisar com foco nas características de eficiência e portabilidade levando em consideração seu uso em diferentes plataformas e cenários.  
 
 Os resultados dessa avaliação interessam toda a comunidade que utiliza o navegador Firefox, pois poderão ter acesso a informações relevantes sobre o desempenho da aplicação, sua capacidade de adaptação a diferentes sistemas operacionais e dispositivos, além de compreender possíveis limitações e oportunidades de melhoria. Dessa forma, a análise contribui tanto para usuários finais, que buscam uma experiência de navegação mais estável e otimizada, quanto para desenvolvedores e colaboradores do projeto, que poderão utilizar os resultados dessa avaliação para futuras evoluções do software.
@@ -110,10 +107,9 @@ Os resultados dessa avaliação interessam toda a comunidade que utiliza o naveg
 - **Uso dos resultados:**  
   - **1. Apoiar melhorias de desempenho**: A avaliação da qualidade do Firefox permite identificar gargalos de processamento, uso de memória e tempo de resposta. Esses dados podem ser utilizados para otimizações futuras, garantindo que o navegador continue competitivo e adequado às necessidades dos usuários em diferentes dispositivos e sistemas operacionais. 
   - **2. Garantir maior inclusão digital por meio do acesso a software livre de qualidade**: Como o Firefox é um navegador de código aberto e multiplataforma, sua melhoria contínua contribui para ampliar o acesso a ferramentas digitais estáveis, seguras e de qualidade, independentemente do poder aquisitivo ou da plataforma utilizada, promovendo assim a democratização da tecnologia.  
-  - **3. Estabelecer métricas auditáveis para comparações futuras**: A definição de critérios e métricas de eficiência e portabilidade permite acompanhar a evolução do navegador ao longo do tempo. Além disso, possibilita comparações transparentes com outros softwares similares, oferecendo um referencial técnico que apoia a tomada de decisões por parte da comunidade de desenvolvedores e usuários.  
+  - **3. Estabelecer métricas auditáveis para comparações futuras**: A definição de critérios e métricas de eficiência e portabilidade permite acompanhar a evolução do navegador ao longo do tempo. Além disso, possibilita comparações transparentes com outros softwares similares, oferecendo um referencial técnico que apoia a tomada de decisões por parte da comunidade de desenvolvedores e usuários.
 
-### ODS Relacionados e Justificativa
-
+### 3.2. Relação com os Objetivos de Desenvolvimento Sustentável (ODS)
 **ODS 9 — Indústria, Inovação e Infraestrutura:**
     Avaliar a **eficiência** do Firefox contribui para compreender como a infraestrutura digital pode ser otimizada para inovação tecnológica inclusiva, alinhando-se à Meta 9.c de aumentar o acesso a tecnologias de informação.<a id="cite-9"></a>[[9]](#ref-9)
 
@@ -171,13 +167,13 @@ AGILE BUSINESS CONSORTIUM. *AgilePM® Agile Project Management Handbook v2*. Ash
 
 | Versão | Descrição | Autor(es) | Data | Revisor(es) | Data de Revisão |
 | ------ | ------------------------------------------------ | -------------------------------------------------------------- | ---------- | ------------------------------------------------------------ | --------------- |
-| 1.0 | Criação e documentação inicial da fase 1 (ODS's ) |[João Filipe de Oliveira Souza](https://github.com/joao151104) | 29/09/2025 | | |
+| 1.0 | Criação e documentação inicial da fase 1  |[João Filipe de Oliveira Souza](https://github.com/joao151104) | 29/09/2025 | | |
 | 1.1 | Adição da bibliografia e do histórico de versões | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 29/09/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 29/09/2025 |
 | 1.2 | Reestruturação do documento  | [Artur Mendonça Arruda](https://github.com/ArtyMend07) e [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 29/09/2025 |  |  |
 | 1.3 | Adição de detalhes técnicos, relação entre as características, e da profundidade do projeto | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 30/09/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 30/09/2025 |
 | 1.4 | Adição de hyperlinks das fontes | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 30/09/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 30/09/2025 |
 | 1.5 | Adição do Propósito da Avaliação e Usos Pretendidos | [Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88) | 30/09/2025 | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 01/10/2025 |
-| 1.6 | Adição de partes interessadas e classificação do tipo do produto | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 01/10/2025 |  |  |
+| 1.6 | Adição de partes interessadas e classificação do tipo do produto | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 01/10/2025 |  |  |
 | 1.7 | Adição das imagens e bibliografia das ODS's | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 01/10/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 01/10/2025 |
 | 1.8 | Adição da priorização MOSCOW para a escolha das características de qualidade| [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 01/10/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 01/10/2025 |
-
+| 1.9 | Reestruturação geral com títulos e seções para melhorar a legibilidade.| [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 01/10/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 01/10/2025 |
