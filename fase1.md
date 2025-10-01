@@ -105,11 +105,20 @@ Os resultados dessa avaliação interessam toda a comunidade que utiliza o naveg
 
 
 ### ODS Relacionados e Justificativa
+
 -   **ODS 9 — Indústria, Inovação e Infraestrutura:**
-    Avaliar a **eficiência** do Firefox contribui para compreender como a infraestrutura digital pode ser otimizada para inovação tecnológica inclusiva, alinhando-se à Meta 9.c de aumentar o acesso a tecnologias de informação.
+    Avaliar a **eficiência** do Firefox contribui para compreender como a infraestrutura digital pode ser otimizada para inovação tecnológica inclusiva, alinhando-se à Meta 9.c de aumentar o acesso a tecnologias de informação.<a id="cite-9"></a>[[9]](#ref-9)
+
+    ![imagem da Meta 9.c](assets/referencia-9.c.png)
+    **Figura 1** – Meta 9.c do Objetivo de Desenvolvimento Sustentável 9.
+    **Fonte:** ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL, [s.d.].
 
 -   **ODS 10 — Redução das Desigualdades:**
-    Avaliar a **portabilidade** garante que o navegador funcione em hardware de baixo custo, promovendo inclusão digital e equidade no acesso à informação, em conformidade com a Meta 10.2 de promover a inclusão social e econômica de todos.
+    Avaliar a **portabilidade** garante que o navegador funcione em hardware de baixo custo, promovendo inclusão digital e equidade no acesso à informação, em conformidade com a Meta 10.2 de promover a inclusão social e econômica de todos.<a id="cite-10"></a>[[10]](#ref-10)
+
+    ![imagem da Meta 10.2](assets/referencia-10.2.png)
+    **Figura 2** – Meta 10.2 do Objetivo de Desenvolvimento Sustentável 10.
+    **Fonte:** ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL, [s.d.].
 
 
 
@@ -121,6 +130,11 @@ ISO. **ISO/IEC 25010:2011 — Systems and software engineering — Systems and s
 
 ISO. **ISO/IEC 25023:2016 — Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Measurement of system and software product quality.** International Organization for Standardization, 2016. Disponível em: [https://www.iso.org/standard/35746.html](https://www.iso.org/standard/35746.html). Acesso em: 30 set. 2025.
 
+ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL. **ODS 9: Indústria, Inovação e Infraestrutura**. Nações Unidas Brasil, [s.d.]. Disponível em: https://brasil.un.org/pt-br/sdgs/9. Acesso em: 1 out. 2025.
+
+ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL. **ODS 10: Redução das Desigualdades**. Nações Unidas Brasil, [s.d.]. Disponível em: https://brasil.un.org/pt-br/sdgs/10. Acesso em: 1 out. 2025.
+
+## Referências Bibliográficas
 <a id="ref-1"></a>[[1]](#cite-1-2) THE BUGZILLA PROJECT. **Bugzilla**. Disponível em: [https://www.bugzilla.org/](https://www.bugzilla.org/). Acesso em: 30 set. 2025.
 
 <a id="ref-2"></a>[[2]](#cite-1-2) MOZILLA. **Bug Writing Guidelines**. MDN Web Docs. Disponível em: [https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines](https://developer.mozilla.org/en-US/docs/Mozilla/QA/Bug_writing_guidelines). Acesso em: 30 set. 2025.
@@ -143,10 +157,11 @@ ISO. **ISO/IEC 25023:2016 — Systems and software engineering — Systems and s
 
 | Versão | Descrição | Autor(es) | Data | Revisor(es) | Data de Revisão |
 | ------ | ------------------------------------------------ | -------------------------------------------------------------- | ---------- | ------------------------------------------------------------ | --------------- |
-| 1.0 | Criação e documentação inicial da fase 1 (ODS's, ) |[João Filipe de Oliveira Souza](https://github.com/joao151104) | 29/09/2025 | | |
+| 1.0 | Criação e documentação inicial da fase 1 (ODS's ) |[João Filipe de Oliveira Souza](https://github.com/joao151104) | 29/09/2025 | | |
 | 1.1 | Adição da bibliografia e do histórico de versões | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 29/09/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 29/09/2025 |
 | 1.2 | Reestruturação do documento  | [Artur Mendonça Arruda](https://github.com/ArtyMend07) e [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 29/09/2025 |  |  |
 | 1.3 | Adição de detalhes técnicos, relação entre as características, e da profundidade do projeto | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 30/09/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 30/09/2025 |
 | 1.4 | Adição de hyperlinks das fontes | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 30/09/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 30/09/2025 |
 | 1.5 |  |  | 30/09/2025 |  | 30/09/2025 |
 | 1.6 | Adição de partes interessadas e classificação do tipo do produto | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 01/10/2025 |  |  |
+| 1.7 | Adição das imagens e bibliografia das ODS's | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 01/10/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 01/10/2025 |
