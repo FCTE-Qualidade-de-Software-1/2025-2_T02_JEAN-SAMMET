@@ -150,3 +150,4 @@ ISO. **ISO/IEC 25023:2016 — Systems and software engineering — Systems and s
 | 1.4 | Adição de hyperlinks das fontes | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 30/09/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 30/09/2025 |
 | 1.5 |  |  | 30/09/2025 |  | 30/09/2025 |
 | 1.6 | Adição de partes interessadas e classificação do tipo do produto | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 01/10/2025 |  |  |
+| 1.7 | Adição do Propósito da Avaliação e Usos Pretendidos | [Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88) | 30/09/2025 | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 01/10/2025 |
