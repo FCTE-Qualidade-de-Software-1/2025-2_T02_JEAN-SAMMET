@@ -12,10 +12,41 @@ Do ponto de vista técnico, a arquitetura moderna do Firefox é baseada em um mo
 
 ---
 
+### Partes interessadas
+
+- **Usuários do navegador**: Impactam diretamente o desenvolvimento com feedback e uso contínuo. Esperam um navegador com um tempo de resposta curto, que consuma pouca memória e CPU e que funcione em diferentes dispositivos. Sua influência é preceptível nas decisões de desempenho e priorização de melhorias.  
+
+- **Comunidade open source**: Contribui com código, testes e documentação, ajudando na evolução do Firefox. Buscam participar do desenvolvimento e implementar melhorias de eficiência e portabilidade. Influenciam diretamente o projeto por meio de sugestões e contribuições práticas.
+
+- **Instituições que utilizam o Firefox**: Dependem do navegador e influenciam indiretamente. Esperam que o software funcione corretamente em seus sistemas, sem decidir funcionalidades.  
+
+- **Parceiros comerciais**: Interessados em parcerias ou divulgação, buscam associar-se a um navegador bem avaliado e acessível. Influenciam de forma indireta, podendo sinalizar necessidades de portabilidade para uma maior divulgação, mas não impacta diretamente decisões do desenvolvimento.
+
+Os usuários do navegador e a comunidade open source são as partes interessadas principais, pois influenciam diretamente no desenvolvimento e operação do produto, influenciando suas funcionalidades e qualidade. Já as instituições e parceiros comerciais influenciam de forma mais indireta, afetando decisões estratégicas, mas não o funcionamento em si do produto.
+
+
 ### Classificação do Tipo de Produto
--   **Categoria:** Software aplicativo (navegador web).
--   **Natureza:** Multiplataforma, distribuído e de código aberto.
--   **Domínio:** Acesso à internet, produtividade e comunicação.
+O Firefox é um navegador de código aberto criado pela Mozilla Foundation, capaz de ser usado em diversas plataformas, como Windows, Linux e macOS. Trata-se de um software multiplataforma, distribuído e de código aberto, onde o domínio de atuação envolve o acesso à internet, produtividade e comunicação. O front-end do navegador é composto por XUL, HTML, CSS e JavaScript, enquanto o back-end utiliza linguagens como C++, Python e Rust.
+
+####  Módulos Principais
+
+- **browser/**  
+  Contém o código do front-end do Firefox para a versão desktop.
+
+- **browser/themes/**  
+  Contém imagens e arquivos CSS usados para personalizar a aparência do navegador em diferentes sistemas operacionais (Windows, Linux, macOS).
+
+- **layout/**  
+  Implementa a árvore de renderização, que define o tipo e a posição dos objetos na interface do usuário, além de gerenciar operações sobre essa árvore.
+
+- **js/src/**  
+  Também chamado de SpiderMonkey, é a engine de JavaScript e WebAssembly do Firefox.
+
+- **netwerk/**  
+  Conhecida como Necko, é a biblioteca de rede do Firefox dentro do motor de renderização Gecko, responsável por implementar os protocolos de rede da web.
+
+
+
 
 ---
 
