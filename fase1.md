@@ -131,6 +131,29 @@ Os resultados dessa avaliação interessam toda a comunidade que utiliza o naveg
 
 **Fonte:** ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL, [s.d.].
 
+## 4. Tabela de Contribuição da Equipe
+
+| Matrícula | Integrante | Principais Contribuições | Comprovação  | Contribuição  |
+| :--- | :--- | :--- | :--- | :--- |
+| `[231033737]` | **Artur Mendonça Arruda** | Reestruturação do documento, inclusão das ferramentas de benchmark, pesquisa e redação da metodologia MoSCoW, rastreabilidade das referências, divisão de seções para legibilidade, adição de detalhes técnicos do firefox (SpiderMonkey e Gecko). | `[https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/5], [https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/7]` | `30%` |
+| `[Matrícula]` | **João Filipe de Oliveira Souza** | | | `%` |
+| `[Matrícula]` | **Lucas Mendonça Arruda** | | | `%` |
+| `[Matrícula]` | **[Nome do Quinto Integrante]** | | | `%` |
+| `[Matrícula]` | **Rodrigo Mattos de F. A. Bezerra** | | | `%` |
+| | **Total** | | | **100%** |
+
+## 5. Declaração de Uso de Inteligência Artificial
+
+Para a elaboração deste artefato, foi utilizado o auxílio de modelos de linguagem de grande escala (LLMs) como ferramentas de suporte. Especificamente, foram consultados os modelos **Google Gemini** e **OpenAI ChatGPT** para obter uma visão mais ampla e analisar diferentes perspectivas sobre a estrutura e o conteúdo do trabalho, permitindo que a equipe avaliasse qual abordagem fazia mais sentido para o projeto (o uso delas não exlui a validação humana).
+
+O uso da inteligência artificial se concentrou em duas áreas principais:
+
+1.  **Validação Adicional de Requisitos:** As IA's foram empregadas como ferramentas de verificação secundária para garantir que todos os requisitos e critérios de avaliação da Fase 1 do projeto estavam sendo atendidos pelo conteúdo do documento.
+
+2.  **Análise de Coerência e Fluidez:** Os modelos foram consultados para obter uma análise sobre a estrutura lógica, a coesão entre as seções e a fluidez geral da narrativa do artefato, ajudando a identificar possíveis pontos de melhoria na organização das ideias.
+
+Vale salientar, novamente, que as IAs atuaram exclusivamente como ferramentas de validação e sugestão. Todo o conteúdo, a redação final e as decisões estratégicas foram produzidos e validados pelos integrantes da equipe.
+
 
 ## Bibliografia
 
@@ -176,4 +199,4 @@ AGILE BUSINESS CONSORTIUM. *AgilePM® Agile Project Management Handbook v2*. Ash
 | 1.6 | Adição de partes interessadas e classificação do tipo do produto | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 01/10/2025 |  |  |
 | 1.7 | Adição das imagens e bibliografia das ODS's | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 01/10/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 01/10/2025 |
 | 1.8 | Adição da priorização MOSCOW para a escolha das características de qualidade| [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 01/10/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 01/10/2025 |
-| 1.9 | Reestruturação geral com títulos e seções para melhorar a legibilidade.| [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 01/10/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 01/10/2025 |
+| 1.9 | Reestruturação geral com títulos e seções para melhorar a legibilidade e adição de declaração de uso de IA| [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 01/10/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 01/10/2025 |
