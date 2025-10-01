@@ -1,5 +1,6 @@
 # Fase 1: Definição dos Requisitos de Avaliação de Qualidade
 
+
 ### Descrição Estrurada do Software Selecionado
 O **Mozilla Firefox** é um navegador web de código aberto, multiplataforma, desenvolvido e mantido pela Mozilla Foundation. É amplamente utilizado em desktops e dispositivos móveis, sendo uma peça fundamental da infraestrutura digital global.
 
@@ -9,6 +10,7 @@ A escolha do Firefox para esta avaliação se justifica por três pilares centra
 -   **Diversidade de ambientes de execução:** Sua natureza multiplataforma permite a coleta de métricas concretas e comparáveis em diferentes sistemas operacionais.
 
 Do ponto de vista técnico, a arquitetura moderna do Firefox é baseada em um modelo **multi-processo**, que isola a interface do navegador dos conteúdos web.<a id="cite-3"></a>[[3]](#ref-3) Essa separação, que utiliza componentes como o motor de renderização **Gecko** e o motor JavaScript **SpiderMonkey**, é projetada para melhorar a estabilidade e a segurança, mas introduz um *trade-off* com o consumo de recursos.<a id="cite-4"></a>[[4]](#ref-4)
+
 
 ---
 
@@ -50,14 +52,6 @@ O Firefox é um navegador de código aberto criado pela Mozilla Foundation, capa
 
 ---
 
-### Propósito da Avaliação e Uso Pretendido dos Resultados
--   **Propósito:** Avaliar como o Firefox mantém **eficiência** e **portabilidade** em diferentes plataformas e cenários de uso.
--   **Uso dos resultados:**
-    -   Apoiar melhorias de desempenho.
-    -   Garantir maior inclusão digital por meio do acesso a software livre de qualidade.
-    -   Estabelecer métricas auditáveis para comparações futuras.
-
----
 
 ### Modelo de Qualidade (Descrição e Representação Gráfica)
 O modelo de qualidade adotado é baseado na norma **ISO/IEC 25010**, adaptado às necessidades do Firefox. As características selecionadas são **Eficiência** e **Portabilidade**.
