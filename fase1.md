@@ -6,55 +6,63 @@
 O **Mozilla Firefox** é um navegador web de código aberto, multiplataforma, desenvolvido e mantido pela Mozilla Foundation. É amplamente utilizado em desktops e dispositivos móveis, sendo uma peça fundamental da infraestrutura digital global.
 
 A escolha do Firefox para esta avaliação se justifica por três pilares centrais:
--   **Relevância global:** O navegador desempenha um papel crucial na promoção de um ecossistema digital aberto e competitivo.
+-   **Relevância global:** O navegador desempenha um papel notório na promoção de um ecossistema digital aberto e competitivo.
 -   **Desenvolvimento contínuo e comunidade ativa:** O Firefox possui um ciclo de desenvolvimento rápido e uma comunidade de contribuidores robusta, o que garante a disponibilidade de vasta documentação pública e dados de bugs, como os encontrados no Bugzilla.<a id="cite-1-2"></a>[[1]](#ref-1), [[2]](#ref-2)
 -   **Diversidade de ambientes de execução:** Sua natureza multiplataforma permite a coleta de métricas concretas e comparáveis em diferentes sistemas operacionais.
 
 Do ponto de vista técnico, a arquitetura moderna do Firefox é baseada em um modelo **multi-processo**, que isola a interface do navegador dos conteúdos web.<a id="cite-3"></a>[[3]](#ref-3) Essa separação, que utiliza componentes como o motor de renderização **Gecko** e o motor JavaScript **SpiderMonkey**, é projetada para melhorar a estabilidade e a segurança, mas introduz um *trade-off* com o consumo de recursos.<a id="cite-4"></a>[[4]](#ref-4)
 
-### 1.2. Requisitante e Partes Interessadas
+### 1.2. Requisitante
 - **Mozilla**: Possui autoridade direta sobre o Firefox, garantindo financiamento, definição de prioridades e direção do projeto. É o requisitante principal, pois encomenda e supervisiona o projeto, buscando que o navegador seja eficiente e acessível para todos.
 
-- **Usuários do navegador**: Impactam diretamente o desenvolvimento com feedback e uso contínuo. Esperam um navegador com um tempo de resposta curto, que consuma pouca memória e CPU e que funcione em diferentes dispositivos. Sua influência é preceptível nas decisões de desempenho e priorização de melhorias.  
+### 1.3 Partes interessadas
 
-- **Comunidade open source**: Contribui com código, testes e documentação, ajudando na evolução do Firefox. Buscam participar do desenvolvimento e implementar melhorias de eficiência e portabilidade. Influenciam diretamente o projeto por meio de sugestões e contribuições práticas.
+- **Usuários**: Impactam diretamente o desenvolvimento com feedback e uso contínuo. Esperam um navegador com um tempo de resposta curto, que consuma pouca memória e CPU e que funcione em diferentes dispositivos. Sua influência é preceptível nas decisões de desempenho e priorização de melhorias.  
+
+- **Equipe interna do firefox**: atua na implementação, manutenção e decisões oficiais do navegador, garantindo o bom funcionamento do produto. É responsável por definir prioridades técnicas e estratégicas. Sua influência é direta sobre o escopo das funcionalidades e sobre a qualidade final do software.
+
+- **Comunidade open source**: Contribui com código, testes e documentação, ajudando na evolução do Firefox. Buscam participar do desenvolvimento e implementar melhorias. Influenciam diretamente o projeto por meio de sugestões e contribuições práticas.
 
 - **Instituições que utilizam o Firefox**: Dependem do navegador e influenciam indiretamente. Esperam que o software funcione corretamente em seus sistemas, sem decidir funcionalidades.  
 
-- **Parceiros comerciais**: Interessados em parcerias ou divulgação, buscam associar-se a um navegador bem avaliado e acessível. Influenciam de forma indireta, podendo sinalizar necessidades de portabilidade para uma maior divulgação, mas não impacta diretamente decisões do desenvolvimento.
+- **Parceiros comerciais**: Interessados em parcerias ou divulgação, buscam associar-se a um navegador bem avaliado e acessível. Influenciam de forma indireta, podendo sinalizar necessidades de portabilidade para uma maior divulgação, mas não impacta diretamente em decisões do desenvolvimento.
 
-Os usuários do navegador e a comunidade open source são as partes interessadas principais, pois influenciam diretamente no desenvolvimento e operação do produto, influenciando suas funcionalidades e qualidade. Já as instituições e parceiros comerciais influenciam de forma mais indireta, afetando decisões estratégicas, mas não o funcionamento em si do produto.
+Os usuários do navegador, equipe interna do firefox e a comunidade open source são as partes interessadas principais, pois influenciam diretamente no desenvolvimento e operação do produto, influenciando suas funcionalidades e qualidade. Já as instituições e parceiros comerciais influenciam de forma mais indireta, afetando decisões estratégicas, mas não o funcionamento em si do produto.
 
 ### 1.3. Classificação e Arquitetura do Produto
+
 O Firefox é um navegador de código aberto criado pela Mozilla Foundation, capaz de ser usado em diversas plataformas, como Windows, Linux e macOS. Trata-se de um software multiplataforma, distribuído e de código aberto, onde o domínio de atuação envolve o acesso à internet, produtividade e comunicação. O front-end do navegador é composto por XUL, HTML, CSS e JavaScript, enquanto o back-end utiliza linguagens como C++, Python e Rust.
 
-#### Módulos Principais
+#### 1.3.1 Módulos Principais
+O Firefox é composto por diferentes módulos que organizam suas funcionalidades principais, são eles:
 
-O código-fonte do Firefox é organizado em diferentes diretórios, que representam componentes fundamentais da sua arquitetura.  
-Os principais módulos do FireFox são:
+- **Gerenciamento de Abas e Janelas**: Controla múltiplas abas, como histórico, favoritos e sessões.  
+- **Segurança e Privacidade**: Garante proteção contra rastreamento e gerencia permissões de sites.  
+- **Sistema de Extensões**: Permite funcionalidades extras via extensões.  
 
 
-- **browser/**  
-  Contém o código do front-end do Firefox para a versão desktop.
+### 1.3.2 Interfaces
+ interfaces do Firefox representam os pontos de contato entre o navegador e seus usuários, permitindo interação direta e configuração de recursos. São eles:
 
-- **browser/themes/**  
-  Contém imagens e arquivos CSS usados para personalizar a aparência do navegador em diferentes sistemas operacionais (Windows, Linux, macOS).
+- **Interface de Usuário (IU/UX)**: Barra de endereços, abas, menus, área de exibição das páginas, painéis de favoritos e histórico.  
+- **Interface de Configurações**: Telas para ajustes de privacidade, desempenho, aparência e gerenciamento de contas.  
 
-- **layout/**  
-  Implementa a árvore de renderização, que define o tipo e a posição dos objetos na interface do usuário, além de gerenciar operações sobre essa árvore.
+### 1.3.3 Dependências
+O FireFox precisa de alguns recursos para funcionar e ser utilizado devidamente, são eles:
 
-- **js/src/**  
-  Também chamado de SpiderMonkey, é o motor JavaScript do Firefox.
-
-- **netwerk/**  
-  Conhecida como Necko, é η bibliotecа de rede do Firefox dentro do motor de renderização Gecko, responsável por implementar os protocolos de rede da web.
+- **Conexão com a Internet**: Necessária para carregar páginas web, verificar atualizações e sincronizar dados.  
+- **Permissões básicas do sistema**: Acesso à tela, rede e dispositivos de entrada como mouse, teclado ou toque.
+- **Bibliotecas de Sistema**: O FireFox possui diversas bibliotecas necessárias para o seu funcionamento, como de renderização de imagem, mídia e etc.
 
 ## 2. Planejamento da Avaliação de Qualidade
+
 
 ### 2.1. Modelo de Qualidade de Referência
 O modelo de qualidade que servirá como base para esta avaliação é o da norma **ISO/IEC 25010**. Suas características de qualidade de produto fornecem uma visão abrangente que será priorizada na seção seguinte para definir o foco do trabalho.
 
+
 ### 2.2. Priorização das Características com o Método MoSCoW
+
 Para garantir que o foco da avaliação de qualidade do Firefox estivesse alinhado com os objetivos do projeto e as necessidades das partes interessadas, foi utilizado um método de priorização estruturado. A abordagem escolhida foi o **MoSCoW**, um acrônimo que classifica os requisitos em quatro categorias, permitindo uma tomada de decisão clara sobre o que é essencial e o que pode ser deixado para avaliações futuras.
 
 O método MoSCoW organiza as características da seguinte forma:
@@ -84,32 +92,59 @@ A tabela a seguir apresenta a priorização de todas as características de qual
 A classificação de cada característica foi definida a partir do contexto do Mozilla Firefox como um produto de software global e do propósito principal desta avaliação.
 
 * **Must Have (Essencial):** As características **Eficiência de Desempenho** e **Portabilidade** são a espinha dorsal da experiência do usuário e da missão do Firefox. Um navegador lento, que consome recursos excessivos (CPU, memória) ou que não funciona em uma vasta gama de sistemas e dispositivos, falha em seu propósito fundamental. Por isso, a avaliação dessas duas características é inegociável para determinar a qualidade do produto no cenário atual.
-* **Should Have (Recomendado):** Nesta categoria estão **Segurança**, **Confiabilidade** e **Adequação Funcional**. A **Segurança** é vital para um navegador, mas para o escopo deste trabalho, focado em métricas de desempenho, ela se torna secundária. **Confiabilidade** (operar sem falhas) e **Adequação Funcional** (renderizar páginas corretamente) são igualmente cruciais. No entanto, como o Firefox é um produto maduro, partimos do pressuposto que ele já possui um alto nível de qualidade nesses quesitos, tornando a medição deles importante, mas não tão urgente quanto a de desempenho.
+* **Should Have (Recomendado):** Nesta categoria estão **Segurança**, **Confiabilidade** e **Adequação Funcional**. A **Segurança** é vital para um navegador, mas para o escopo deste trabalho, focado em métricas de desempenho, ela se torna secundária. **Confiabilidade** (operar sem falhas) e **Adequação Funcional** (renderizar páginas corretamente) são igualmente importantes. No entanto, como o Firefox é um produto maduro, partimos do pressuposto que ele já possui um alto nível de qualidade nesses quesitos, tornando a medição deles importante, mas não tão urgente quanto a de desempenho.
 * **Could Have (Desejável):** **Compatibilidade** (coexistir com outros softwares) e **Manutenibilidade** (facilidade de modificar o código) são importantes, mas têm um impacto menos direto no usuário final, que é o foco da nossa avaliação. A manutenibilidade é uma grande preocupação para os desenvolvedores do projeto, mas uma avaliação externa como esta pode deixá-la em segundo plano para focar em características mais perceptíveis pelo público.
 * **Won't Have (Fora de Escopo):** A **Usabilidade** foi classificada aqui para cumprir as premissas obrigatórias do projeto, que proibiam explicitamente a escolha desta característica.
 
+
 ### 2.3. Escopo e Profundidade da Avaliação
--   **Escopo:** A avaliação focará nas características de **Eficiência** e **Portabilidade** do Firefox nos sistemas operacionais **Windows, Linux, macOS e Android**. A escolha destas características foi justificada pela priorização MoSCoW, que as identificou como cruciais para o projeto.
+-   **Escopo:** A avaliação focará nas características de **Eficiência** e **Portabilidade** do Firefox nos sistemas operacionais **Windows, Linux, macOS e Android**. A escolha destas características foi justificada pela priorização MoSCoW, que as identificou como necessárias para o projeto.
     - O critério para focar em **Eficiência** é seu impacto direto na experiência do usuário, onde um navegador lento leva à frustração e abandono do produto.
     - O critério para focar em **Portabilidade** é a democratização do acesso, garantindo que o software funcione em uma vasta gama de hardwares e sistemas.
 -   **Profundidade:** A avaliação será realizada por meio de métricas objetivas (tempo em milissegundos, uso percentual de CPU/memória, sucesso em instalação/atualização).
     - Para **Eficiência**, a aplicação consistirá em medir o tempo de carregamento, inicialização e uso de recursos em diferentes cenários, utilizando benchmarks como **Speedometer** e **JetStream** <a id="cite-5"></a>[[5]](#ref-5), e utilitários de sistema (`typeperf` no Windows <a id="cite-6"></a>[[6]](#ref-6), `top` <a id="cite-7"></a>[[7]](#ref-7) e `vmstat` <a id="cite-8"></a>[[8]](#ref-8) no Linux) para monitoramento de recursos.
     - Para **Portabilidade**, a aplicação se dará pela comparação dos processos de instalação, atualização e compatibilidade nos diferentes sistemas.
--   **Objetos de avaliação:** Versão estável mais recente do Firefox em múltiplos ambientes, com e sem extensões.
+-   **Objetos de avaliação:** Será considerada a versão estável mais recente do Firefox até o dia 1º de outubro de 2025, que é a versão 143.0.3. Os testes serão feitos considerando diferentes ambientes como Windows, Linux, macOS e Android, tanto com extensões instaladas quanto sem elas. Essa versão foi escolhida como referência fixa para todo o estudo, atualizações que surgirem depois dessa data não farão parte da análise.
+
+### 2.3.1 Arquitetura alinhada com escopo
+
+Para que o documento atual se alinhe ao escopo e foque em eficiencia e portabilidade, será necessário avaliar a arquitetura do firefox, analisando documentação oficial do firefox sobre o seu projeto que está disnponibilizado no github. O código-fonte do Firefox é organizado em diferentes diretórios, que representam componentes fundamentais da sua arquitetura.  
+Os principais módulos do FireFox são:
+
+- **browser/**  
+  Contém o código do front-end do Firefox para a versão desktop.
+
+- **browser/themes/**  
+  Contém imagens e arquivos CSS usados para personalizar a aparência do navegador em diferentes sistemas operacionais (Windows, Linux, macOS).
+
+- **layout/**  
+  Implementa a árvore de renderização, que define o tipo e a posição dos objetos na interface do usuário, além de gerenciar operações sobre essa árvore.
+
+- **js/src/**  
+  Também chamado de SpiderMonkey, é o motor JavaScript do Firefox.
+
+- **netwerk/**  
+  Conhecida como Necko, é η bibliotecа de rede do Firefox dentro do motor de renderização Gecko, responsável por implementar os protocolos de rede da web.
+
+o conhecimento prévio das pastas e o que cada uma faz irá ajudar no direcionamento da equipe. 
+
 
 ## 3. Propósito e Relevância da Avaliação
 
-### 3.1. Propósito e Uso dos Resultados
-- **Propósito:** O nosso propósito é avaliar a qualidade do software Firefox, um navegador multiplataforma de código aberto, e analisar com foco nas características de eficiência e portabilidade levando em consideração seu uso em diferentes plataformas e cenários.  
+### 3.1. Propósito
+
+ O nosso propósito é avaliar a qualidade do software Firefox, um navegador multiplataforma de código aberto, e analisar com foco nas características de eficiência e portabilidade levando em consideração seu uso em diferentes plataformas e cenários.  
 
 Os resultados dessa avaliação interessam toda a comunidade que utiliza o navegador Firefox, pois poderão ter acesso a informações relevantes sobre o desempenho da aplicação, sua capacidade de adaptação a diferentes sistemas operacionais e dispositivos, além de compreender possíveis limitações e oportunidades de melhoria. Dessa forma, a análise contribui tanto para usuários finais, que buscam uma experiência de navegação mais estável e otimizada, quanto para desenvolvedores e colaboradores do projeto, que poderão utilizar os resultados dessa avaliação para futuras evoluções do software.
 
-- **Uso dos resultados:**  
+### 3.2. Uso dos resultados 
+
   - **1. Apoiar melhorias de desempenho**: A avaliação da qualidade do Firefox permite identificar gargalos de processamento, uso de memória e tempo de resposta. Esses dados podem ser utilizados para otimizações futuras, garantindo que o navegador continue competitivo e adequado às necessidades dos usuários em diferentes dispositivos e sistemas operacionais. 
   - **2. Garantir maior inclusão digital por meio do acesso a software livre de qualidade**: Como o Firefox é um navegador de código aberto e multiplataforma, sua melhoria contínua contribui para ampliar o acesso a ferramentas digitais estáveis, seguras e de qualidade, independentemente do poder aquisitivo ou da plataforma utilizada, promovendo assim a democratização da tecnologia.  
   - **3. Estabelecer métricas auditáveis para comparações futuras**: A definição de critérios e métricas de eficiência e portabilidade permite acompanhar a evolução do navegador ao longo do tempo. Além disso, possibilita comparações transparentes com outros softwares similares, oferecendo um referencial técnico que apoia a tomada de decisões por parte da comunidade de desenvolvedores e usuários.
 
-### 3.2. Relação com os Objetivos de Desenvolvimento Sustentável (ODS)
+### 3.3. Relação com os Objetivos de Desenvolvimento Sustentável (ODS)
+
 **ODS 9 — Indústria, Inovação e Infraestrutura:**
     Avaliar a **eficiência** do Firefox contribui para compreender como a infraestrutura digital pode ser otimizada para inovação tecnológica inclusiva, alinhando-se à Meta 9.c de aumentar o acesso a tecnologias de informação.<a id="cite-9"></a>[[9]](#ref-9)
 
