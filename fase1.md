@@ -59,7 +59,17 @@ O FireFox precisa de alguns recursos para funcionar e ser utilizado devidamente,
 
 ### 2.1. Modelo de Qualidade de Referência
 O modelo de qualidade que servirá como base para esta avaliação é o da norma **ISO/IEC 25010**. Suas características de qualidade de produto fornecem uma visão abrangente que será priorizada na seção seguinte para definir o foco do trabalho.
+Dentro desse modelo, o foco do estudo será direcionado às características de Eficiência de Desempenho e Portabilidade, por serem as mais relevantes ao contexto do Firefox e ao propósito declarado.
 
+[Característica Iso](/2025-2_T02_JEAN-SAMMET/assets/qualidadeISO.png)
+
+- Em Eficiência de Desempenho, as subcaracterísticas analisadas serão uso de recursos, medindo o consumo de CPU, memória e outros recursos do sistema, e tempo de resposta, avaliando o carregamento de páginas e a inicialização do navegador.
+
+- Em Portabilidade, a subcaracterística escolhida é a adaptabilidade, observando como o Firefox se comporta em diferentes sistemas operacionais e dispositivos.
+
+Assim como mostra o diagrama abaixo:
+
+[Características escolhidas](/2025-2_T02_JEAN-SAMMET/assets/caracteristicas.jpeg)
 
 ### 2.2. Priorização das Características com o Método MoSCoW
 
@@ -104,29 +114,31 @@ A classificação de cada característica foi definida a partir do contexto do M
 -   **Profundidade:** A avaliação será realizada por meio de métricas objetivas (tempo em milissegundos, uso percentual de CPU/memória, sucesso em instalação/atualização).
     - Para **Eficiência**, a aplicação consistirá em medir o tempo de carregamento, inicialização e uso de recursos em diferentes cenários, utilizando benchmarks como **Speedometer** e **JetStream** <a id="cite-5"></a>[[5]](#ref-5), e utilitários de sistema (`typeperf` no Windows <a id="cite-6"></a>[[6]](#ref-6), `top` <a id="cite-7"></a>[[7]](#ref-7) e `vmstat` <a id="cite-8"></a>[[8]](#ref-8) no Linux) para monitoramento de recursos.
     - Para **Portabilidade**, a aplicação se dará pela comparação dos processos de instalação, atualização e compatibilidade nos diferentes sistemas.
--   **Objetos de avaliação:** Será considerada a versão estável mais recente do Firefox até o dia 1º de outubro de 2025, que é a versão 143.0.3. Os testes serão feitos considerando diferentes ambientes como Windows, Linux, macOS e Android, tanto com extensões instaladas quanto sem elas. Essa versão foi escolhida como referência fixa para todo o estudo, atualizações que surgirem depois dessa data não farão parte da análise.
+-   *Objetos de avaliação:* Será considerada a versão estável mais recente do Firefox até o dia 1º de outubro de 2025, que é a versão 143.0.3. Os testes serão feitos considerando diferentes ambientes como Windows, Linux, macOS e Android, tanto com extensões instaladas quanto sem elas. Essa versão foi escolhida como referência fixa para todo o estudo, atualizações que surgirem depois dessa data não farão parte da análise.
 
 ### 2.3.1 Arquitetura alinhada com escopo
 
 Para que o documento atual se alinhe ao escopo e foque em eficiencia e portabilidade, será necessário avaliar a arquitetura do firefox, analisando documentação oficial do firefox sobre o seu projeto que está disnponibilizado no github. O código-fonte do Firefox é organizado em diferentes diretórios, que representam componentes fundamentais da sua arquitetura.  
-Os principais módulos do FireFox são:
+Os principais módulos do Firefox e sua relevância para eficiência e portabilidade são:
 
-- **browser/**  
-  Contém o código do front-end do Firefox para a versão desktop.
 
-- **browser/themes/**  
-  Contém imagens e arquivos CSS usados para personalizar a aparência do navegador em diferentes sistemas operacionais (Windows, Linux, macOS).
+- *browser/*  
+  Contém o código do front-end do Firefox para a versão desktop. Este módulo influencia diretamente o tempo de resposta e a utilização de recursos, impactando a eficiência percebida pelo usuário.
 
-- **layout/**  
-  Implementa a árvore de renderização, que define o tipo e a posição dos objetos na interface do usuário, além de gerenciar operações sobre essa árvore.
 
-- **js/src/**  
+- *browser/themes/*  
+  Contém imagens e arquivos CSS usados para personalizar a aparência do navegador em diferentes sistemas operacionais (Windows, Linux, macOS), contribuindo para a portabilidade do sistema.
+
+- *layout/*  
+  Implementa a árvore de renderização, que define o tipo e a posição dos objetos na interface do usuário, além de gerenciar operações sobre essa árvore. Esse módulo impacta tanto no tempo de resposta quanto no uso de recursos.
+
+- *js/src/*  
   Também chamado de SpiderMonkey, é o motor JavaScript do Firefox.
 
-- **netwerk/**  
+- *netwerk/*  
   Conhecida como Necko, é η bibliotecа de rede do Firefox dentro do motor de renderização Gecko, responsável por implementar os protocolos de rede da web.
 
-o conhecimento prévio das pastas e o que cada uma faz irá ajudar no direcionamento da equipe. 
+O entendimento prévio desses módulos e suas funções permite direcionar a avaliação para aspectos que afetam a eficiência e portabilidade, garantindo que a análise seja consistente.
 
 
 ## 3. Propósito e Relevância da Avaliação
@@ -170,9 +182,9 @@ Os resultados dessa avaliação interessam toda a comunidade que utiliza o naveg
 
 | Matrícula | Integrante | Principais Contribuições | Comprovação  | Contribuição  |
 | :--- | :--- | :--- | :--- | :--- |
-| `[231033737]` | **Artur Mendonça Arruda** | Reestruturação do documento, inclusão das ferramentas de benchmark, pesquisa e redação da metodologia MoSCoW, rastreabilidade das referências, divisão de seções para legibilidade, adição de detalhes técnicos do firefox (SpiderMonkey e Gecko). | `[https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/5], [https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/7]` | `30%` |
+| `[231033737]` | **Artur Mendonça Arruda** | Reestruturação do documento, inclusão das ferramentas de benchmark, pesquisa e redação da metodologia MoSCoW, rastreabilidade das referências, divisão de seções para legibilidade, adição de detalhes técnicos do firefox (SpiderMonkey e Gecko). | [Pull Request #5](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/5), [Pull Request #7](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/7), [Reestruturação do documento](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/bf6acdefa042cf4c1d47401877df6fa1d49a6292), [Adição de detalhes técnicos](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/335b78a8f6dda9a71324b64b0a6c365b96736ad0), [Bibliografia e imagem das ODS's](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/93561fa97097c8445767a75c998f020066426089), [Implementação MoSCoW](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/0a7e1731b4fc88146dd8eac5f8d9b54bd5578d27),  [Pull Request #8](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/8)| | `30%` |
 | `[Matrícula]` | **João Filipe de Oliveira Souza** |Desenvolvimento da estrutura inicial do projeto | | `20%` |
-| `[Matrícula]` | **Lucas Mendonça Arruda** | | | `%` |
+| `[Matrícula]` | **Lucas Mendonça Arruda** | | [Pull Request #5](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/5), [Pull Request #8](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/8)| `%` |
 | `[Matrícula]` | **[Nome do Quinto Integrante]** | | | `%` |
 | `[180108875]` | **Rodrigo Mattos de F. A. Bezerra** | Adição do propósito da avaliação e usos pretendidos | `[https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/3]` | `15%` |
 | | **Total** | | | **100%** |
