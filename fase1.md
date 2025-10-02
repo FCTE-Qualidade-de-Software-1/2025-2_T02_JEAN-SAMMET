@@ -174,7 +174,7 @@ Os resultados dessa avaliação interessam toda a comunidade que utiliza o naveg
 | `[Matrícula]` | **João Filipe de Oliveira Souza** |Desenvolvimento da estrutura inicial do projeto | | `20%` |
 | `[Matrícula]` | **Lucas Mendonça Arruda** | | | `%` |
 | `[Matrícula]` | **[Nome do Quinto Integrante]** | | | `%` |
-| `[Matrícula]` | **Rodrigo Mattos de F. A. Bezerra** | | | `%` |
+| `[180108875]` | **Rodrigo Mattos de F. A. Bezerra** | Adição do propósito da avaliação e usos pretendidos | `[https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/3]` | `15%` |
 | | **Total** | | | **100%** |
 
 ## 5. Declaração de Uso de Inteligência Artificial
