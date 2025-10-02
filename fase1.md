@@ -171,7 +171,7 @@ Os resultados dessa avaliação interessam toda a comunidade que utiliza o naveg
 | Matrícula | Integrante | Principais Contribuições | Comprovação  | Contribuição  |
 | :--- | :--- | :--- | :--- | :--- |
 | `[231033737]` | **Artur Mendonça Arruda** | Reestruturação do documento, inclusão das ferramentas de benchmark, pesquisa e redação da metodologia MoSCoW, rastreabilidade das referências, divisão de seções para legibilidade, adição de detalhes técnicos do firefox (SpiderMonkey e Gecko). | `[https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/5], [https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/7]` | `30%` |
-| `[Matrícula]` | **João Filipe de Oliveira Souza** | | | `%` |
+| `[Matrícula]` | **João Filipe de Oliveira Souza** |Desenvolvimento da estrutura inicial do projeto | | `20%` |
 | `[Matrícula]` | **Lucas Mendonça Arruda** | | | `%` |
 | `[Matrícula]` | **[Nome do Quinto Integrante]** | | | `%` |
 | `[Matrícula]` | **Rodrigo Mattos de F. A. Bezerra** | | | `%` |
