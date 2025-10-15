@@ -77,6 +77,52 @@ A seguir, são apresentadas as escalas de pontuação correspondentes a cada mé
 
 ## Critérios de Avaliação e Julgamento
 
+### 1. Consolidação dos Resultados
+
+Cada métrica (M1.1 a M2.2) utiliza uma **escala de 1 a 4**:
+
+| Pontuação | Nível Qualitativo | Interpretação |
+|:--:|:--|:--|
+| 4 | Excelente | Supera ou iguala os valores-alvo, alta conformidade. |
+| 3 | Bom | Atende satisfatoriamente aos critérios. |
+| 2 | Regular | Abaixo do esperado, com limitações. |
+| 1 | Insatisfatório | Não atende aos critérios mínimos. |
+
+### 2. Índice de Qualidade por Característica
+
+Para cada característica, calcula-se a média ponderada das métricas:
+
+\[
+IQ_c = \frac{\sum (P_i \times w_i)}{\sum w_i}
+\]
+
+- \(IQ_c\) = Índice de Qualidade da característica  
+- \(P_i\) = Pontuação da métrica \(i\)  
+- \(w_i\) = Peso da métrica (igual a 1 se não houver ponderação)
+
+### 3. Interpretação do Índice
+
+| Intervalo | Nível | Interpretação |
+|:--:|:--|:--|
+| 3,5 – 4,0 | Excelente | Desempenho e portabilidade excelentes. |
+| 2,5 – 3,4 | Bom | Atende adequadamente aos critérios. |
+| 1,5 – 2,4 | Regular | Limitações perceptíveis; requer otimização. |
+| 1,0 – 1,4 | Insatisfatório | Não atende aos requisitos mínimos. |
+
+### 4. Índice Global de Qualidade (IQG)
+
+\[
+IQG = \frac{IQ_{Desempenho} + IQ_{Portabilidade}}{2}
+\]
+
+Avalia a **qualidade geral do Firefox**, permitindo comparação entre versões e identificação de oportunidades de melhoria.
+
+### 5. Critérios de Aceitação
+
+- **Aceito:** \(IQG ≥ 2,5\)  
+- **Aceito com recomendações:** \(2,0 ≤ IQG < 2,5\)  
+- **Rejeitado:** \(IQG < 2,0\)  
+
 
 ## Tabela de Contribuição
 
@@ -97,6 +143,8 @@ A seguir, são apresentadas as escalas de pontuação correspondentes a cada mé
   - MARTINEZ, L., et al. **Assistant for the Evaluation of Software Product Quality Characteristics Proposed by ISO/IEC 25010 Based on GQM-Defined Metrics**. SEDICI, 2018.
   - TESTSIGMA. **Portability Testing: Attributes, Checklists, and Examples**. Disponível em: [https://testsigma.com/blog/portability-testing/](https://testsigma.com/blog/portability-testing/). Acesso em: 15 out. 2025.
   - VARGAS, S. A., et al. **Application of the Goal-Question-Metric (GQM) Method to Improve the Management of Software Projects**. SciELO, 2025.
+  - - SOLLAMI, T.; AL-ZUBAIDI, L. **Software Quality Metrics and Evaluation Using GQM Approach**. International Journal of Computer Applications, 2019.  
+
 
 ## Histórico de Versões
 
@@ -107,3 +155,4 @@ A seguir, são apresentadas as escalas de pontuação correspondentes a cada mé
 | 1.2 | Adição das seções de Métricas, Níveis de Pontuação e Critérios de Avaliação. | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 15/10/2025 | |  |
 | 1.3 | Adição da Tabela de Contribuição e Referências. | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 15/10/2025 |  | |
 | 1.4 | Criação dos níveis de pontuação  |[Nayra Nery](https://github.com/NayraNery127) | 15/10/2025 | | |
+| 1.4 | Criação dos Criterios de Avaliação  |[João Filipe de Oliveira Souza](https://github.com/Joao151104) | 15/10/2025 | | |
