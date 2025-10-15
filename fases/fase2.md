@@ -131,8 +131,8 @@ Avalia a **qualidade geral do Firefox**, permitindo comparação entre versões 
 | `[231033737]` | **Artur Mendonça Arruda** | | | `20%` |
 | `[Matrícula]` | **Nayra Silva Nery** | | | `20%` |
 | `[Matrícula]` | **João FIlipe de Oliveira Souza** | | | `20%` |
-| `[Matrícula]` | **Nome do Integrante** | | | `%` |
-| `[Matrícula]` | **Nome do Integrante** | | | `%` |
+| `[Matrícula]` | **Lucas Mendonça Arruda** | | | `20%` |
+| `[Matrícula]` | **Rodrigo Mattos de Figueiredo** | | | `20%` |
 | | **Total** | | | **100%** |
 
 ## Referências
