@@ -55,9 +55,8 @@ As métricas para esta característica focam em **Uso de Recursos** e **Tempo de
 
 As métricas de portabilidade avaliam a subcaracterística de **Adaptabilidade**.
 
-  - **M2.1: Taxa de Sucesso na Instalação e Desinstalação:** Medida em percentual (%), verifica a capacidade do software de ser instalado e removido de forma limpa e sem erros em diferentes sistemas.
-  - **M2.2: Paridade Funcional entre Plataformas:** Medida em percentual (%), quantifica a proporção de funcionalidades essenciais disponíveis e consistentes em todas as plataformas suportadas (desktop e mobile).
-  - **M2.3: Conformidade da Interface do Usuário (UI):** Medida em percentual (%), avalia o grau em que a interface se adapta corretamente a diferentes resoluções de tela e segue as convenções de cada sistema operacional, com base em um checklist de verificação.
+  - **M2.1: Paridade Funcional entre Plataformas:** Medida em percentual (%), quantifica a proporção de funcionalidades essenciais disponíveis e consistentes em todas as plataformas suportadas (desktop e mobile).
+  - **M2.2: Conformidade da Interface do Usuário (UI):** Medida em percentual (%), avalia o grau em que a interface se adapta corretamente a diferentes resoluções de tela e segue as convenções de cada sistema operacional, com base em um checklist de verificação.
 
 ## Tabela de Contribuição
 
