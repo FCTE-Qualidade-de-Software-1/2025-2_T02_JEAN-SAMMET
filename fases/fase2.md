@@ -75,9 +75,7 @@ A seguir, são apresentadas as escalas de pontuação correspondentes a cada mé
 | **M2.1 – Paridade Funcional entre Plataformas** | 100 % | 95 % – 99 % | 85 % – 94 % | < 85 % |
 | **M2.2 – Conformidade da Interface do Usuário (UI)** | ≥ 95 % | 85 % – 94 % | 70 % – 84 % | < 70 % |
 
-Essas faixas foram definidas com base nas **hipóteses estabelecidas nas questões de medição**, refletindo as expectativas de desempenho e qualidade percebidas pelo usuário final.
-
-Os valores obtidos nos testes práticos e nas análises de benchmark serão convertidos em pontuações de **1 a 4**, sendo utilizados pela **Pessoa 5 – Estabelecer Critérios de Avaliação** para consolidar os resultados finais e determinar os níveis de conformidade do produto.
+## Critérios de Avaliação e Julgamento
 
 
 ## Tabela de Contribuição
@@ -106,7 +104,6 @@ Os valores obtidos nos testes práticos e nas análises de benchmark serão conv
 | ------ | ------------------------------------------------ | -------------------------------------------------------------- | ---------- | ------------------------------------------------------------ | --------------- |
 | 1.0 | Criação e adição dos objetivos de medição  |[Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 14/10/2025 | | |
 | 1.1 | Adição das questões e hipóteses de medição  |([https://github.com/Rodrigomfab88](https://github.com/Rodrigomfab88)) | 15/10/2025 | | |
-| 1.3 | Criação dos níveis de pontuação  |[Nayra Nery](https://github.com/NayraNery127) | 15/10/2025 | | |
-
 | 1.2 | Adição das seções de Métricas, Níveis de Pontuação e Critérios de Avaliação. | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 15/10/2025 | |  |
 | 1.3 | Adição da Tabela de Contribuição e Referências. | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 15/10/2025 |  | |
+| 1.4 | Criação dos níveis de pontuação  |[Nayra Nery](https://github.com/NayraNery127) | 15/10/2025 | | |
