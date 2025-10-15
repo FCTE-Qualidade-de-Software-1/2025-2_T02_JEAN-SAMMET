@@ -58,12 +58,34 @@ As métricas de portabilidade avaliam a subcaracterística de **Adaptabilidade**
   - **M2.1: Paridade Funcional entre Plataformas:** Medida em percentual (%), quantifica a proporção de funcionalidades essenciais disponíveis e consistentes em todas as plataformas suportadas (desktop e mobile).
   - **M2.2: Conformidade da Interface do Usuário (UI):** Medida em percentual (%), avalia o grau em que a interface se adapta corretamente a diferentes resoluções de tela e segue as convenções de cada sistema operacional, com base em um checklist de verificação.
 
+### Níveis de Pontuação
+
+Nesta etapa, são estabelecidos os **níveis de pontuação** para cada métrica identificada, permitindo avaliar de forma objetiva e comparável a qualidade do Mozilla Firefox quanto à **Eficiência de Desempenho** e **Portabilidade**.
+
+A definição desses níveis busca **converter valores numéricos em interpretações qualitativas** — *Excelente*, *Bom*, *Regular* e *Insatisfatório* — de modo que os resultados obtidos nos testes possam ser analisados de maneira uniforme.
+
+A seguir, são apresentadas as escalas de pontuação correspondentes a cada métrica definida:
+
+| **Métrica** | **Excelente (4)** | **Bom (3)** | **Regular (2)** | **Insatisfatório (1)** |
+|:--:|:--|:--|:--|:--|
+| **M1.1 – Consumo de Memória (RAM)** | ≤ 1,0 GB | 1,1 – 1,5 GB | 1,6 – 2,0 GB | > 2,0 GB |
+| **M1.2 – Tempo de Carregamento de Página** | ≤ 2,0 s | 2,1 – 3,0 s | 3,1 – 4,0 s | > 4,0 s |
+| **M1.3 – Pontuação em Benchmarks (Speedometer / JetStream)** | ≥ 90 % da média de referência | 75 % – 89 % | 60 % – 74 % | < 60 % |
+| **M1.4 – Variação de Desempenho entre Plataformas** | ≤ 10 % | 11 % – 15 % | 16 % – 20 % | > 20 % |
+| **M2.1 – Paridade Funcional entre Plataformas** | 100 % | 95 % – 99 % | 85 % – 94 % | < 85 % |
+| **M2.2 – Conformidade da Interface do Usuário (UI)** | ≥ 95 % | 85 % – 94 % | 70 % – 84 % | < 70 % |
+
+Essas faixas foram definidas com base nas **hipóteses estabelecidas nas questões de medição**, refletindo as expectativas de desempenho e qualidade percebidas pelo usuário final.
+
+Os valores obtidos nos testes práticos e nas análises de benchmark serão convertidos em pontuações de **1 a 4**, sendo utilizados pela **Pessoa 5 – Estabelecer Critérios de Avaliação** para consolidar os resultados finais e determinar os níveis de conformidade do produto.
+
+
 ## Tabela de Contribuição
 
 | Matrícula | Integrante | Principais Contribuições | Comprovação | Contribuição |
 | :--- | :--- | :--- | :--- | :--- |
 | `[231033737]` | **Artur Mendonça Arruda** | | | `20%` |
-| `[Matrícula]` | **Nome do Integrante** | | | `%` |
+| `[Matrícula]` | **Nayra Silva Nery** | | | `20%` |
 | `[Matrícula]` | **Nome do Integrante** | | | `%` |
 | `[Matrícula]` | **Nome do Integrante** | | | `%` |
 | `[Matrícula]` | **Nome do Integrante** | | | `%` |
@@ -84,5 +106,7 @@ As métricas de portabilidade avaliam a subcaracterística de **Adaptabilidade**
 | ------ | ------------------------------------------------ | -------------------------------------------------------------- | ---------- | ------------------------------------------------------------ | --------------- |
 | 1.0 | Criação e adição dos objetivos de medição  |[Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 14/10/2025 | | |
 | 1.1 | Adição das questões e hipóteses de medição  |([https://github.com/Rodrigomfab88](https://github.com/Rodrigomfab88)) | 15/10/2025 | | |
+| 1.3 | Criação dos níveis de pontuação  |[Nayra Nery](https://github.com/NayraNery127) | 15/10/2025 | | |
+
 | 1.2 | Adição das seções de Métricas, Níveis de Pontuação e Critérios de Avaliação. | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 15/10/2025 | |  |
 | 1.3 | Adição da Tabela de Contribuição e Referências. | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 15/10/2025 |  | |
