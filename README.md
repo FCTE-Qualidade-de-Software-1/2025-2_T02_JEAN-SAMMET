@@ -66,6 +66,5 @@ O Mozilla Firefox é um navegador multiplataforma, de código aberto, amplamente
 | Versão | Descrição                               | Autor(es)                                              | Data       | Revisor(es)                                              | Data de Revisão |
 | ------ | --------------------------------------- | ------------------------------------------------------ | ---------- | -------------------------------------------------------- | --------------- |
 | 1.0    | Criação e inclusão do README do projeto | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 28/09/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 28/09/2025      |
---------------- | --------------- |
 | 1.1    | Edição do perfil | [Nayra Nery](https://github.com/NayraNery127) | 15/10/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 28/09/2025      |
 
