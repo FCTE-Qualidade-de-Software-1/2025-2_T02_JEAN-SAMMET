@@ -48,11 +48,16 @@ O Mozilla Firefox é um navegador multiplataforma, de código aberto, amplamente
         </a><br />
         <sub><b>Rodrigo Mattos de F. A. Bezerra</b></sub><br/>
       </td>
+      <td align="center">
+        <a href="https://github.com/NayraNery127">
+          <img style="border-radius: 50%; border: 3px solid #4CAF50;" src="https://github.com/NayraNery127.png" width="120px;" alt="Nayra Nery"/>
+        </a><br />
+        <sub><b>Nayra Nery</b></sub><br/>
+      </td>
     </tr>
   </table>
 </div>
 
----
 
 ## Bibliografia
 
@@ -69,3 +74,6 @@ ISO. **ISO/IEC 25023:2016 — Systems and software engineering — Systems and s
 | Versão | Descrição                               | Autor(es)                                              | Data       | Revisor(es)                                              | Data de Revisão |
 | ------ | --------------------------------------- | ------------------------------------------------------ | ---------- | -------------------------------------------------------- | --------------- |
 | 1.0    | Criação e inclusão do README do projeto | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 28/09/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 28/09/2025      |
+--------------- | --------------- |
+| 1.1    | Edição do perfil | [Nayra Nery](https://github.com/NayraNery127) | 15/10/2025 | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 28/09/2025      |
+
