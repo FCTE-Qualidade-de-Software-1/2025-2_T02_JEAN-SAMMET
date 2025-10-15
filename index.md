@@ -53,6 +53,12 @@ Navegue pelas seções abaixo para conhecer as fases e os detalhes da nossa aval
         </a><br />
         <sub><b>Rodrigo Mattos de F. A. Bezerra</b></sub><br/>
       </td>
+      <td align="center">
+        <a href="https://github.com/NayraNery127">
+          <img style="border-radius: 50%; border: 3px solid #4CAF50;" src="https://github.com/NayraNery127.png" width="120px;" alt="Nayra Nery"/>
+        </a><br />
+        <sub><b>Nayra Nery</b></sub><br/>
+      </td>
     </tr>
   </table>
 </div>
