@@ -17,8 +17,8 @@ O Mozilla Firefox é um navegador multiplataforma, de código aberto, amplamente
 
 Navegue pelas seções abaixo para conhecer as fases e os detalhes da nossa avaliação.
 
--   [**Fase 1:** Definição do Modelo de Qualidade e Escopo](./fase1.md)
--   [**Fase 2:** Definição de Objetivos de Medição e Métricas (Metodologia GQM)](./fase2.md)
+-   [**Fase 1:** Definição do Modelo de Qualidade e Escopo](fases/fase1.md)
+-   [**Fase 2:** Definição de Objetivos de Medição e Métricas (Metodologia GQM)](fases/fase2.md)
 
 *(Mais links para outras fases e documentos serão adicionados aqui conforme o projeto avança.)*
 
