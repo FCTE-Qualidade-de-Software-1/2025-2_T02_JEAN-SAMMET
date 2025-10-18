@@ -2,21 +2,20 @@
 
 ## Introdução
 
-O objetivo desta fase é definir objetivos de medição e estabelecer métricas para avaliar a qualidade do Mozilla Firefox, utilizando a abordagem GQM, que conecta metas de alto nível a métricas de avaliação. Os objetivos serão fundamentados nas prioridades identificadas na [Fase 1](fase1.md), com foco em Eficiência de Desempenho e Portabilidade, considerando a perspectiva do usuário final e o contexto de uso em diferentes plataformas e dispositivos.
+O objetivo desta fase é definir objetivos de medição e estabelecer métricas para avaliar a qualidade do Mozilla Firefox, utilizando a abordagem GQM, que conecta metas de alto nível a métricas de avaliação. Os objetivos serão fundamentados nas prioridades identificadas na [Fase 1](fase1.md), com foco em Eficiência de Desempenho e Portabilidade, considerando as diversos pontos de vista e o contexto de uso em diferentes plataformas e dispositivos.
 
-
-
-## Objetivos de Medição
-
-Os objetivos de medição serão criados com base nas prioridades do Firefox, considerando suas subcaracterísticas e mantendo a perspectiva do usuário final em diferentes sistemas operacionais e dispositivos, tanto desktop quanto mobile.  
-
-Eficiência de Desempenho: O objetivo é medir a eficiência e desempenho do Firefox, avaliando o uso de recursos e o tempo de resposta do navegador, de forma que o usuário final perceba rapidez e eficiência ao realizar tarefas comuns.  
-
-Portabilidade: O objetivo é medir a portabilidade do Firefox, analisando a adaptabilidade do navegador, garantindo que ele mantenha suas funcionalidades e desempenho de maneira consistente para o usuário final em diferentes ambientes e plataformas.
-
-## Questôes e Hipóteses de Medição
 
 ### 1. Eficiência de Desempenho
+
+### 1.1 Objetivo de medição
+
+| Analisar | Navegador FireFox |
+| Do propósito de | Avaliar |
+| Com respeito a | Eficiência de desempenho |
+| Do ponto de vista do | Time de desenvolvimento |
+| No contexto da | Disciplina de Qualidade de Software |
+
+### 1.2 Questões e Hipóteses de medição
 
 - Questão 1.1: O Firefox oferece uma navegação rápida e responsiva, com tempos de carregamento e uso de recursos adequados às expectativas do usuário final?
 
@@ -26,7 +25,27 @@ Portabilidade: O objetivo é medir a portabilidade do Firefox, analisando a adap
 
 - Hipótese 1.2: A variação de desempenho entre sistemas operacionais é inferior a 15% e o tempo de resposta médio permanece dentro dos limites aceitáveis (até 3,5 segundos). Em avaliações subjetivas, pelo menos 80% dos usuários relatam experiência semelhante de desempenho entre plataformas.
 
+### 1.3 Métricas 
+
+  - **M1.1: Consumo de Memória (RAM):** Medido em Gigabytes (GB), avalia a quantidade de memória que o navegador utiliza durante um cenário de uso padrão (ex: 5 a 10 abas abertas).
+  - **M1.2: Tempo de Carregamento de Página:** Medido em segundos (s), corresponde ao tempo decorrido desde a solicitação de uma página até sua renderização completa.
+  - **M1.3: Pontuação em Benchmarks de Desempenho:** Utilização de ferramentas padronizadas da indústria para obter uma pontuação objetiva.
+      - **Speedometer 3.0:** Mede a responsividade de aplicações web complexas.
+      - **JetStream 2.2:** Avalia o desempenho de JavaScript e WebAssembly em tarefas computacionalmente intensivas.
+  - **M1.4: Variação de Desempenho entre Plataformas:** Medida em percentual (%), calcula a diferença relativa nas pontuações de benchmark (M1.3) entre diferentes sistemas operacionais (Windows, macOS, Linux).
+
+
 ### 2. Portabilidade
+
+### 2.1 Objetivo de medição
+
+| Analisar | Navegador FireFox |
+| Do propósito de | Avaliar |
+| Com respeito a | Portabilidade |
+| Do ponto de vista do | Time de desenvolvimento |
+| No contexto da | Disciplina de Qualidade de Software |
+
+### 2.2 Questões e Hipóteses de medição
 
 - Questão 2.1: O Firefox mantém suas principais funcionalidades e qualidade de uso de forma consistente em diferentes plataformas e dispositivos?
 
@@ -36,29 +55,16 @@ Portabilidade: O objetivo é medir a portabilidade do Firefox, analisando a adap
 
 - Hipótese 2.2: O Firefox apresenta comportamento visual e funcional consistente em 95% dos dispositivos testados, sem distorções de layout ou falhas de interação. Pelo menos 85% dos usuários avaliam positivamente a adaptação da interface em diferentes tamanhos de tela.
 
-## Métricas de Avaliação
+## 2.3 Métricas de Avaliação
 
 Para responder às questões e validar as hipóteses, foram selecionadas as seguintes métricas quantitativas e qualitativas, alinhadas com a metodologia GQM.
-
-### 1\. Métricas de Eficiência de Desempenho
-
-As métricas para esta característica focam em **Uso de Recursos** e **Tempo de Resposta**.
-
-  - **M1.1: Consumo de Memória (RAM):** Medido em Gigabytes (GB), avalia a quantidade de memória que o navegador utiliza durante um cenário de uso padrão (ex: 5 a 10 abas abertas).
-  - **M1.2: Tempo de Carregamento de Página:** Medido em segundos (s), corresponde ao tempo decorrido desde a solicitação de uma página até sua renderização completa.
-  - **M1.3: Pontuação em Benchmarks de Desempenho:** Utilização de ferramentas padronizadas da indústria para obter uma pontuação objetiva.
-      - **Speedometer 3.0:** Mede a responsividade de aplicações web complexas.
-      - **JetStream 2.2:** Avalia o desempenho de JavaScript e WebAssembly em tarefas computacionalmente intensivas.
-  - **M1.4: Variação de Desempenho entre Plataformas:** Medida em percentual (%), calcula a diferença relativa nas pontuações de benchmark (M1.3) entre diferentes sistemas operacionais (Windows, macOS, Linux).
-
-### 2\. Métricas de Portabilidade
 
 As métricas de portabilidade avaliam a subcaracterística de **Adaptabilidade**.
 
   - **M2.1: Paridade Funcional entre Plataformas:** Medida em percentual (%), quantifica a proporção de funcionalidades essenciais disponíveis e consistentes em todas as plataformas suportadas (desktop e mobile).
   - **M2.2: Conformidade da Interface do Usuário (UI):** Medida em percentual (%), avalia o grau em que a interface se adapta corretamente a diferentes resoluções de tela e segue as convenções de cada sistema operacional, com base em um checklist de verificação.
 
-### Níveis de Pontuação
+### 3. Níveis de Pontuação
 
 Nesta etapa, são estabelecidos os **níveis de pontuação** para cada métrica identificada, permitindo avaliar de forma objetiva e comparável a qualidade do Mozilla Firefox quanto à **Eficiência de Desempenho** e **Portabilidade**.
 
@@ -75,9 +81,9 @@ A seguir, são apresentadas as escalas de pontuação correspondentes a cada mé
 | **M2.1 – Paridade Funcional entre Plataformas** | 100 % | 95 % – 99 % | 85 % – 94 % | < 85 % |
 | **M2.2 – Conformidade da Interface do Usuário (UI)** | ≥ 95 % | 85 % – 94 % | 70 % – 84 % | < 70 % |
 
-## Critérios de Avaliação e Julgamento
+## 4.Critérios de Avaliação e Julgamento
 
-### 1. Consolidação dos Resultados
+### 4.1 Consolidação dos Resultados
 
 Cada métrica (M1.1 a M2.2) utiliza uma **escala de 1 a 4**:
 
@@ -88,7 +94,7 @@ Cada métrica (M1.1 a M2.2) utiliza uma **escala de 1 a 4**:
 | 2 | Regular | Abaixo do esperado, com limitações. |
 | 1 | Insatisfatório | Não atende aos critérios mínimos. |
 
-### 2. Índice de Qualidade por Característica
+### 4.2 Índice de Qualidade por Característica
 
 Para cada característica, calcula-se a média ponderada das métricas:
 
@@ -100,7 +106,7 @@ IQ_c = \frac{\sum (P_i \times w_i)}{\sum w_i}
 - \(P_i\) = Pontuação da métrica \(i\)  
 - \(w_i\) = Peso da métrica (igual a 1 se não houver ponderação)
 
-### 3. Interpretação do Índice
+### 4.3 Interpretação do Índice
 
 | Intervalo | Nível | Interpretação |
 |:--:|:--|:--|
@@ -109,7 +115,7 @@ IQ_c = \frac{\sum (P_i \times w_i)}{\sum w_i}
 | 1,5 – 2,4 | Regular | Limitações perceptíveis; requer otimização. |
 | 1,0 – 1,4 | Insatisfatório | Não atende aos requisitos mínimos. |
 
-### 4. Índice Global de Qualidade (IQG)
+### 4.4 Índice Global de Qualidade (IQG)
 
 \[
 IQG = \frac{IQ_{Desempenho} + IQ_{Portabilidade}}{2}
@@ -117,7 +123,7 @@ IQG = \frac{IQ_{Desempenho} + IQ_{Portabilidade}}{2}
 
 Avalia a **qualidade geral do Firefox**, permitindo comparação entre versões e identificação de oportunidades de melhoria.
 
-### 5. Critérios de Aceitação
+### 4.5 Critérios de Aceitação
 
 - **Aceito:** \(IQG ≥ 2,5\)  
 - **Aceito com recomendações:** \(2,0 ≤ IQG < 2,5\)  
