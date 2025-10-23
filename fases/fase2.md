@@ -189,6 +189,8 @@ O ChatGPT atuou exclusivamente como ferramentas de validação e sugestão. Todo
 | 1.4 | Criação dos níveis de pontuação  |[Nayra Nery](https://github.com/NayraNery127) | 15/10/2025 | | |
 | 1.5 | Criação dos Criterios de Avaliação  |[João Filipe de Oliveira Souza](https://github.com/Joao151104) | 15/10/2025 | | |
 | 1.6 | Criação dos Criterios de Avaliação  |[João Filipe de Oliveira Souza](https://github.com/Joao151104) | 15/10/2025 | | |
-| 1.7 | Ajustes nas questões e hipóteses de medição  |[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88) | 18/10/2025 | | |
-| 1.8 | Criação e Adição do diagrama GQM | [Artur Mendonça Arruda](https://github.com/ArtyMend07) e [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 23/10/2025 | |  |
+| 1.7 | Arrumando objetivos| [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 18/10/2025 | |  |
+| 1.8 | Ajustes nas questões e hipóteses de medição  |[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88) | 18/10/2025 | | |
+| 1.9 | Criação e Adição do diagrama GQM | [Artur Mendonça Arruda](https://github.com/ArtyMend07) e [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 23/10/2025 | |  |
+| 1.10 | Adicionando declaração de Uso de Inteligência Artificial| [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 23/10/2025 | |  |
 
