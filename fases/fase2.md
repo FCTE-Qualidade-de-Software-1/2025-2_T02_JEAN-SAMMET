@@ -149,6 +149,18 @@ O diagrama abaixo apresenta a representação visual da hierarquia GQM (Goal-Que
 | `[Matrícula]` | **Rodrigo Mattos de Figueiredo** | | | `20%` |
 | | **Total** | | | **100%** |
 
+## 6. Declaração de Uso de Inteligência Artificial
+
+Para elaborar este artefato, a equipe contou com o apoio de modelos de linguagem de grande escala (LLMs), em especial o **ChatGPT**, como ferramenta auxiliar. O objetivo foi obter diferentes perspectivas sobre a organização e o conteúdo do trabalho, complementando a análise feita pelos integrantes do projeto.
+
+O uso da IA se concentrou em duas frentes principais:
+
+1. **Confirmação de Requisitos:** Serviu como recurso adicional para garantir que todos os requisitos e critérios da Fase 2 do projeto estavam atendidos.
+
+2. **Coerência e Clareza do Documento:** Auxiliou na revisão da lógica e fluidez do texto, ajudando a identificar pontos que poderiam ser ajustados para tornar o artefato mais claro e bem estruturado.
+
+O ChatGPT atuou exclusivamente como ferramentas de validação e sugestão. Todo o conteúdo, a redação final e as decisões estratégicas foram produzidos e validados pelos integrantes da equipe.
+
 ## Referências
 
   - BASILI, V. R. et al. **The Goal/Question/Metric Paradigm**. Fraunhofer IESE, 2003.
