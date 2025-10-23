@@ -63,7 +63,6 @@ As métricas de portabilidade avaliam a subcaracterística de **Adaptabilidade**
 
   - **M2.1: Paridade Funcional entre Plataformas:** Medida em percentual (%), quantifica a proporção de funcionalidades essenciais disponíveis e consistentes em todas as plataformas suportadas (desktop e mobile).
   - **M2.2: Conformidade da Interface do Usuário (UI):** Medida em percentual (%), avalia o grau em que a interface se adapta corretamente a diferentes resoluções de tela e segue as convenções de cada sistema operacional, com base em um checklist de verificação.
-  - **M2.3: Variação de Desempenho entre Plataformas:** Medida em percentual (%), calcula a diferença relativa nas pontuações de benchmark (M1.3) entre diferentes sistemas (Windows, macOS, Linux). Esta métrica é a mesma da M1.4 e também é considerada uma métrica de portabilidade, porém, enquanto M1.4 avalia somente a eficiência, M2.3 usa o mesmo dado para avaliar a adaptabilidade (conforme [Fase 1, Seção 2.1](fase1.md)).
 
 ### 3. Níveis de Pontuação
 
@@ -78,7 +77,7 @@ A seguir, são apresentadas as escalas de pontuação correspondentes a cada mé
 | **M1.1 – Consumo de Memória (RAM)** | ≤ 1,0 GB | 1,1 – 1,5 GB | 1,6 – 2,0 GB | > 2,0 GB |
 | **M1.2 – Tempo de Carregamento de Página** | ≤ 2,0 s | 2,1 – 3,0 s | 3,1 – 4,0 s | > 4,0 s |
 | **M1.3 – Pontuação em Benchmarks (Speedometer / JetStream)** | ≥ 90 % da média de referência | 75 % – 89 % | 60 % – 74 % | < 60 % |
-| **M1.4 / M2.3 – Variação de Desempenho entre Plataformas** | ≤ 10 % | 11 % – 15 % | 16 % – 20 % | > 20 % |
+| **M1.4 – Variação de Desempenho entre Plataformas** | ≤ 10 % | 11 % – 15 % | 16 % – 20 % | > 20 % |
 | **M2.1 – Paridade Funcional entre Plataformas** | 100 % | 95 % – 99 % | 85 % – 94 % | < 85 % |
 | **M2.2 – Conformidade da Interface do Usuário (UI)** | ≥ 95 % | 85 % – 94 % | 70 % – 84 % | < 70 % |
 
@@ -86,7 +85,7 @@ A seguir, são apresentadas as escalas de pontuação correspondentes a cada mé
 
 ### 4.1 Consolidação dos Resultados
 
-Cada métrica (M1.1 a M2.3) utiliza uma **escala de 1 a 4**:
+Cada métrica (M1.1 a M2.2) utiliza uma **escala de 1 a 4**:
 
 | Pontuação | Nível Qualitativo | Interpretação |
 |:--:|:--|:--|
@@ -131,6 +130,14 @@ Avalia a **qualidade geral do Firefox**, permitindo comparação entre versões 
 - **Rejeitado:** \(IQG < 2,0\)  
 
 
+## 5. Diagrama GQM
+
+O diagrama abaixo apresenta a representação visual da hierarquia GQM (Goal-Question-Metric) adotada neste plano de medição. O diagrama ilustra como os Objetivos de Medição de alto nível (Eficiência e Portabilidade) são decompostos em Questões específicas para avaliação. Por sua vez, cada Questão é conectada às Métricas quantitativas que fornecerão os dados necessários para respondê-las. A estrutura evidencia os três níveis lógicos da abordagem GQM, sendo eles o Conceitual (Objetivos), Operacional (Questões) e Quantitativo (Métricas).
+
+![Diagrama GQM do Projeto de Avaliação do Firefox](../assets/Diagrama-GQM.drawio.png)
+**Figura 1** – Diagrama GQM representando a hierarquia de Objetivos, Questões e Métricas.
+
+**Fonte:** Elaborado pelos autores [Artur Mendonça Arruda](https://github.com/ArtyMend07) e [Lucas Mendonça Arruda](https://github.com/lucasarruda9) (2025).
 ## Tabela de Contribuição
 
 | Matrícula | Integrante | Principais Contribuições | Comprovação | Contribuição |
@@ -163,4 +170,4 @@ Avalia a **qualidade geral do Firefox**, permitindo comparação entre versões 
 | 1.3 | Adição da Tabela de Contribuição e Referências. | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 15/10/2025 |  | |
 | 1.4 | Criação dos níveis de pontuação  |[Nayra Nery](https://github.com/NayraNery127) | 15/10/2025 | | |
 | 1.4 | Criação dos Criterios de Avaliação  |[João Filipe de Oliveira Souza](https://github.com/Joao151104) | 15/10/2025 | | |
-| 1.5 | Ampliação da métrica de variação de desempenho entre plataformas | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 22/10/2025 | |  |
+| 1.5 | Criação e Adição do diagrama GQM | [Artur Mendonça Arruda](https://github.com/ArtyMend07) e [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 23/10/2025 | |  |
