@@ -160,7 +160,7 @@ O ChatGPT atuou exclusivamente como ferramentas de validação e sugestão. Todo
 
 | Matrícula | Integrante | Principais Contribuições | Comprovação | Contribuição |
 | :--- | :--- | :--- | :--- | :--- |
-| `[231033737]` | **Artur Mendonça Arruda** | | | `20%` |
+| `[231033737]` | **Artur Mendonça Arruda** | Defini as métricas, fiz a bibliografia e o diagrama GQM |  [Métricas](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/2aac6e30dc0ae8dfd190b807c9d1c2f307bf9320), [Bibliografia](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/2aac6e30dc0ae8dfd190b807c9d1c2f307bf9320), [Diagrama GQM](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/5352bea09f49ce493e74948bb10371e8b3bf8f96) | `20%` |
 | `[Matrícula]` | **Nayra Silva Nery** | | | `20%` |
 | `[Matrícula]` | **João FIlipe de Oliveira Souza** | | | `20%` |
 | `[231035464]` | **Lucas Mendonça Arruda** | Adicionei a introdução do artefato, tópico de Objetivos de medição e Declaração de Uso de inteligência Artificial   | [Introdução](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/325725f582c8805cf616b0bfa7fde9d5403219fc), [Objetivos de medição](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/805d714287eca545ca80ac06834581b188acc04d), [Declaração IA](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/d1ae9f64d0003ce1e5747d0ae8a96aa50f1c2350)  | `20%` |
@@ -185,12 +185,12 @@ O ChatGPT atuou exclusivamente como ferramentas de validação e sugestão. Todo
 | 1.0 | Criação e adição dos objetivos de medição  |[Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 14/10/2025 | | |
 | 1.1 | Adição das questões e hipóteses de medição  |[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88) | 15/10/2025 | | |
 | 1.2 | Adição das seções de Métricas, Níveis de Pontuação e Critérios de Avaliação. | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 15/10/2025 | |  |
-| 1.3 | Adição da Tabela de Contribuição e Referências. | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 15/10/2025 |  | |
+| 1.3 | Adição da Tabela de Contribuição e Referências | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 15/10/2025 |  | |
 | 1.4 | Criação dos níveis de pontuação  |[Nayra Nery](https://github.com/NayraNery127) | 15/10/2025 | | |
 | 1.5 | Criação dos Criterios de Avaliação  |[João Filipe de Oliveira Souza](https://github.com/Joao151104) | 15/10/2025 | | |
-| 1.6 | Criação dos Criterios de Avaliação  |[João Filipe de Oliveira Souza](https://github.com/Joao151104) | 15/10/2025 | | |
-| 1.7 | Arrumando objetivos| [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 18/10/2025 | |  |
-| 1.8 | Ajustes nas questões e hipóteses de medição  |[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88) | 18/10/2025 | | |
-| 1.9 | Criação e Adição do diagrama GQM | [Artur Mendonça Arruda](https://github.com/ArtyMend07) e [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 23/10/2025 | |  |
-| 1.10 | Adicionando declaração de Uso de Inteligência Artificial| [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 23/10/2025 | |  |
+| 1.6 | Arrumando objetivos| [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 18/10/2025 | |  |
+| 1.7 | Ajustes nas questões e hipóteses de medição  |[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88) | 18/10/2025 | | |
+| 1.8 | Criação e Adição do diagrama GQM | [Artur Mendonça Arruda](https://github.com/ArtyMend07) e [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 23/10/2025 | |  |
+| 1.9 | Adicionando declaração de Uso de Inteligência Artificial| [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 23/10/2025 | |  |
+| 1.10 | Adição dos comprobatórios das contribuições de Artur | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 23/10/2025 |  | |
 
