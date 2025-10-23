@@ -163,7 +163,7 @@ O ChatGPT atuou exclusivamente como ferramentas de validação e sugestão. Todo
 | `[231033737]` | **Artur Mendonça Arruda** | | | `20%` |
 | `[Matrícula]` | **Nayra Silva Nery** | | | `20%` |
 | `[Matrícula]` | **João FIlipe de Oliveira Souza** | | | `20%` |
-| `[231035464]` | **Lucas Mendonça Arruda** | | | `20%` |
+| `[231035464]` | **Lucas Mendonça Arruda** | Adicionei a introdução do artefato, tópico de Objetivos de medição e Declaração de Uso de inteligência Artificial   | [Introdução](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/325725f582c8805cf616b0bfa7fde9d5403219fc), [Objetivos de medição](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/805d714287eca545ca80ac06834581b188acc04d), [Declaração IA](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/d1ae9f64d0003ce1e5747d0ae8a96aa50f1c2350)  | `20%` |
 | `[180108875]` | **Rodrigo Mattos de Figueiredo** | | | `20%` |
 | | **Total** | | | **100%** |
 
