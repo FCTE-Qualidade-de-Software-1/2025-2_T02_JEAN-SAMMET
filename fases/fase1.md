@@ -8,7 +8,7 @@ O **Mozilla Firefox** é um navegador web de código aberto, multiplataforma, de
 A escolha do Firefox para esta avaliação se justifica por três pilares centrais:
 -   **Relevância global:** O navegador desempenha um papel notório na promoção de um ecossistema digital aberto e competitivo.
 -   **Desenvolvimento contínuo e comunidade ativa:** O Firefox possui um ciclo de desenvolvimento rápido e uma comunidade de contribuidores robusta, o que garante a disponibilidade de vasta documentação pública e dados de bugs, como os encontrados no Bugzilla.<a id="cite-1-2"></a>[[1]](#ref-1), [[2]](#ref-2)
--   **Diversidade de ambientes de execução:** Sua natureza [multiplataforma](#14-classificação-e-arquitetura-do-produto) permite a coleta de métricas concretas e comparáveis em diferentes sistemas operacionais.
+-   **Diversidade de ambientes de execução:** Sua natureza multiplataforma permite a coleta de métricas concretas e comparáveis em diferentes sistemas operacionais.
 
 Do ponto de vista técnico, a arquitetura moderna do Firefox é baseada em um modelo **multi-processo**, que isola a interface do navegador dos conteúdos web.<a id="cite-3"></a>[[3]](#ref-3) Essa separação, que utiliza componentes como o motor de renderização **Gecko** e o motor JavaScript **SpiderMonkey**, é projetada para melhorar a estabilidade e a segurança, mas introduz um *trade-off* com o consumo de recursos.<a id="cite-4"></a>[[4]](#ref-4)
 
@@ -27,7 +27,7 @@ Os usuários do navegador, equipe interna do firefox e a comunidade open source 
 
 ### 1.4. Classificação e Arquitetura do Produto
 
-O Firefox é um navegador de código aberto criado pela Mozilla Foundation, capaz de ser usado em diversas plataformas, como Windows, Linux e macOS. Trata-se de um software [multiplataforma](#11-descrição-estruturada-do-software-selecionado), distribuído e de código aberto, onde o domínio de atuação envolve o acesso à internet, produtividade e comunicação. O front-end do navegador é composto por XUL, HTML, CSS e JavaScript, enquanto o back-end utiliza linguagens como C++, Python e Rust.
+O Firefox é um navegador de código aberto criado pela Mozilla Foundation, capaz de ser usado em diversas plataformas, como Windows, Linux e macOS. Trata-se de um software multiplataforma, distribuído e de código aberto, onde o domínio de atuação envolve o acesso à internet, produtividade e comunicação. O front-end do navegador é composto por XUL, HTML, CSS e JavaScript, enquanto o back-end utiliza linguagens como C++, Python e Rust.
 
 #### 1.4.1 Módulos Principais
 O Firefox é composto por diferentes módulos que organizam suas funcionalidades principais, são eles:
@@ -135,9 +135,9 @@ O entendimento prévio desses módulos e suas funções permite direcionar a ava
 
 ### 3.1. Propósito
 
- O nosso propósito é avaliar a qualidade do software Firefox, um [navegador multiplataforma de código aberto](#11-descrição-estruturada-do-software-selecionado), e analisar com foco nas características de [eficiência](#21-modelo-de-qualidade-de-referência) e [portabilidade](#21-modelo-de-qualidade-de-referência) levando em consideração seu uso em diferentes plataformas e cenários.
+ O nosso propósito é avaliar a qualidade do software Firefox, um navegador multiplataforma de código aberto, e analisar com foco nas características de [eficiência](#21-modelo-de-qualidade-de-referência) e [portabilidade](#21-modelo-de-qualidade-de-referência) levando em consideração seu uso em diferentes plataformas e cenários.
 
-Os resultados dessa avaliação interessam toda a comunidade que utiliza o navegador Firefox ([partes interessadas](#13-partes-interessadas)), pois poderão ter acesso a informações relevantes sobre o desempenho da aplicação, sua capacidade de adaptação a diferentes sistemas operacionais e dispositivos ([adaptabilidade](#21-modelo-de-qualidade-de-referência)), além de compreender possíveis limitações e oportunidades de melhoria. Dessa forma, a análise contribui tanto para usuários finais, que buscam uma experiência de navegação mais estável e otimizada, quanto para desenvolvedores e colaboradores do projeto, que poderão utilizar os [resultados](#32-uso-dos-resultados) dessa avaliação para futuras evoluções do software.
+Os resultados dessa avaliação interessam toda a comunidade que utiliza o navegador Firefox, pois poderão ter acesso a informações relevantes sobre o desempenho da aplicação, sua capacidade de [adaptação a diferentes sistemas operacionais e dispositivos](#21-modelo-de-qualidade-de-referência), além de compreender possíveis limitações e oportunidades de melhoria. Dessa forma, a análise contribui tanto para usuários finais, que buscam uma experiência de navegação mais estável e otimizada, quanto para desenvolvedores e colaboradores do projeto, que poderão utilizar os [resultados](#32-uso-dos-resultados) dessa avaliação para futuras evoluções do software.
 
 ### 3.2. Uso dos resultados
 
@@ -150,15 +150,19 @@ Os resultados dessa avaliação interessam toda a comunidade que utiliza o naveg
 **ODS 9 — Indústria, Inovação e Infraestrutura:**
     Avaliar a **eficiência** do Firefox contribui para compreender como a infraestrutura digital pode ser otimizada para inovação tecnológica inclusiva, alinhando-se à Meta 9.c de aumentar o acesso a tecnologias de informação. <a id="cite-9"></a>[[9]](#ref-9)
 
-    ![imagem da Meta 9.c](../assets/referencia-9.c.png)
+![imagem da Meta 9.c](../assets/referencia-9.c.png)
+
 **Figura 1** – Meta 9.c do Objetivo de Desenvolvimento Sustentável 9.
+
 **Fonte:** ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL, [s.d.].
 
 **ODS 10 — Redução das Desigualdades:**
     Avaliar a **portabilidade** garante que o navegador funcione em hardware de baixo custo, promovendo inclusão digital e equidade no acesso à informação, em conformidade com a Meta 10.2 de promover a inclusão social e econômica de todos. <a id="cite-10"></a>[[10]](#ref-10)
 
-    ![imagem da Meta 10.2](../assets/referencia-10.2.png)
+![imagem da Meta 10.2](../assets/referencia-10.2.png)
+
 **Figura 2** – Meta 10.2 do Objetivo de Desenvolvimento Sustentável 10.
+
 **Fonte:** ORGANIZAÇÃO DAS NAÇÕES UNIDAS NO BRASIL, [s.d.].
 
 ## 4. Tabela de Contribuição da Equipe
