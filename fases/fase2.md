@@ -142,16 +142,6 @@ O diagrama abaixo apresenta a representação visual da hierarquia GQM (Goal-Que
 **Figura 1** – Diagrama GQM representando a hierarquia de Objetivos, Questões e Métricas.
 
 **Fonte:** Elaborado pelos autores [Artur Mendonça Arruda](https://github.com/ArtyMend07) e [Lucas Mendonça Arruda](https://github.com/lucasarruda9) (2025).
-## Tabela de Contribuição
-
-| Matrícula | Integrante | Principais Contribuições | Comprovação | Contribuição |
-| :--- | :--- | :--- | :--- | :--- |
-| `[231033737]` | **Artur Mendonça Arruda** | | | `20%` |
-| `[Matrícula]` | **Nayra Silva Nery** | | | `20%` |
-| `[Matrícula]` | **João FIlipe de Oliveira Souza** | | | `20%` |
-| `[Matrícula]` | **Lucas Mendonça Arruda** | | | `20%` |
-| `[180108875]` | **Rodrigo Mattos de Figueiredo** | | | `20%` |
-| | **Total** | | | **100%** |
 
 ## 6. Declaração de Uso de Inteligência Artificial
 
@@ -164,6 +154,18 @@ O uso da IA se concentrou em duas frentes principais:
 2. **Coerência e Clareza do Documento:** Auxiliou na revisão da lógica e fluidez do texto, ajudando a identificar pontos que poderiam ser ajustados para tornar o artefato mais claro e bem estruturado.
 
 O ChatGPT atuou exclusivamente como ferramentas de validação e sugestão. Todo o conteúdo, a redação final e as decisões estratégicas foram produzidos e validados pelos integrantes da equipe.
+
+
+## Tabela de Contribuição
+
+| Matrícula | Integrante | Principais Contribuições | Comprovação | Contribuição |
+| :--- | :--- | :--- | :--- | :--- |
+| `[231033737]` | **Artur Mendonça Arruda** | | | `20%` |
+| `[Matrícula]` | **Nayra Silva Nery** | | | `20%` |
+| `[Matrícula]` | **João FIlipe de Oliveira Souza** | | | `20%` |
+| `[231035464]` | **Lucas Mendonça Arruda** | | | `20%` |
+| `[180108875]` | **Rodrigo Mattos de Figueiredo** | | | `20%` |
+| | **Total** | | | **100%** |
 
 ## Referências
 
