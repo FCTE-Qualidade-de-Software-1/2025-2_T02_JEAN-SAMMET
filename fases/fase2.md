@@ -19,13 +19,13 @@ O objetivo desta fase é definir objetivos de medição e estabelecer métricas 
 
 ### 1.2 Questões e Hipóteses de medição
 
-- Questão 1.1: O Firefox oferece uma navegação rápida e responsiva, com tempos de carregamento e uso de recursos adequados às expectativas do usuário final?
+- **Questão 1.1:** O Firefox oferece uma navegação rápida e responsiva, atendendo às expectativas do usuário final?
 
-- Hipótese 1.1: Em pelo menos 85% dos testes realizados, o Firefox carrega páginas em menos de 3 segundos e mantém o consumo médio de memória abaixo de 1 GB durante a navegação comum (até 10 abas abertas). A percepção de fluidez pelos usuários é superior a 80% nas avaliações de desempenho.
+    - **Hipótese 1.1:** Em pelo menos 90% dos testes realizados, o Firefox carrega páginas em menos de 3 segundos e mantém o consumo médio de memória abaixo de 1 GB durante a navegação comum (até 10 abas abertas). A percepção de fluidez pelos usuários é superior a 90% nas avaliações de desempenho.
 
-- Questão 1.2: O Firefox mantém desempenho estável e consistente entre diferentes sistemas operacionais (Windows, Linux, macOS) e dispositivos (desktop e mobile)?
+- **Questão 1.2:** O Firefox mantém desempenho estável e consistente entre diferentes sistemas operacionais e dispositivos?
 
-- Hipótese 1.2: A variação de desempenho entre sistemas operacionais é inferior a 15% e o tempo de resposta médio permanece dentro dos limites aceitáveis (até 3,5 segundos). Em avaliações subjetivas, pelo menos 80% dos usuários relatam experiência semelhante de desempenho entre plataformas.
+    - **Hipótese 1.2:** A variação de desempenho entre sistemas operacionais é inferior a 10% e o tempo de resposta médio permanece dentro dos limites aceitáveis (até 3,5 segundos). Em avaliações subjetivas, pelo menos 90% dos usuários relatam experiência semelhante de desempenho entre plataformas.
 
 ### 1.3 Métricas 
 
@@ -53,11 +53,11 @@ O objetivo desta fase é definir objetivos de medição e estabelecer métricas 
 
 - Questão 2.1: O Firefox mantém suas principais funcionalidades e qualidade de uso de forma consistente em diferentes plataformas e dispositivos?
 
-- Hipótese 2.1: O Firefox preserva 100% das funcionalidades essenciais (favoritos, histórico, extensões, sincronização) em todas as plataformas. A diferença na pontuação média de satisfação entre versões desktop e mobile é inferior a 10%.
+    - **Hipótese 2.1:** O Firefox preserva 100% das funcionalidades essenciais (favoritos, histórico, extensões, sincronização) em todas as plataformas. A diferença na pontuação média de satisfação entre versões desktop e mobile é inferior a 10%.
 
-- Questão 2.2: O Firefox adapta corretamente sua interface e experiência de uso às diferentes resoluções de tela e modos de interação (toque, mouse, teclado) entre dispositivos?
+- **Questão 2.2:** O Firefox adapta corretamente sua interface e experiência de uso em diferentes dispositivos?
 
-- Hipótese 2.2: O Firefox apresenta comportamento visual e funcional consistente em 95% dos dispositivos testados, sem distorções de layout ou falhas de interação. Pelo menos 85% dos usuários avaliam positivamente a adaptação da interface em diferentes tamanhos de tela.
+    - **Hipótese 2.2:** O Firefox apresenta comportamento visual e funcional consistente em 95% dos dispositivos testados, sem distorções de layout ou falhas de interação. Pelo menos 90% dos usuários avaliam positivamente a adaptação da interface em diferentes tamanhos de tela.
 
 ## 2.3 Métricas de Avaliação
 
@@ -150,7 +150,7 @@ O diagrama abaixo apresenta a representação visual da hierarquia GQM (Goal-Que
 | `[Matrícula]` | **Nayra Silva Nery** | | | `20%` |
 | `[Matrícula]` | **João FIlipe de Oliveira Souza** | | | `20%` |
 | `[Matrícula]` | **Lucas Mendonça Arruda** | | | `20%` |
-| `[Matrícula]` | **Rodrigo Mattos de Figueiredo** | | | `20%` |
+| `[180108875]` | **Rodrigo Mattos de Figueiredo** | | | `20%` |
 | | **Total** | | | **100%** |
 
 ## 6. Declaração de Uso de Inteligência Artificial
@@ -181,9 +181,12 @@ O ChatGPT atuou exclusivamente como ferramentas de validação e sugestão. Todo
 | Versão | Descrição | Autor(es) | Data | Revisor(es) | Data de Revisão |
 | ------ | ------------------------------------------------ | -------------------------------------------------------------- | ---------- | ------------------------------------------------------------ | --------------- |
 | 1.0 | Criação e adição dos objetivos de medição  |[Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 14/10/2025 | | |
-| 1.1 | Adição das questões e hipóteses de medição  |([https://github.com/Rodrigomfab88](https://github.com/Rodrigomfab88)) | 15/10/2025 | | |
+| 1.1 | Adição das questões e hipóteses de medição  |[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88) | 15/10/2025 | | |
 | 1.2 | Adição das seções de Métricas, Níveis de Pontuação e Critérios de Avaliação. | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 15/10/2025 | |  |
 | 1.3 | Adição da Tabela de Contribuição e Referências. | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 15/10/2025 |  | |
 | 1.4 | Criação dos níveis de pontuação  |[Nayra Nery](https://github.com/NayraNery127) | 15/10/2025 | | |
-| 1.4 | Criação dos Criterios de Avaliação  |[João Filipe de Oliveira Souza](https://github.com/Joao151104) | 15/10/2025 | | |
-| 1.5 | Criação e Adição do diagrama GQM | [Artur Mendonça Arruda](https://github.com/ArtyMend07) e [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 23/10/2025 | |  |
+| 1.5 | Criação dos Criterios de Avaliação  |[João Filipe de Oliveira Souza](https://github.com/Joao151104) | 15/10/2025 | | |
+| 1.6 | Criação dos Criterios de Avaliação  |[João Filipe de Oliveira Souza](https://github.com/Joao151104) | 15/10/2025 | | |
+| 1.7 | Ajustes nas questões e hipóteses de medição  |[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88) | 18/10/2025 | | |
+| 1.8 | Criação e Adição do diagrama GQM | [Artur Mendonça Arruda](https://github.com/ArtyMend07) e [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 23/10/2025 | |  |
+
