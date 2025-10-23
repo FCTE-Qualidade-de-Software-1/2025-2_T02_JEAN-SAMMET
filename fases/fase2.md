@@ -2,21 +2,22 @@
 
 ## Introdução
 
-O objetivo desta fase é definir objetivos de medição e estabelecer métricas para avaliar a qualidade do Mozilla Firefox, utilizando a abordagem GQM, que conecta metas de alto nível a métricas de avaliação. Os objetivos serão fundamentados nas prioridades identificadas na [Fase 1](fase1.md), com foco em Eficiência de Desempenho e Portabilidade, considerando a perspectiva do usuário final e o contexto de uso em diferentes plataformas e dispositivos.
+O objetivo desta fase é definir objetivos de medição e estabelecer métricas para avaliar a qualidade do Mozilla Firefox, utilizando a abordagem GQM, que conecta metas de alto nível a métricas de avaliação. Os objetivos serão fundamentados nas prioridades identificadas na [Fase 1](fase1.md), com foco em Eficiência de Desempenho e Portabilidade, considerando as diversos pontos de vista e o contexto de uso em diferentes plataformas e dispositivos.
 
-
-
-## Objetivos de Medição
-
-Os objetivos de medição serão criados com base nas prioridades do Firefox, considerando suas subcaracterísticas e mantendo a perspectiva do usuário final em diferentes sistemas operacionais e dispositivos, tanto desktop quanto mobile.  
-
-Eficiência de Desempenho: O objetivo é medir a eficiência e desempenho do Firefox, avaliando o uso de recursos e o tempo de resposta do navegador, de forma que o usuário final perceba rapidez e eficiência ao realizar tarefas comuns.  
-
-Portabilidade: O objetivo é medir a portabilidade do Firefox, analisando a adaptabilidade do navegador, garantindo que ele mantenha suas funcionalidades e desempenho de maneira consistente para o usuário final em diferentes ambientes e plataformas.
-
-## Questões e Hipóteses de Medição
 
 ### 1. Eficiência de Desempenho
+
+### 1.1 Objetivo de medição
+
+|                     |                           |
+|---------------------|---------------------------|
+| Analisar | Navegador FireFox |
+| Do propósito de | Avaliar |
+| Com respeito a | Eficiência de desempenho |
+| Do ponto de vista do | Time de desenvolvimento |
+| No contexto da | Disciplina de Qualidade de Software |
+
+### 1.2 Questões e Hipóteses de medição
 
 - **Questão 1.1:** O Firefox oferece uma navegação rápida e responsiva, atendendo às expectativas do usuário final?
 
@@ -26,23 +27,7 @@ Portabilidade: O objetivo é medir a portabilidade do Firefox, analisando a adap
 
     - **Hipótese 1.2:** A variação de desempenho entre sistemas operacionais é inferior a 10% e o tempo de resposta médio permanece dentro dos limites aceitáveis (até 3,5 segundos). Em avaliações subjetivas, pelo menos 90% dos usuários relatam experiência semelhante de desempenho entre plataformas.
 
-### 2. Portabilidade
-
-- **Questão 2.1:** O Firefox mantém suas principais funcionalidades consistentes em diferentes sistemas operacionais e dispositivos?
-
-    - **Hipótese 2.1:** O Firefox preserva 100% das funcionalidades essenciais (favoritos, histórico, extensões, sincronização) em todas as plataformas. A diferença na pontuação média de satisfação entre versões desktop e mobile é inferior a 10%.
-
-- **Questão 2.2:** O Firefox adapta corretamente sua interface e experiência de uso em diferentes dispositivos?
-
-    - **Hipótese 2.2:** O Firefox apresenta comportamento visual e funcional consistente em 95% dos dispositivos testados, sem distorções de layout ou falhas de interação. Pelo menos 90% dos usuários avaliam positivamente a adaptação da interface em diferentes tamanhos de tela.
-
-## Métricas de Avaliação
-
-Para responder às questões e validar as hipóteses, foram selecionadas as seguintes métricas quantitativas e qualitativas, alinhadas com a metodologia GQM.
-
-### 1\. Métricas de Eficiência de Desempenho
-
-As métricas para esta característica focam em **Uso de Recursos** e **Tempo de Resposta**.
+### 1.3 Métricas 
 
   - **M1.1: Consumo de Memória (RAM):** Medido em Gigabytes (GB), avalia a quantidade de memória que o navegador utiliza durante um cenário de uso padrão (ex: 5 a 10 abas abertas).
   - **M1.2: Tempo de Carregamento de Página:** Medido em segundos (s), corresponde ao tempo decorrido desde a solicitação de uma página até sua renderização completa.
@@ -51,14 +36,39 @@ As métricas para esta característica focam em **Uso de Recursos** e **Tempo de
       - **JetStream 2.2:** Avalia o desempenho de JavaScript e WebAssembly em tarefas computacionalmente intensivas.
   - **M1.4: Variação de Desempenho entre Plataformas:** Medida em percentual (%), calcula a diferença relativa nas pontuações de benchmark (M1.3) entre diferentes sistemas operacionais (Windows, macOS, Linux).
 
-### 2\. Métricas de Portabilidade
+
+### 2. Portabilidade
+
+### 2.1 Objetivo de medição
+
+|                     |                           |
+|---------------------|---------------------------|
+| Analisar | Navegador FireFox |
+| Do propósito de | Avaliar |
+| Com respeito a | Portabilidade |
+| Do ponto de vista do | Time de desenvolvimento |
+| No contexto da | Disciplina de Qualidade de Software |
+
+### 2.2 Questões e Hipóteses de medição
+
+- Questão 2.1: O Firefox mantém suas principais funcionalidades e qualidade de uso de forma consistente em diferentes plataformas e dispositivos?
+
+    - **Hipótese 2.1:** O Firefox preserva 100% das funcionalidades essenciais (favoritos, histórico, extensões, sincronização) em todas as plataformas. A diferença na pontuação média de satisfação entre versões desktop e mobile é inferior a 10%.
+
+- **Questão 2.2:** O Firefox adapta corretamente sua interface e experiência de uso em diferentes dispositivos?
+
+    - **Hipótese 2.2:** O Firefox apresenta comportamento visual e funcional consistente em 95% dos dispositivos testados, sem distorções de layout ou falhas de interação. Pelo menos 90% dos usuários avaliam positivamente a adaptação da interface em diferentes tamanhos de tela.
+
+## 2.3 Métricas de Avaliação
+
+Para responder às questões e validar as hipóteses, foram selecionadas as seguintes métricas quantitativas e qualitativas, alinhadas com a metodologia GQM.
 
 As métricas de portabilidade avaliam a subcaracterística de **Adaptabilidade**.
 
   - **M2.1: Paridade Funcional entre Plataformas:** Medida em percentual (%), quantifica a proporção de funcionalidades essenciais disponíveis e consistentes em todas as plataformas suportadas (desktop e mobile).
   - **M2.2: Conformidade da Interface do Usuário (UI):** Medida em percentual (%), avalia o grau em que a interface se adapta corretamente a diferentes resoluções de tela e segue as convenções de cada sistema operacional, com base em um checklist de verificação.
 
-### Níveis de Pontuação
+### 3. Níveis de Pontuação
 
 Nesta etapa, são estabelecidos os **níveis de pontuação** para cada métrica identificada, permitindo avaliar de forma objetiva e comparável a qualidade do Mozilla Firefox quanto à **Eficiência de Desempenho** e **Portabilidade**.
 
@@ -75,9 +85,9 @@ A seguir, são apresentadas as escalas de pontuação correspondentes a cada mé
 | **M2.1 – Paridade Funcional entre Plataformas** | 100 % | 95 % – 99 % | 85 % – 94 % | < 85 % |
 | **M2.2 – Conformidade da Interface do Usuário (UI)** | ≥ 95 % | 85 % – 94 % | 70 % – 84 % | < 70 % |
 
-## Critérios de Avaliação e Julgamento
+## 4.Critérios de Avaliação e Julgamento
 
-### 1. Consolidação dos Resultados
+### 4.1 Consolidação dos Resultados
 
 Cada métrica (M1.1 a M2.2) utiliza uma **escala de 1 a 4**:
 
@@ -88,7 +98,7 @@ Cada métrica (M1.1 a M2.2) utiliza uma **escala de 1 a 4**:
 | 2 | Regular | Abaixo do esperado, com limitações. |
 | 1 | Insatisfatório | Não atende aos critérios mínimos. |
 
-### 2. Índice de Qualidade por Característica
+### 4.2 Índice de Qualidade por Característica
 
 Para cada característica, calcula-se a média ponderada das métricas:
 
@@ -100,7 +110,7 @@ IQ_c = \frac{\sum (P_i \times w_i)}{\sum w_i}
 - \(P_i\) = Pontuação da métrica \(i\)  
 - \(w_i\) = Peso da métrica (igual a 1 se não houver ponderação)
 
-### 3. Interpretação do Índice
+### 4.3 Interpretação do Índice
 
 | Intervalo | Nível | Interpretação |
 |:--:|:--|:--|
@@ -109,7 +119,7 @@ IQ_c = \frac{\sum (P_i \times w_i)}{\sum w_i}
 | 1,5 – 2,4 | Regular | Limitações perceptíveis; requer otimização. |
 | 1,0 – 1,4 | Insatisfatório | Não atende aos requisitos mínimos. |
 
-### 4. Índice Global de Qualidade (IQG)
+### 4.4 Índice Global de Qualidade (IQG)
 
 \[
 IQG = \frac{IQ_{Desempenho} + IQ_{Portabilidade}}{2}
@@ -117,11 +127,33 @@ IQG = \frac{IQ_{Desempenho} + IQ_{Portabilidade}}{2}
 
 Avalia a **qualidade geral do Firefox**, permitindo comparação entre versões e identificação de oportunidades de melhoria.
 
-### 5. Critérios de Aceitação
+### 4.5 Critérios de Aceitação
 
 - **Aceito:** \(IQG ≥ 2,5\)  
 - **Aceito com recomendações:** \(2,0 ≤ IQG < 2,5\)  
 - **Rejeitado:** \(IQG < 2,0\)  
+
+
+## 5. Diagrama GQM
+
+O diagrama abaixo apresenta a representação visual da hierarquia GQM (Goal-Question-Metric) adotada neste plano de medição. O diagrama ilustra como os Objetivos de Medição de alto nível (Eficiência e Portabilidade) são decompostos em Questões específicas para avaliação. Por sua vez, cada Questão é conectada às Métricas quantitativas que fornecerão os dados necessários para respondê-las. A estrutura evidencia os três níveis lógicos da abordagem GQM, sendo eles o Conceitual (Objetivos), Operacional (Questões) e Quantitativo (Métricas).
+
+![Diagrama GQM do Projeto de Avaliação do Firefox](../assets/Diagrama-GQM.drawio.png)
+**Figura 1** – Diagrama GQM representando a hierarquia de Objetivos, Questões e Métricas.
+
+**Fonte:** Elaborado pelos autores [Artur Mendonça Arruda](https://github.com/ArtyMend07) e [Lucas Mendonça Arruda](https://github.com/lucasarruda9) (2025).
+
+## 6. Declaração de Uso de Inteligência Artificial
+
+Para elaborar este artefato, a equipe contou com o apoio de modelos de linguagem de grande escala (LLMs), em especial o **ChatGPT**, como ferramenta auxiliar. O objetivo foi obter diferentes perspectivas sobre a organização e o conteúdo do trabalho, complementando a análise feita pelos integrantes do projeto.
+
+O uso da IA se concentrou em duas frentes principais:
+
+1. **Confirmação de Requisitos:** Serviu como recurso adicional para garantir que todos os requisitos e critérios da Fase 2 do projeto estavam atendidos.
+
+2. **Coerência e Clareza do Documento:** Auxiliou na revisão da lógica e fluidez do texto, ajudando a identificar pontos que poderiam ser ajustados para tornar o artefato mais claro e bem estruturado.
+
+O ChatGPT atuou exclusivamente como ferramentas de validação e sugestão. Todo o conteúdo, a redação final e as decisões estratégicas foram produzidos e validados pelos integrantes da equipe.
 
 
 ## Tabela de Contribuição
@@ -131,7 +163,7 @@ Avalia a **qualidade geral do Firefox**, permitindo comparação entre versões 
 | `[231033737]` | **Artur Mendonça Arruda** | | | `20%` |
 | `[Matrícula]` | **Nayra Silva Nery** | | | `20%` |
 | `[Matrícula]` | **João FIlipe de Oliveira Souza** | | | `20%` |
-| `[Matrícula]` | **Lucas Mendonça Arruda** | | | `20%` |
+| `[231035464]` | **Lucas Mendonça Arruda** | Adicionei a introdução do artefato, tópico de Objetivos de medição e Declaração de Uso de inteligência Artificial   | [Introdução](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/325725f582c8805cf616b0bfa7fde9d5403219fc), [Objetivos de medição](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/805d714287eca545ca80ac06834581b188acc04d), [Declaração IA](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/d1ae9f64d0003ce1e5747d0ae8a96aa50f1c2350)  | `20%` |
 | `[180108875]` | **Rodrigo Mattos de Figueiredo** | | | `20%` |
 | | **Total** | | | **100%** |
 
@@ -156,4 +188,9 @@ Avalia a **qualidade geral do Firefox**, permitindo comparação entre versões 
 | 1.3 | Adição da Tabela de Contribuição e Referências. | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 15/10/2025 |  | |
 | 1.4 | Criação dos níveis de pontuação  |[Nayra Nery](https://github.com/NayraNery127) | 15/10/2025 | | |
 | 1.5 | Criação dos Criterios de Avaliação  |[João Filipe de Oliveira Souza](https://github.com/Joao151104) | 15/10/2025 | | |
-| 1.6 | Ajustes nas questões e hipóteses de medição  |[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88) | 18/10/2025 | | |
+| 1.6 | Criação dos Criterios de Avaliação  |[João Filipe de Oliveira Souza](https://github.com/Joao151104) | 15/10/2025 | | |
+| 1.7 | Arrumando objetivos| [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 18/10/2025 | |  |
+| 1.8 | Ajustes nas questões e hipóteses de medição  |[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88) | 18/10/2025 | | |
+| 1.9 | Criação e Adição do diagrama GQM | [Artur Mendonça Arruda](https://github.com/ArtyMend07) e [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 23/10/2025 | |  |
+| 1.10 | Adicionando declaração de Uso de Inteligência Artificial| [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 23/10/2025 | |  |
+
