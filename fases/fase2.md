@@ -9,6 +9,8 @@ O objetivo desta fase é definir objetivos de medição e estabelecer métricas 
 
 ### 1.1 Objetivo de medição
 
+|                     |                           |
+|---------------------|---------------------------|
 | Analisar | Navegador FireFox |
 | Do propósito de | Avaliar |
 | Com respeito a | Eficiência de desempenho |
@@ -39,6 +41,8 @@ O objetivo desta fase é definir objetivos de medição e estabelecer métricas 
 
 ### 2.1 Objetivo de medição
 
+|                     |                           |
+|---------------------|---------------------------|
 | Analisar | Navegador FireFox |
 | Do propósito de | Avaliar |
 | Com respeito a | Portabilidade |
