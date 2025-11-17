@@ -75,5 +75,5 @@ Ao final, o executor deve somar o número total de itens marcados como 'OK' e re
 
 | Versão | Descrição | Autor(es) | Data | Revisor(es) | Data de Revisão |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1.0 | Criação do template do checklist M2.1 | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 16/11/2025 | | |
+| 1.0 | Criação do template do checklist M2.1 | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 17/11/2025 | | |
 | 1.1 | Adição da Seção 2 (Metodologia de Execução) | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 17/11/2025 | | |
