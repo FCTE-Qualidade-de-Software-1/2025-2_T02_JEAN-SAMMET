@@ -42,17 +42,17 @@ Ao final, o executor deve somar o número total de itens marcados como 'OK' e re
 
 **2. Navegação e Gerenciamento de Abas (5 Itens)**
 - [ ] **2.1 Modo Privado:** Consegue abrir uma janela/aba de navegação privativa.
-- [ ] **2.2 Reabrir Aba Fechada:** A função "Reabrir aba fechada" (Ctrl+Shift+T ou menu) funciona.
-- [ ] **2.3 Fixar Aba:** Consegue "Fixar Aba" (Pin Tab). (Marcar N/A se for Android).
-- [ ] **2.4 Mover Aba:** Consegue arrastar uma aba para uma nova janela. (Marcar N/A se for Android).
-- [ ] **2.5 Mudo (Mute) de Aba:** Consegue silenciar o áudio de uma aba específica.
+- [ ] **2.2 Reabrir Aba Fechada:** A função "Reabrir aba fechada" está presente.
+- [ ] **2.3 Fixar Aba:** Consegue "Fixar Aba".
+- [ ] **2.4 Mover Aba:** Consegue arrastar uma aba para uma nova janela.
+- [ ] **2.5 Mudo de Aba:** Consegue silenciar o áudio de uma aba específica.
 
 **3. Interação com Conteúdo Web (5 Itens)**
-- [ ] **3.1 Reprodução de Mídia:** Reproduz vídeo H.264 (ex: YouTube) sem erro.
-- [ ] **3.2 Submissão de Formulário:** Consegue preencher campos de texto e submeter um formulário (ex: login Amazon).
-- [ ] **3.3 Download de Arquivo:** Consegue baixar um arquivo (ex: .pdf) e acessá-lo.
-- [ ] **3.4 Zoom:** A função de zoom (Ctrl +/- ou gesto de pinça) funciona corretamente.
-- [ ] **3.5 Interação com Dropdown:** Menus dropdown (<select>) em sites funcionam.
+- [ ] **3.1 Reprodução de Mídia:** Reproduz vídeo no youtube.
+- [ ] **3.2 Submissão de Formulário:** Consegue preencher campos de texto e submeter um formulário.
+- [ ] **3.3 Download de Arquivo:** Consegue baixar um arquivo pdf e acessá-lo.
+- [ ] **3.4 Zoom:** A função de zoom funciona corretamente.
+- [ ] **3.5 Interação com Dropdown:** Menus dropdown em sites funcionam.
 
 **4. Recursos Nativos do Navegador (5 Itens)**
 - [ ] **4.1 Instalação de Extensão:** Consegue instalar "uBlock Origin" da loja de addons. (Desktop/Android).
