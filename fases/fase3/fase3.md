@@ -83,15 +83,11 @@ Aqui está **todo o conteúdo formatado em Markdown**, limpo, organizado e pront
 
  **M1.4 — Variação de Desempenho entre Plataformas (GQM)**
 
-## **Objetivo**
+ **Objetivo**: Quantificar a **diferença relativa de desempenho entre os ambientes** (Windows, macOS, Linux e Android) com base nas pontuações dos benchmarks **Speedometer 3.0** e **JetStream 2**, utilizando o **Coeficiente de Variação (CV)**.
 
-Quantificar a **diferença relativa de desempenho entre os ambientes** (Windows, macOS, Linux e Android) com base nas pontuações dos benchmarks **Speedometer 3.0** e **JetStream 2**, utilizando o **Coeficiente de Variação (CV)**.
+ **Definição da Métrica**
 
-## **Definição da Métrica**
-
-**M1.4 (Variação de Desempenho)** = Coeficiente de Variação das pontuações entre plataformas.
-
-### **Fórmula**
+ **Fórmula**:
 
 [
 CV(%) = \frac{\sigma}{\mu} \times 100
@@ -102,7 +98,7 @@ Onde:
 * **σ** = desvio padrão das pontuações (por benchmark)
 * **μ** = média aritmética das pontuações entre plataformas
 
-## **Procedimento de Coleta**
+**Procedimento de Coleta**
 
 1. **Executar os benchmarks** Speedometer 3.0 e JetStream 2 em cada plataforma:
 
