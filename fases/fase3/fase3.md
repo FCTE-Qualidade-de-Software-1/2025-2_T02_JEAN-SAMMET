@@ -83,7 +83,7 @@ Aqui está **todo o conteúdo formatado em Markdown**, limpo, organizado e pront
 
 ---
 
-# **M1.4 — Variação de Desempenho entre Plataformas (GQM)**
+ **M1.4 — Variação de Desempenho entre Plataformas (GQM)**
 
 ## **Objetivo**
 
@@ -132,60 +132,6 @@ Onde:
    * **CV (%)** pela fórmula.
 
 5. O valor obtido será o resultado da métrica **M1.4**.
-
----
-
-## **Cálculo de Exemplo (na planilha)**
-
-| Plataforma | Execução 1 | Execução 2 | Execução 3 | Mediana |
-| ---------- | ---------- | ---------- | ---------- | ------- |
-| Windows    | ...        | ...        | ...        | ...     |
-| macOS      | ...        | ...        | ...        | ...     |
-| Linux      | ...        | ...        | ...        | ...     |
-| Android    | ...        | ...        | ...        | ...     |
-
-### **Células da planilha**
-
-* **μ = MÉDIA(intervalo_das_medianas)**
-* **σ = DESVPAD(intervalo_das_medianas)**
-* **CV = σ / μ × 100**
-
----
-
-## **Critério de Pontuação (Escala M1.4 — Seção 3)**
-
-| CV (%)        | Classificação  | Nota  |
-| ------------- | -------------- | ----- |
-| **≤ 10%**     | Excelente      | **4** |
-| **11% – 15%** | Bom            | **3** |
-| **16% – 20%** | Regular        | **2** |
-| **> 20%**     | Insatisfatório | **1** |
-
----
-
-## **Artefatos Exigidos / Evidências**
-
-* **Planilha Mestra** contendo:
-
-  * Execuções brutas
-  * Medianas
-  * Cálculo de μ, σ e CV
-* **Screenshots** de todas as execuções (Speedometer e JetStream).
-* **Arquivo metadata por execução**, com:
-
-  * Data e hora
-  * Versão exata do Firefox
-  * Especificação de hardware (CPU, RAM)
-  * Versão do SO
-* Observações sobre **condições atípicas**, como:
-
-  * Picos de CPU
-  * Atualizações do SO
-  * Aplicativos interferindo
-
----
-Se quiser, posso transformar isso em **PDF**, **DOCX**, ou **modelo de planilha preenchível**, é só pedir!
-
 
 
 ### 2.4. Lista de Sites Padronizados (M1.1 e M1.2)
