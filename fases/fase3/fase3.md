@@ -81,15 +81,11 @@ Para avaliar o desempenho sintético bruto, dois benchmarks padronizados serão 
 6.  Registrar a pontuação final na [Planilha Mestra](#21-artefatos-de-coleta-e-divisão-de-tarefas) e salvar um screenshot como evidência.
 Aqui está **todo o conteúdo formatado em Markdown**, limpo, organizado e pronto para colocar no relatório ou na planilha de procedimentos:
 
----
-
  **M1.4 — Variação de Desempenho entre Plataformas (GQM)**
 
 ## **Objetivo**
 
 Quantificar a **diferença relativa de desempenho entre os ambientes** (Windows, macOS, Linux e Android) com base nas pontuações dos benchmarks **Speedometer 3.0** e **JetStream 2**, utilizando o **Coeficiente de Variação (CV)**.
-
----
 
 ## **Definição da Métrica**
 
@@ -105,8 +101,6 @@ Onde:
 
 * **σ** = desvio padrão das pontuações (por benchmark)
 * **μ** = média aritmética das pontuações entre plataformas
-
----
 
 ## **Procedimento de Coleta**
 
