@@ -125,7 +125,7 @@ Esta seção identifica riscos potenciais para a validade da coleta de dados e s
 
 * **Risco 3: Diferenças de Hardware.**
     * *Descrição:* O hardware, como CPU e RAM, de cada executor impactará diretamente M1.1 e M1.3.
-    * *Mitigação:* Esta não é uma falha, but sim uma variável controlada. O objetivo da métrica [M1.4 (Variação de Desempenho)](../fases/fase2.md#13-métricas-de-eficiência) é justamente capturar essa diferença. A coleta será focada em *benchmarks*, que normalizam o desempenho, e não em valores absolutos de CPU.
+    * *Mitigação:* Esta não é uma falha, mas sim uma variável controlada. O objetivo da métrica [M1.4 (Variação de Desempenho)](../fases/fase2.md#13-métricas-de-eficiência) é justamente capturar essa diferença. A coleta será focada em *benchmarks*, que normalizam o desempenho, e não em valores absolutos de CPU.
 
 ---
 
@@ -135,12 +135,12 @@ Esta tabela reflete as contribuições para a elaboração deste **Plano de Exec
 
 | Matrícula | Integrante | Principais Contribuições | Comprovação | Contribuição |
 | :--- | :--- | :--- | :--- | :--- |
-| `[231033737]` | **[Artur Mendonça Arruda](https://github.com/ArtyMend07)** | | | |
+| `[231033737]` | **[Artur Mendonça Arruda](https://github.com/ArtyMend07)** | | | 30% |
 | `[221007608]` | **[Nayra Silva Nery](https://github.com/NayraNery127)** | | | |
 | `[231035141]` | **[João Filipe de Oliveira Souza](https://github.com/Joao151104)**| | | |
 | `[231035464]` | **[Lucas Mendonça Arruda](https://github.com/lucasarruda9)** | | | |
 | `[180108875]` | **[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88)** | | | |
-| | **Total** | | | **0%** |
+| | **Total** | | | **30%** |
 
 ---
 
