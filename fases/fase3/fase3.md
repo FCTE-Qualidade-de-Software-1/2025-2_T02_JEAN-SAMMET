@@ -79,6 +79,114 @@ Para avaliar o desempenho sintético bruto, dois benchmarks padronizados serão 
 4.  Reiniciar o Firefox.
 5.  Acessar e executar: `https://browserbench.org/JetStream/`
 6.  Registrar a pontuação final na [Planilha Mestra](#21-artefatos-de-coleta-e-divisão-de-tarefas) e salvar um screenshot como evidência.
+Aqui está **todo o conteúdo formatado em Markdown**, limpo, organizado e pronto para colocar no relatório ou na planilha de procedimentos:
+
+---
+
+# **M1.4 — Variação de Desempenho entre Plataformas (GQM)**
+
+## **Objetivo**
+
+Quantificar a **diferença relativa de desempenho entre os ambientes** (Windows, macOS, Linux e Android) com base nas pontuações dos benchmarks **Speedometer 3.0** e **JetStream 2**, utilizando o **Coeficiente de Variação (CV)**.
+
+---
+
+## **Definição da Métrica**
+
+**M1.4 (Variação de Desempenho)** = Coeficiente de Variação das pontuações entre plataformas.
+
+### **Fórmula**
+
+[
+CV(%) = \frac{\sigma}{\mu} \times 100
+]
+
+Onde:
+
+* **σ** = desvio padrão das pontuações (por benchmark)
+* **μ** = média aritmética das pontuações entre plataformas
+
+---
+
+## **Procedimento de Coleta**
+
+1. **Executar os benchmarks** Speedometer 3.0 e JetStream 2 em cada plataforma:
+
+   * Windows
+   * macOS
+   * Linux
+   * Android
+
+2. **Para cada benchmark**, executar **3 repetições** em cada plataforma:
+
+   * Reiniciar o navegador entre execuções.
+   * Registrar a pontuação final.
+   * Salvar **screenshot** de cada execução como evidência.
+
+3. **Para cada plataforma**, calcular a **pontuação representativa** como a **mediana** das 3 execuções (reduz ruído estatístico).
+
+4. Reunir as pontuações representativas das 4 plataformas e calcular:
+
+   * **μ (média)**
+   * **σ (desvio padrão)**
+   * **CV (%)** pela fórmula.
+
+5. O valor obtido será o resultado da métrica **M1.4**.
+
+---
+
+## **Cálculo de Exemplo (na planilha)**
+
+| Plataforma | Execução 1 | Execução 2 | Execução 3 | Mediana |
+| ---------- | ---------- | ---------- | ---------- | ------- |
+| Windows    | ...        | ...        | ...        | ...     |
+| macOS      | ...        | ...        | ...        | ...     |
+| Linux      | ...        | ...        | ...        | ...     |
+| Android    | ...        | ...        | ...        | ...     |
+
+### **Células da planilha**
+
+* **μ = MÉDIA(intervalo_das_medianas)**
+* **σ = DESVPAD(intervalo_das_medianas)**
+* **CV = σ / μ × 100**
+
+---
+
+## **Critério de Pontuação (Escala M1.4 — Seção 3)**
+
+| CV (%)        | Classificação  | Nota  |
+| ------------- | -------------- | ----- |
+| **≤ 10%**     | Excelente      | **4** |
+| **11% – 15%** | Bom            | **3** |
+| **16% – 20%** | Regular        | **2** |
+| **> 20%**     | Insatisfatório | **1** |
+
+---
+
+## **Artefatos Exigidos / Evidências**
+
+* **Planilha Mestra** contendo:
+
+  * Execuções brutas
+  * Medianas
+  * Cálculo de μ, σ e CV
+* **Screenshots** de todas as execuções (Speedometer e JetStream).
+* **Arquivo metadata por execução**, com:
+
+  * Data e hora
+  * Versão exata do Firefox
+  * Especificação de hardware (CPU, RAM)
+  * Versão do SO
+* Observações sobre **condições atípicas**, como:
+
+  * Picos de CPU
+  * Atualizações do SO
+  * Aplicativos interferindo
+
+---
+Se quiser, posso transformar isso em **PDF**, **DOCX**, ou **modelo de planilha preenchível**, é só pedir!
+
+
 
 ### 2.4. Lista de Sites Padronizados (M1.1 e M1.2)
 
