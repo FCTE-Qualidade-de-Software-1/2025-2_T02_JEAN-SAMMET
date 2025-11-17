@@ -146,9 +146,6 @@ Esta tabela reflete as contribuições para a elaboração deste **Plano de Exec
 
 ## 4. Declaração de Uso de Inteligência Artificial
 
-*Esta seção será preenchida pela equipe ao final da fase.*
-
----
 
 ## 5. Referências
 
