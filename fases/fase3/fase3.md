@@ -27,16 +27,18 @@ Para centralizar a coleta de dados da Fase 4, a equipe utilizará uma Planilha M
 | **Rodrigo Mattos de F. A. Bezerra**| Android |
 | **Nayra Silva Nery** | Windows (Coleta 2) |
 
-### 2.2. Ferramentas e Ambientes de Teste Padronizados
+### 2.2. Ferramentas e Guias Técnicos Padronizados
 
-Cada executor será responsável por configurar seu ambiente e utilizar as ferramentas padronizadas listadas abaixo para garantir a consistência dos dados.
+Para evitar inconsistências na execução dos comandos (ex: parâmetros errados no terminal), foram criados Guias de Coleta individuais. **Todo executor deve ler o guia correspondente ao seu SO antes de iniciar.**
 
-| Ambiente | Executor(es) | Ferramentas de Coleta para M1.1 (RAM) | Ferramentas de Coleta para M1.2 (LCP) | Ferramentas de Coleta para M1.3 (Bench) |
-| :--- | :--- | :--- | :--- | :--- |
-| **Windows 11** | Artur M. / Nayra S. | `typeperf`, executado via Prompt Admin | Firefox DevTools, especificamente o Painel Rede | Sites Oficiais, como o BrowserBench |
-| **Linux (Ubuntu)**| Lucas M. | `top` executado em modo batch ou `vmstat` | Firefox DevTools, especificamente o Painel Rede | Sites Oficiais, como o BrowserBench |
-| **macOS** | João Filipe S. | Monitor de Atividade | Firefox DevTools, especificamente o Painel Rede | Sites Oficiais, como o BrowserBench |
-| **Android** | Rodrigo M. | `adb shell dumpsys meminfo` | Firefox DevTools, usando Depuração Remota | Sites Oficiais, como o BrowserBench |
+| Ambiente | Ferramenta Principal (RAM) | Link para o Guia Técnico de Execução |
+| :--- | :--- | :--- |
+| **Windows 11** | `typeperf` (CMD Admin) | **[Ver Guia Técnico - Windows](./guias_tecnicos/guia_de_coleta_windows.md)** |
+| **Linux**| `top` / `ps` | **[Ver Guia Técnico - Linux](./guias_tecnicos/guia_de_coleta_linux.md)** |
+| **macOS** | Monitor de Atividade | **[Ver Guia Técnico - macOS](./guias_tecnicos/guia_de_coleta_macos.md)** |
+| **Android** | `adb shell` | **[Ver Guia Técnico - Android](./guias_tecnicos/guia_de_coleta_android.md)** |
+
+*Nota: As ferramentas de LCP (DevTools) e Benchmarks (BrowserBench) são padrão para todos os ambientes e estão detalhadas nas seções [2.3](#23-cenários-de-teste-eficiência---m1) e [2.4](#24-lista-de-sites-padronizados-m11-e-m12) deste documento.*
 
 O requisito crítico para **Windows** é que a ferramenta `typeperf` deve ser executada a partir de um prompt de comando como **Administrador** ou por um usuário no grupo "Performance Log Users". Esta exigência é necessária para que o sistema operacional permita o acesso aos contadores de processo.
 
@@ -165,3 +167,4 @@ Esta tabela reflete as contribuições para a elaboração deste **Plano de Exec
 | 1.1 | Definição dos artefatos, ferramentas e divisão de tarefas | [Artur Mendonça Arruda](https://github.com/ArtyMend07)| 16/11/2025 | | |
 | 1.2 | Detalhamento dos cenários de teste e riscos | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 16/11/2025 | | |
 | 1.3 | Adição da seção de Sites Padronizados e da seção de Links de Checklists | [Artur Mendonça Arruda](https://github.com/ArtyMend07)| 16/11/2025 | | |
+| 1.4 | Atualização da seção 2.2 (Ferramentas), para conter os guias de coleta de cada SO | [Artur Mendonça Arruda](https://github.com/ArtyMend07)| 23/11/2025 | | |
