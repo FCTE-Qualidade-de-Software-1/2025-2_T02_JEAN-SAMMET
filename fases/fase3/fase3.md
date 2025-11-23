@@ -81,6 +81,50 @@ Para avaliar o desempenho sintético bruto, dois benchmarks padronizados serão 
 4.  Reiniciar o Firefox.
 5.  Acessar e executar: `https://browserbench.org/JetStream/`
 6.  Registrar a pontuação final na [Planilha Mestra](#21-artefatos-de-coleta-e-divisão-de-tarefas) e salvar um screenshot como evidência.
+Aqui está **todo o conteúdo formatado em Markdown**, limpo, organizado e pronto para colocar no relatório ou na planilha de procedimentos:
+
+ **M1.4 — Variação de Desempenho entre Plataformas (GQM)**
+
+ **Objetivo**: Quantificar a **diferença relativa de desempenho entre os ambientes** (Windows, macOS, Linux e Android) com base nas pontuações dos benchmarks **Speedometer 3.0** e **JetStream 2**, utilizando o **Coeficiente de Variação (CV)**.
+
+ **Definição da Métrica**
+
+ **Fórmula**:
+
+[
+CV(%) = \frac{\sigma}{\mu} \times 100
+]
+
+Onde:
+
+* **σ** = desvio padrão das pontuações (por benchmark)
+* **μ** = média aritmética das pontuações entre plataformas
+
+**Procedimento de Coleta**
+
+1. **Executar os benchmarks** Speedometer 3.0 e JetStream 2 em cada plataforma:
+
+   * Windows
+   * macOS
+   * Linux
+   * Android
+
+2. **Para cada benchmark**, executar **3 repetições** em cada plataforma:
+
+   * Reiniciar o navegador entre execuções.
+   * Registrar a pontuação final.
+   * Salvar **screenshot** de cada execução como evidência.
+
+3. **Para cada plataforma**, calcular a **pontuação representativa** como a **mediana** das 3 execuções (reduz ruído estatístico).
+
+4. Reunir as pontuações representativas das 4 plataformas e calcular:
+
+   * **μ (média)**
+   * **σ (desvio padrão)**
+   * **CV (%)** pela fórmula.
+
+5. O valor obtido será o resultado da métrica **M1.4**.
+
 
 ### 2.4. Lista de Sites Padronizados (M1.1 e M1.2)
 
@@ -168,3 +212,4 @@ Esta tabela reflete as contribuições para a elaboração deste **Plano de Exec
 | 1.2 | Detalhamento dos cenários de teste e riscos | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 16/11/2025 | | |
 | 1.3 | Adição da seção de Sites Padronizados e da seção de Links de Checklists | [Artur Mendonça Arruda](https://github.com/ArtyMend07)| 16/11/2025 | | |
 | 1.4 | Atualização da seção 2.2 (Ferramentas), para conter os guias de coleta de cada SO | [Artur Mendonça Arruda](https://github.com/ArtyMend07)| 23/11/2025 | | |
+
