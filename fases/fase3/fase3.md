@@ -69,7 +69,26 @@ A medição do tempo de carregamento focará na métrica Largest Contentful Pain
 2.  Abrir o DevTools (F12) e navegar até o Painel "Rede" (Network).
 3.  Marcar a opção **"Desabilitar Cache"**.
 4.  Carregar cada um dos 10 sites padronizados da [Seção 2.4](#24-lista-de-sites-padronizados-m11-e-m12).
-5.  Para cada site, anotar o tempo do LCP na aba "Temporização".
+5. Para cada site, anotar o tempo do LCP:
+
+   - Abrir o DevTools** e ir para a seção Console e Colar o seguinte código para medir o LCP:
+
+   ```javascript
+   const observer = new PerformanceObserver((list) => {
+     const entries = list.getEntries();
+     const lastEntry = entries[entries.length - 1]; // Pega o LCP mais recente
+     console.log("LCP:", lastEntry.startTime);
+     console.log(lastEntry);
+   });
+
+   observer.observe({ type: "largest-contentful-paint", buffered: true });
+   ```
+   pra rodar de novo sem reiniciar a página basta usar o comando:
+
+   ```javascript
+   observer.observe({ type: "largest-contentful-paint", buffered: true });
+   ```
+   
 6.  Calcular a média dos 10 resultados e registrar na [Planilha Mestra](#21-artefatos-de-coleta-e-divisão-de-tarefas).
 
 **M1.3 - Benchmarks:**
@@ -200,6 +219,7 @@ Esta tabela reflete as contribuições para a elaboração deste **Plano de Exec
 * WEB.DEV. **Largest Contentful Paint (LCP)**. Disponível em: <https://web.dev/articles/lcp>. Acesso em: 16 nov. 2025.
 * BROWSERBENCH. **Speedometer 3.0**. Disponível em: <https://browserbench.org/Speedometer3.0/>. Acesso em: 16 nov. 2025.
 * WEBKIT. **JetStream 2.2**. Disponível em: <https://browserbench.org/JetStream/>. Acesso em: 16 nov. 2025.
+* MDN Web Docs. LargestContentfulPaint. Disponível em: <https://developer.mozilla.org/en-US/docs/Web/API/LargestContentfulPaint>. Acesso em: 25 nov. 2025.
 
 ---
 
