@@ -8,13 +8,13 @@
 
 **Cenário de Carga Leve**
 
-![Imagem 1](../assets/fase4-windows1/RAM-Leve.png)
+![Imagem 1](/assets/RAM-Leve.png)
 
 - Totalizando um consumo médio de 2.763,1 MB.
 
 **Cenário de Carga Pesada**
 
-![Imagem 2](../assets/fase4-windows1/RAM-Pesada.png)
+![Imagem 2](/assets/RAM-Pesada.png)
 
 - Totalizando um consumo médio de 5.954,2 MB.
 
@@ -22,7 +22,7 @@
 
 ### M1.2 - Tempo de Carga (LCP):
 
-![Imagem 3](../assets/fase4-windows1/LCP-Geral.png)
+![Imagem 3](/assets/LCP-Geral.jpg)
 
 - Resultando em uma média do tempo do LCP de 1,41 segundos.
 
@@ -32,11 +32,11 @@
 
 **Speedometer3.0**
 
-![Imagem 4](../assets/fase4-windows1/Speedometer.png)
+![Imagem 4](/assets/Speedometer.png)
 
 **JetStream2**
 
-![Imagem 5](../assets/fase4-windows1/JetStream.png)
+![Imagem 5](/assets/JetStream.png)
 
 ---
 
