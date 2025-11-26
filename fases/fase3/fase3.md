@@ -21,10 +21,10 @@ Para centralizar a coleta de dados da Fase 4, a equipe utilizará uma Planilha M
 
 | Executor | Papel de Execução |
 | :--- | :--- |
-| **Artur Mendonça Arruda** | Windows (Coleta 1) |
+| **Artur Mendonça Arruda** | Android |
 | **Lucas Mendonça Arruda** | Linux |
 | **João Filipe de Oliveira Souza** | macOS |
-| **Rodrigo Mattos de F. A. Bezerra**| Android |
+| **Rodrigo Mattos de F. A. Bezerra**| Windows (Coleta 1) |
 | **Nayra Silva Nery** | Windows (Coleta 2) |
 
 ### 2.2. Ferramentas e Ambientes de Teste Padronizados
@@ -33,10 +33,10 @@ Cada executor será responsável por configurar seu ambiente e utilizar as ferra
 
 | Ambiente | Executor(es) | Ferramentas de Coleta para M1.1 (RAM) | Ferramentas de Coleta para M1.2 (LCP) | Ferramentas de Coleta para M1.3 (Bench) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Windows 11** | Artur M. / Nayra S. | `typeperf`, executado via Prompt Admin | Firefox DevTools, especificamente o Painel Rede | Sites Oficiais, como o BrowserBench |
+| **Windows 11** | Rodrigo M. / Nayra S. | `typeperf`, executado via Prompt Admin | Firefox DevTools, especificamente o Painel Rede | Sites Oficiais, como o BrowserBench |
 | **Linux (Ubuntu)**| Lucas M. | `top` executado em modo batch ou `vmstat` | Firefox DevTools, especificamente o Painel Rede | Sites Oficiais, como o BrowserBench |
 | **macOS** | João Filipe S. | Monitor de Atividade | Firefox DevTools, especificamente o Painel Rede | Sites Oficiais, como o BrowserBench |
-| **Android** | Rodrigo M. | `adb shell dumpsys meminfo` | Firefox DevTools, usando Depuração Remota | Sites Oficiais, como o BrowserBench |
+| **Android** | Artur M. | `adb shell dumpsys meminfo` | Firefox DevTools, usando Depuração Remota | Sites Oficiais, como o BrowserBench |
 
 O requisito crítico para **Windows** é que a ferramenta `typeperf` deve ser executada a partir de um prompt de comando como **Administrador** ou por um usuário no grupo "Performance Log Users". Esta exigência é necessária para que o sistema operacional permita o acesso aos contadores de processo.
 
