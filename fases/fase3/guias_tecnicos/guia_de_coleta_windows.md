@@ -1,7 +1,7 @@
 # Guia Técnico de Coleta: Windows 11
 
 **Artefato Vinculado:** [Fase 3: Plano de Execução da Avaliação](../fase3.md)
-**Responsáveis:** Artur Mendonça Arruda e Nayra Silva Nery
+**Responsáveis:** Rodrigo Mattos de F. A. Bezerra e Nayra Silva Nery
 **Data:** 23/11/2025
 **Versão:** 1.0
 
@@ -22,7 +22,7 @@ Para executar este guia, o responsável deve garantir:
 ### Passo 1: Preparação do Ambiente
 
 1.  Inicie o Firefox.
-2.  Prepare o cenário de teste conforme definido na [Fase 3](https://www.google.com/search?q=../fases/fase3.md%2323-cen%C3%A1rios-de-teste-efici%C3%AAncia---m1) (Carga Leve ou Carga Pesada).
+2.  Prepare o cenário de teste conforme definido na [Fase 3](../fase3.md)(Carga Leve ou Carga Pesada).
 3.  Aguarde 60 segundos para estabilização da memória.
 4.  Abra o **Prompt de Comando (CMD)** como Administrador:
       * *Pressione a tecla `Win`, digite "CMD", clique com o botão direito e selecione "Executar como administrador".*

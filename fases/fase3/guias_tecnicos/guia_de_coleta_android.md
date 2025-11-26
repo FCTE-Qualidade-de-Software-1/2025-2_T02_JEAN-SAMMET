@@ -1,7 +1,7 @@
 # Guia Técnico de Coleta: Android
 
 **Artefato Vinculado:** [Fase 3: Plano de Execução da Avaliação](../fase3.md)
-**Responsável:** Rodrigo Mattos de F. A. Bezerra
+**Responsável:** Artur Mendonça Arruda
 **Data:** 23/11/2025
 **Versão:** 1.0
 
@@ -91,3 +91,4 @@ App Summary
 | Versão | Descrição | Autor(es) | Data | Revisor(es) | Data de Revisão |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1.0 | Criação do guia técnico e detalhamento do `adb dumpsys` | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 23/11/2025 | | |
+| 1.1 | Troca de responsável e correção de hyperlink errado | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 26/11/2025 | | |

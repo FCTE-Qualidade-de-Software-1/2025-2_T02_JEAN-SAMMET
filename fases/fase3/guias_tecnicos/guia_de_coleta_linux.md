@@ -21,7 +21,7 @@ Para executar este guia, o responsável deve garantir:
 ### Passo 1: Preparação do Ambiente
 
 1.  Inicie o Firefox.
-2.  Prepare o cenário de teste conforme definido na [Fase 3](https://www.google.com/search?q=../fase3.md%2323-cen%C3%A1rios-de-teste-efici%C3%AAncia---m1) (Carga Leve ou Carga Pesada).
+2.  Prepare o cenário de teste conforme definido na [Fase 3](../fase3.md) (Carga Leve ou Carga Pesada).
 3.  Aguarde 60 segundos para estabilização da memória.
 4.  Abra o Terminal.
 
@@ -73,3 +73,4 @@ ps -C firefox -o rss= | awk '{sum+=$1} END {print sum/1024 " MB"}'
 | Versão | Descrição | Autor(es) | Data | Revisor(es) | Data de Revisão |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1.0 | Criação do guia técnico e script de automação `ps/awk` | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 23/11/2025 | | |
+| 1.1 | Correção de hyperlink errado | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 26/11/2025 | | |
