@@ -21,15 +21,16 @@ Para centralizar a coleta de dados da Fase 4, a equipe utilizará uma Planilha M
 
 | Executor | Papel de Execução |
 | :--- | :--- |
-| **Artur Mendonça Arruda** | Windows (Coleta 1) |
+| **Artur Mendonça Arruda** | Android |
 | **Lucas Mendonça Arruda** | Linux |
 | **João Filipe de Oliveira Souza** | macOS |
-| **Rodrigo Mattos de F. A. Bezerra**| Android |
+| **Rodrigo Mattos de F. A. Bezerra**| Windows (Coleta 1) |
 | **Nayra Silva Nery** | Windows (Coleta 2) |
 
 ### 2.2. Ferramentas e Guias Técnicos Padronizados
 
 Para evitar inconsistências na execução dos comandos (ex: parâmetros errados no terminal), foram criados Guias de Coleta individuais. **Todo executor deve ler o guia correspondente ao seu SO antes de iniciar.**
+
 
 | Ambiente | Ferramenta Principal (RAM) | Link para o Guia Técnico de Execução |
 | :--- | :--- | :--- |
@@ -39,6 +40,7 @@ Para evitar inconsistências na execução dos comandos (ex: parâmetros errados
 | **Android** | `adb shell` | **[Ver Guia Técnico - Android](./guias_tecnicos/guia_de_coleta_android.md)** |
 
 *Nota: As ferramentas de LCP (DevTools) e Benchmarks (BrowserBench) são padrão para todos os ambientes e estão detalhadas nas seções [2.3](#23-cenários-de-teste-eficiência---m1) e [2.4](#24-lista-de-sites-padronizados-m11-e-m12) deste documento.*
+
 
 O requisito crítico para **Windows** é que a ferramenta `typeperf` deve ser executada a partir de um prompt de comando como **Administrador** ou por um usuário no grupo "Performance Log Users". Esta exigência é necessária para que o sistema operacional permita o acesso aos contadores de processo.
 
