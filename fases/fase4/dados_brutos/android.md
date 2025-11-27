@@ -72,16 +72,16 @@
 
 #### JetStream 2
 
-**Tentativa 1 (54.409)**
+**Tentativa 1 (67.572)**
 ![JetStream 1](/assets/jetstream_resultado_1.png)
 
-**Tentativa 2 (55.103)**
+**Tentativa 2 (70.962)**
 ![JetStream 2](/assets/jetstream_resultado_2.png)
 
 **Tentativa 3 (77.335)**
 ![JetStream 3](/assets/jetstream_resultado_3.png)
 
-- **Pontuação Representativa (Mediana): 55.103**
+- **Pontuação Representativa (Mediana): 70.962**
 
 ---
 
