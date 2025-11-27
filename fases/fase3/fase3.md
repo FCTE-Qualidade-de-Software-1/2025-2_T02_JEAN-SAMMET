@@ -184,12 +184,12 @@ O cronograma foi desenvolvido com o objetivo de guiar a equipe na execução dos
 
 | Atividade                   | Autores             | Data de início      | Prazo |
 |-----------------------------|-------------------|-------------------|-------|
-| Execução da métrica M 1.1  |  Artur, João, Lucas, Rodrigo, Nayra | 25/11/2025        | 3 dias |
-| Execução da métrica M 1.2  | Artur, João, Lucas, Rodrigo, Nayra  | 25/11/2025        | 3 dias |
-| Execução da métrica M 1.3  | Artur, João, Lucas, Rodrigo, Nayra  | 25/11/2025        | 3 dias |
-| Execução da métrica M 2.1  | Artur, João, Lucas, Rodrigo, Nayra | 26/11/2025        | 2 dias |
-| Execução da métrica M 2.2  | Artur, João, Lucas, Rodrigo, Nayra | 26/11/2025        | 2 dias |
-| Execução da métrica M 1.4  | Artur, João, Lucas, Rodrigo, Nayra  | 27/11/2025        | 1 dia |
+| Execução da métrica M 1.1  |  [Artur Mendonça Arruda](https://github.com/ArtyMend07), [João Filipe de Oliveira Souza](https://github.com/Joao151104), [Lucas Mendonça Arruda](https://github.com/lucasarruda9), [Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88), [Nayra Silva Nery](https://github.com/NayraNery127) | 25/11/2025        | 3 dias |
+| Execução da métrica M 1.2  | [Artur Mendonça Arruda](https://github.com/ArtyMend07), [João Filipe de Oliveira Souza](https://github.com/Joao151104), [Lucas Mendonça Arruda](https://github.com/lucasarruda9), [Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88), [Nayra Silva Nery](https://github.com/NayraNery127) | 25/11/2025   | 25/11/2025        | 3 dias |
+| Execução da métrica M 1.3  | [Artur Mendonça Arruda](https://github.com/ArtyMend07), [João Filipe de Oliveira Souza](https://github.com/Joao151104), [Lucas Mendonça Arruda](https://github.com/lucasarruda9), [Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88), [Nayra Silva Nery](https://github.com/NayraNery127) | 25/11/2025   | 25/11/2025        | 3 dias |
+| Execução da métrica M 2.1  | [Artur Mendonça Arruda](https://github.com/ArtyMend07), [João Filipe de Oliveira Souza](https://github.com/Joao151104), [Lucas Mendonça Arruda](https://github.com/lucasarruda9), [Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88), [Nayra Silva Nery](https://github.com/NayraNery127) | 25/11/2025  | 26/11/2025        | 2 dias |
+| Execução da métrica M 2.2  | [Artur Mendonça Arruda](https://github.com/ArtyMend07), [João Filipe de Oliveira Souza](https://github.com/Joao151104), [Lucas Mendonça Arruda](https://github.com/lucasarruda9), [Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88), [Nayra Silva Nery](https://github.com/NayraNery127) | 25/11/2025  | 26/11/2025        | 2 dias |
+| Execução da métrica M 1.4  | [Artur Mendonça Arruda](https://github.com/ArtyMend07), [João Filipe de Oliveira Souza](https://github.com/Joao151104), [Lucas Mendonça Arruda](https://github.com/lucasarruda9), [Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88), [Nayra Silva Nery](https://github.com/NayraNery127) | 25/11/2025   | 27/11/2025        | 1 dia |
 
 Foi definido que cada integrante deve executar os testes de cada métrica, a fim de obter resultados em diferentes sistemas operacionais, respondendo às questões propostas e atendendo ao objetivo de medição.
 
@@ -253,5 +253,4 @@ Esta tabela reflete as contribuições para a elaboração deste **Plano de Exec
 | 1.3 | Adição da seção de Sites Padronizados e da seção de Links de Checklists | [Artur Mendonça Arruda](https://github.com/ArtyMend07)| 16/11/2025 | | |
 | 1.4 | Atualização da seção 2.2 (Ferramentas), para conter os guias de coleta de cada SO | [Artur Mendonça Arruda](https://github.com/ArtyMend07)| 23/11/2025 | | |
 | 1.5 | Adicionando cronograma na documentação| [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 26/11/2025 | | |
-
-
+| 1.6 | Adição de rastreabilidade no cronograma da documentação  | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 27/11/2025 | | |
