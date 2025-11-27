@@ -38,7 +38,7 @@ Esta seção consolida os dados e responde às [Questões de Medição da Fase 2
 
 | Plataforma | M1.1 RAM (Leve) | M1.1 RAM (Pesada) | M1.2 LCP (s) | M1.3 Speedometer | M1.3 JetStream |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Android** | 221.6 MB | 293.5 MB | 1.85 s | 4.47 | **71.0** |
+| **Android** | 221.6 MB | 293.5 MB | 1.85 s | 4.47 | 71.0 |
 | **Windows** | 421.8 MB | 1070.0 MB | 1.23 s | 21.0 | 122.8 |
 | **macOS** | 421.8 MB | 1070.0 MB | 1.23 s | 21.0 | 122.8 |
 | **Linux** | 1980.0 MB | 6771.0 MB | 1.51 s | 20.0 | 109.6 |
