@@ -117,12 +117,12 @@ O cronograma foi desenvolvido com o objetivo de guiar a equipe na execução dos
 
 | Atividade                   | Autores             | Data de início      | Prazo |
 |-----------------------------|-------------------|-------------------|-------|
-| Execução da métrica M 1.1  |                     | 25/11/2025        | 2 dias |
-| Execução da métrica M 1.2  |                     | 25/11/2025        | 2 dias |
-| Execução da métrica M 1.3  |                     | 25/11/2025        | 2 dias |
-| Execução da métrica M 2.1  |                     | 25/11/2025        | 2 dias |
-| Execução da métrica M 2.2  |                     | 25/11/2025        | 2 dias |
-| Execução da métrica M 1.4  |                     | 27/11/2025        | 1 dia |
+| Execução da métrica M 1.1  |  Artur, João, Lucas, Rodrigo, Nayra | 25/11/2025        | 3 dias |
+| Execução da métrica M 1.2  | Artur, João, Lucas, Rodrigo, Nayra  | 25/11/2025        | 3 dias |
+| Execução da métrica M 1.3  | Artur, João, Lucas, Rodrigo, Nayra  | 25/11/2025        | 3 dias |
+| Execução da métrica M 2.1  | Artur, João, Lucas, Rodrigo, Nayra | 26/11/2025        | 2 dias |
+| Execução da métrica M 2.2  | Artur, João, Lucas, Rodrigo, Nayra | 26/11/2025        | 2 dias |
+| Execução da métrica M 1.4  | Artur, João, Lucas, Rodrigo, Nayra  | 27/11/2025        | 1 dia |
 
 Foi definido que cada integrante deve executar os testes de cada métrica, a fim de obter resultados em diferentes sistemas operacionais, respondendo às questões propostas e atendendo ao objetivo de medição.
 
