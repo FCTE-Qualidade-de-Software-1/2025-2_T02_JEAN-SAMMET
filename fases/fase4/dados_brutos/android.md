@@ -52,7 +52,7 @@
 
 ### M1.3 - Benchmarks:
 
-**Evidência de Execução (Vídeo):** [Assistir Benchmarks no YouTube](https://youtu.be/yvJ5XiceAJc)
+**Evidência de Execução (Vídeo):** [Assistir Benchmarks no YouTube](https://youtu.be/QU0Z0jzR_Gw)
 
 #### Speedometer 3.0
 
