@@ -223,9 +223,9 @@ Esta tabela reflete as contribuições para a elaboração deste **Plano de Exec
 | `[231033737]` | **[Artur Mendonça Arruda](https://github.com/ArtyMend07)** | | | 30% |
 | `[221007608]` | **[Nayra Silva Nery](https://github.com/NayraNery127)** | | | |
 | `[231035141]` | **[João Filipe de Oliveira Souza](https://github.com/Joao151104)**| | | |
-| `[231035464]` | **[Lucas Mendonça Arruda](https://github.com/lucasarruda9)** | | | |
+| `[231035464]` | **[Lucas Mendonça Arruda](https://github.com/lucasarruda9)** | | | 20% |
 | `[180108875]` | **[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88)** | | | |
-| | **Total** | | | **30%** |
+| | **Total** | | | **50%** |
 
 ---
 
@@ -251,6 +251,7 @@ Esta tabela reflete as contribuições para a elaboração deste **Plano de Exec
 | 1.1 | Definição dos artefatos, ferramentas e divisão de tarefas | [Artur Mendonça Arruda](https://github.com/ArtyMend07)| 16/11/2025 | | |
 | 1.2 | Detalhamento dos cenários de teste e riscos | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 16/11/2025 | | |
 | 1.3 | Adição da seção de Sites Padronizados e da seção de Links de Checklists | [Artur Mendonça Arruda](https://github.com/ArtyMend07)| 16/11/2025 | | |
-| 1.4 | Adicionando cronograma na documentação| [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 26/11/2025 | | |
 | 1.4 | Atualização da seção 2.2 (Ferramentas), para conter os guias de coleta de cada SO | [Artur Mendonça Arruda](https://github.com/ArtyMend07)| 23/11/2025 | | |
+| 1.5 | Adicionando cronograma na documentação| [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 26/11/2025 | | |
+
 
