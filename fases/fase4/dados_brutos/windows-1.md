@@ -34,9 +34,19 @@
 
 ![Imagem 4](/assets/Speedometer.png)
 
+![Imagem 5](/assets/Speedometer2.png)
+
+![Imagem 6](/assets/Speedometer3.png)
+
 **JetStream2**
 
-![Imagem 5](/assets/JetStream.png)
+![Imagem 7](/assets/JetStream.png)
+
+![Imagem 8](/assets/JetStream2.png)
+
+![Imagem 9](/assets/JetStream3.png)
+
+- Nos Execução da Avaliação de **Eficiência** na plataforma Windows não foram feitas gravações, pois as gravações estavam influenciando nos resultados.
 
 ---
 
@@ -87,7 +97,9 @@
 
 ---
 
-## 3. Checklist (Template)
+### M2.2 - Conformidade da UI
+
+#### 3. Checklist
 
 **Instrução:** Preencha 'OK', 'N/A' ou 'FALHA'.
 
@@ -121,3 +133,9 @@
 **Total 4/5**
 
 ---
+
+## 3. Histórico de Versões
+
+| Versão | Descrição | Autor(es) | Data | Revisor(es) | Data de Revisão |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1.0 | Criação do documento e adição das coletas de dados das métricas  | [Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88) | 26/11/2025 | | |
