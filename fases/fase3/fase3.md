@@ -111,7 +111,25 @@ Cada executor deverá criar uma cópia dos templates abaixo, preenchê-los para 
 * **[Template: Checklist M2.1 - Paridade Funcional (20 Itens)](./checklists/checklist_m2.1.md)**
 * **[Template: Checklist M2.2 - Conformidade da UI (15 Itens)](./checklists/checklist_m2.2.md)**
 
-### 2.6. Riscos e Mitigações Planejados
+### 2.6. Cronograma de atividades
+
+O cronograma foi desenvolvido com o objetivo de guiar a equipe na execução dos testes. A seguir, detalham-se as atividades a serem realizadas, bem como seus respectivos autores e datas:
+
+| Atividade                   | Autores             | Data de início      | Prazo |
+|-----------------------------|-------------------|-------------------|-------|
+| Execução da métrica M 1.1  |                     | 25/11/2025        | 2 dias |
+| Execução da métrica M 1.2  |                     | 25/11/2025        | 2 dias |
+| Execução da métrica M 1.3  |                     | 25/11/2025        | 2 dias |
+| Execução da métrica M 2.1  |                     | 25/11/2025        | 2 dias |
+| Execução da métrica M 2.2  |                     | 25/11/2025        | 2 dias |
+| Execução da métrica M 1.4  |                     | 27/11/2025        | 1 dia |
+
+Foi definido que cada integrante deve executar os testes de cada métrica, a fim de obter resultados em diferentes sistemas operacionais, respondendo às questões propostas e atendendo ao objetivo de medição.
+
+O cronograma foi planejado considerando que cada integrante deve executar e armazenar os dados do teste da métrica 1.3 antes que a métrica 1.4 seja iniciada. Por isso, a data de início da métrica 1.4 está configurada para coincidir com o término do prazo estimado da métrica 1.3. Além disso, o tempo de execução da métrica 1.4 foi definido como 1 dia, uma vez que os testes já estarão armazenados na planilha, sendo necessário apenas calcular a média e o desvio padrão.
+
+
+### 2.7. Riscos e Mitigações Planejados
 
 Esta seção identifica riscos potenciais para a validade da coleta de dados e suas respectivas mitigações.
 
@@ -165,3 +183,4 @@ Esta tabela reflete as contribuições para a elaboração deste **Plano de Exec
 | 1.1 | Definição dos artefatos, ferramentas e divisão de tarefas | [Artur Mendonça Arruda](https://github.com/ArtyMend07)| 16/11/2025 | | |
 | 1.2 | Detalhamento dos cenários de teste e riscos | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 16/11/2025 | | |
 | 1.3 | Adição da seção de Sites Padronizados e da seção de Links de Checklists | [Artur Mendonça Arruda](https://github.com/ArtyMend07)| 16/11/2025 | | |
+| 1.4 | Adicionando cronograma na documentação| [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 26/11/2025 | | |
