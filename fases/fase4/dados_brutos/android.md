@@ -22,7 +22,6 @@
 
 - Totalizando um consumo médio de **293,515 MB**.
 
----
 
 ### M1.2 - Tempo de Carga (LCP):
 
@@ -48,7 +47,6 @@
 
 - Resultando em uma média do tempo do LCP de **1,85 segundos**.
 
----
 
 ### M1.3 - Benchmarks:
 
@@ -83,7 +81,6 @@
 
 - **Pontuação Representativa (Mediana): 70.962**
 
----
 
 ## 2. Portabilidade
 
@@ -126,7 +123,6 @@
 - [OK] **4.4 Histórico:** Acesso ao histórico é intuitivo.
 - [OK] **4.5 Limpar Dados:** Opção de "Limpar dados privativos" ao sair ou no menu.
 
----
 
 ### M2.2 - Conformidade da UI (Checklist)
 
@@ -158,8 +154,45 @@
 - [OK] **3.4 Pull-to-refresh:** Puxar o topo da página para recarregar funciona.
 - [OK] **3.5 Acessibilidade:** O tamanho da fonte do navegador respeita o zoom de texto do sistema Android.
 
+Abaixo estão as capturas de tela coletadas, organizadas por métrica.
+
+#### Galeria M2.1 - Paridade Funcional
+
+| Item do Checklist | Evidência Visual | Descrição |
+| :--- | :---: | :--- |
+| **1.1 Login / Perfil** | ![Conta](/assets/checklist_android/prova1.png) | Tela de conta Mozilla com usuário logado e sincronização ativa. |
+| **1.2 Favoritos** | ![Favoritos](/assets/checklist_android/prova2.png) | Lista de favoritos sincronizados exibida corretamente. |
+| **1.3 Histórico** | ![Histórico](/assets/checklist_android/prova3.png) | Histórico de navegação acessível e organizado por data. |
+| **2.3 Coleções** | ![Coleções](/assets/checklist_android/prova7.png) | Criação de coleção de abas, recurso exclusivo da versão mobile. |
+| **2.5 2º Plano** | ![Notif](/assets/checklist_android/prova8.png) | Áudio reproduzindo em segundo plano com controle via notificação. |
+| **3.1 Mídia** | ![Youtube](/assets/checklist_android/prova9.png) | Reprodução de vídeo em andamento no YouTube. |
+| **3.3 Download** | ![Download](/assets/checklist_android/prova11.png) | Notificação visual de download de imagem concluído com sucesso. |
+| **3.3 Download Efetuado** | ![Busca](/assets/checklist_android/prova10.png) | Imagem instalada. |
+| **4.1 Extensões** | ![Addons](/assets/checklist_android/prova13.png) | Instalação da extensão uBlock Origin via menu de complementos. |
+| **4.2 Modo Leitura** | ![Leitura](/assets/checklist_android/prova14.png) | Artigo carregado com ícone de Modo Leitura disponível na barra. |
+| **4.5 Limpar Dados** | ![Limpeza](/assets/checklist_android/prova17.png) | Pop-up nativo para seleção de intervalo de limpeza de histórico. |
+| **4.5 Privacidade** | ![Privacidade](/assets/checklist_android/prova19.png) | Configurações de privacidade e limpeza de dados (Referência). |
+| **Config. de Sync** | ![Sync](/assets/checklist_android/prova4.png) | Painel de configurações mostrando opções de sincronização de dados. |
+| **Menu Principal** | ![Menu](/assets/checklist_android/prova16.png) | Menu principal do Firefox com todas as opções acessíveis. |
+| **Tela Inicial** | ![Home](/assets/checklist_android/prova6.png) | Home screen com atalhos, favoritos e barra de pesquisa. |
+
+#### Galeria M2.2 - Conformidade da UI
+
+| Item do Checklist | Evidência Visual | Descrição |
+| :--- | :---: | :--- |
+| **1.2 Menu Contexto** | ![Contexto](/assets/checklist_android/prova18.png) | Menu de contexto ao pressionar link. |
+| **1.4 Notificações** | ![NotifSistema](/assets/checklist_android/prova20.png) | Central de notificações do Android exibindo alertas do sistema. |
+| **1.5 Permissões** | ![Permissoes](/assets/checklist_android/prova21.png) | Integração com o gerenciador de permissões nativo do Android. |
+| **2.1 Renderização** | ![Mobile](/assets/checklist_android/prova5.png) | Busca carregado com viewport correto para mobile. |
+| **2.1 Renderização** | ![Wiki](/assets/checklist_android/prova12.png) | Renderização de fontes e layout na página inicial da Wikipédia. |
+| **2.2 Modo Paisagem** | ![Paisagem](/assets/checklist_android/prova22.png) | Adaptação correta da interface ao virar a tela. |
+| **2.3 Barra Dinâmica** | ![Barra](/assets/checklist_android/prova23.png) | Barra de endereço oculta automaticamente ao rolar a página. |
+| **2.4 Modo Escuro (UI)** | ![FavUI](/assets/checklist_android/prova15.png) | Interface de gerenciamento de favoritos adaptada ao Tema Escuro. |
+| **3.4 Pull-to-Refresh** | ![Recarregar](/assets/checklist_android/prova24.png) | Interface reagindo ao gesto de puxar para recarregar a página. |
+
 ## 3. Histórico de Versões
 
 | Versão | Descrição | Autor(es) | Data | Revisor(es) | Data de Revisão |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1.0 | Criação do documento e adição das coletas de dados das métricas  | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 26/11/2025 | | |
+| 1.0 | Criação do documento e adição das coletas de dados das métricas | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 26/11/2025 | | |
+| 1.1 | Inclusão das evidências visuais do checklist | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 27/11/2025 | | |
