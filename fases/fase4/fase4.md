@@ -8,9 +8,9 @@ Esta fase documenta a execução dos testes planejados na [Fase 3: Plano de Exec
 
 A coleta foi realizada nos ambientes Android, Windows, macOS e Linux, seguindo os [Guias Técnicos Padronizados](../fase3/fase3.md#22-ferramentas-e-guias-técnicos-padronizados). Os dados brutos detalhados e as evidências de cada plataforma estão organizados nos artefatos individuais abaixo:
 
-* **Android:** [Ver Relatório de Execução - Android](./android.md)
-* **Windows (Coleta 1):** [Ver Relatório de Execução - Windows](./windows-1.md)
-* **macOS:** [Ver Relatório de Execução - macOS](./macos.md)
+* **Android:** [Ver Relatório de Execução - Android](./dados_brutos/android.md)
+* **Windows (Coleta 1):** [Ver Relatório de Execução - Windows](./dados_brutos/windows-1.md)
+* **macOS:** [Ver Relatório de Execução - macOS](./dados_brutos/macos.md)
 * **Linux:** *[Dados consolidados na Planilha Mestra]*
 * **Windows (Coleta 2):** *[Dados consolidados na Planilha Mestra]*
 
@@ -133,3 +133,4 @@ Com base nas métricas que pontuaram abaixo de Bom, ou nível 3, recomendam-se a
 | Versão | Descrição | Autor(es) | Data |
 | :--- | :--- | :--- | :--- |
 | 1.0 | Criação do relatório de execução e análise dos resultados | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 27/11/2025 |
+| 1.1 | Corrige hyperlinks dos dados brutos | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 27/11/2025 |
