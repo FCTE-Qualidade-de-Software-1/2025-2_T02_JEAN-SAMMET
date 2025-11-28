@@ -22,7 +22,6 @@
 
 - Totalizando um consumo médio de **293,515 MB**.
 
-
 ### M1.2 - Tempo de Carga (LCP):
 
 **Evidência de Execução (Vídeo):** [Assistir Coleta de LCP no YouTube](https://youtu.be/GD2c-ZWF6jU)
@@ -46,7 +45,6 @@
 </details>
 
 - Resultando em uma média do tempo do LCP de **1,85 segundos**.
-
 
 ### M1.3 - Benchmarks:
 
@@ -81,7 +79,6 @@
 
 - **Pontuação Representativa (Mediana): 70.962**
 
-
 ## 2. Portabilidade
 
 ### M2.1 - Paridade Funcional:
@@ -93,7 +90,7 @@
 **Ambiente:** Android 14 (One UI)
 **Executor:** Artur Mendonça Arruda
 
-#### Total: 20/20
+#### Total: 14/20
 
 **1. Gerenciamento de Conta e Sincronização (5 Itens)**
 - [OK] **1.1 Login:** Consegue fazer login em uma conta Firefox.
@@ -103,92 +100,94 @@
 - [OK] **1.5 Logout:** Consegue desconectar a conta do navegador.
 
 **2. Navegação e Gerenciamento de Abas (5 Itens)**
-- [OK] **2.1 Modo Privado:** Consegue abrir uma aba de navegação privativa.
-- [OK] **2.2 Reabrir Aba Fechada:** A função de reabrir aba fechada ou histórico recente está acessível.
-- [OK] **2.3 Coleções/Fixar:** Consegue salvar abas em Coleções equivalente mobile ao Fixar.
-- [OK] **2.4 Mover Aba:** Consegue enviar uma aba para outro dispositivo conectado ou reorganizar a grade.
-- [OK] **2.5 Reprodução em 2º Plano:** O áudio continua tocando se minimizar o app.
+- [OK] **2.1 Modo Privado:** Consegue abrir uma janela/aba de navegação privativa.
+- [OK] **2.2 Reabrir Aba Fechada:** A função "Reabrir aba fechada" está presente.
+- [OK] **2.3 Fixar Aba:** Consegue "Fixar Aba".
+- [ ] **2.4 Mover Aba:** Consegue arrastar uma aba para uma nova janela.
+- [ ] **2.5 Mudo de Aba:** Consegue silenciar o áudio de uma aba específica.
 
 **3. Interação com Conteúdo Web (5 Itens)**
-- [OK] **3.1 Reprodução de Mídia:** Reproduz vídeo no YouTube/Twitch.
-- [OK] **3.2 Submissão de Formulário:** Teclado virtual abre corretamente e submete formulários.
-- [OK] **3.3 Download de Arquivo:** Consegue baixar um arquivo e notifica na barra de status.
-- [OK] **3.4 Zoom:** O gesto de pinça para zoom funciona suavemente.
-- [OK] **3.5 Menus Mobile:** Menus com três linhas horizontais de sites responsivos funcionam ao toque.
+- [OK] **3.1 Reprodução de Mídia:** Reproduz vídeo no youtube.
+- [OK] **3.2 Submissão de Formulário:** Consegue preencher campos de texto e submeter um formulário.
+- [OK] **3.3 Download de Arquivo:** Consegue baixar um arquivo pdf e acessá-lo.
+- [OK] **3.4 Zoom:** A função de zoom funciona corretamente.
+- [ ] **3.5 Interação com Dropdown:** Menus dropdown em sites funcionam.
 
 **4. Recursos Nativos do Navegador (5 Itens)**
-- [OK] **4.1 Instalação de Extensão:** Consegue instalar extensões pelo menu de Add-ons.
-- [OK] **4.2 Modo Leitura:** O ícone de modo leitura aparece em artigos compatíveis.
-- [OK] **4.3 Gerenciador de Favoritos:** Consegue adicionar e editar favoritos na interface mobile.
-- [OK] **4.4 Histórico:** Acesso ao histórico é intuitivo.
-- [OK] **4.5 Limpar Dados:** Opção de "Limpar dados privativos" ao sair ou no menu.
+- [OK] **4.1 Instalação de Extensão:** Consegue instalar "uBlock Origin" da loja de addons. (Desktop/Android).
+- [FALHA] **4.2 Ferramenta de Captura:** A ferramenta nativa de captura de tela do Firefox funciona.
+- [OK] **4.3 Gerenciador de Favoritos:** Consegue adicionar, nomear e deletar um favorito.
+- [OK] **4.4 Gerenciador de Histórico:** Consegue visualizar e pesquisar o histórico.
+- [OK] **4.5 Limpar Dados:** A função "Limpar dados de navegação" funciona.
 
+#### Evidências Visuais M2.1
+
+| Item do Checklist | Evidência Visual | Descrição |
+| :--- | :---: | :--- |
+| **1.1 Login** | ![Conta](/assets/checklist_android/prova1.png) | Tela de conta Mozilla com usuário logado. |
+| **1.2 Sinc. Favoritos** | ![Favoritos](/assets/checklist_android/prova2.png) | Lista de favoritos sincronizados. |
+| **1.3 Sinc. Histórico** | ![Histórico](/assets/checklist_android/prova3.png) | Histórico sincronizado e organizado. |
+| **1.4 Sinc. Senhas** | ![Sync](/assets/checklist_android/prova4.png) | Configurações de sincronização ativa. |
+| **2.1 Modo Privado** | ![Contexto](/assets/checklist_android/prova18.png) | Opção "Abrir em aba privativa" no menu. |
+| **2.2 Reabrir Aba** | ![Histórico](/assets/checklist_android/prova3.png) | Opção "Abas fechadas recentemente". |
+| **2.3 Fixar Aba** | ![Coleções](/assets/checklist_android/prova7.png) | Recurso "Coleções" (equivalente mobile). |
+| **3.1 Rep. Mídia** | ![Youtube](/assets/checklist_android/prova9.png) | Vídeo reproduzindo no YouTube. |
+| **3.2 Submissão** | ![Form](/assets/checklist_android/prova5.png) | Resultados de busca (submissão efetuada). |
+| **3.3 Download** | ![Download](/assets/checklist_android/prova10.png) | Notificação de download concluído. |
+| **3.3 Download** | ![Busca](/assets/checklist_android/prova11.png) | Interface de busca e download de imagem. |
+| **4.1 Instalação Ext.** | ![Addons](/assets/checklist_android/prova13.png) | Instalação do uBlock Origin. |
+| **4.3 Ger. Favoritos** | ![FavUI](/assets/checklist_android/prova15.png) | Gerenciador de favoritos (UI). |
+| **4.4 Ger. Histórico** | ![Histórico](/assets/checklist_android/prova3.png) | Interface de histórico. |
+| **4.5 Limpar Dados** | ![Limpeza](/assets/checklist_android/prova17.png) | Pop-up para excluir histórico. |
+| **4.5 Limpar Dados** | ![Privacidade](/assets/checklist_android/prova19.png) | Menu de privacidade e limpeza. |
 
 ### M2.2 - Conformidade da UI (Checklist)
 
 **Instrução:** Preencha 'OK', 'N/A' ou 'FALHA'.
 
-**Ambiente:** Android 14
+**Ambiente:** Android 14 (One UI)
 **Executor:** Artur Mendonça Arruda
 
-#### Total: 12/15
+#### Total: 10/15
 
 **1. Convenções Nativas do SO (5 Itens)**
-- [FALHA] **1.1 Gestos de Navegação:** Suporta gestos do Android corretamente.
-- [OK] **1.2 Menu de Contexto:** O toque longo em links abre um menu consistente com o Material Design.
-- [N/A] **1.3 Teclado Virtual:** O teclado abre com o layout correto dependendo do campo.
-- [FALHA] **1.4 Notificações:** Downloads e mídias aparecem na barra de notificações do Android.
-- [OK] **1.5 Permissões:** Solicita permissões usando o pop-up nativo do Android.
+- [N/A] **1.1 Controles de Janela:** (Desktop) Botões de Fechar, Minimizar e Maximizar seguem o padrão visual do SO (ex: "semáforo" no macOS, botões à direita no Windows/Linux).
+- [OK] **1.2 Menus de Contexto:** O menu de clique-direito (ou toque longo) parece nativo do SO ou, pelo menos, é consistente com o resto da UI do Firefox.
+- [OK] **1.3 Renderização de Fonte:** As fontes da UI do navegador (menus, barra de endereço) respeitam as configurações de renderização (ex: ClearType no Windows, anti-aliasing do macOS).
+- [OK] **1.4 Notificações:** Notificações de sites (Web Push) são entregues através do sistema nativo de notificações do SO (Action Center, Notificações do macOS/Linux/Android).
+- [OK] **1.5 Alertas/Prompts:** Caixas de diálogo (alertas JavaScript, prompts de senha) usam o estilo nativo do SO.
 
 **2. Adaptabilidade e Layout (5 Itens)**
-- [OK] **2.1 Renderização Mobile:** Sites carregam a versão mobile por padrão.
-- [OK] **2.2 Modo Paisagem:** A UI se adapta ao girar a tela.
-- [OK] **2.3 Barra de Endereço Dinâmica:** A barra se esconde ao rolar a página para baixo e reaparece ao subir.
-- [OK] **2.4 Modo Escuro:** O app respeita a configuração de Modo Escuro/Claro do Android.
-- [OK] **2.5 Ícone Adaptativo:** O ícone do app na home screen segue o padrão do tema.
+- [OK] **2.1 Renderização HiDPI (Retina):** (Desktop/Mobile) Ícones, texto e UI estão nítidos e sem borrões em telas de alta resolução.
+- [N/A] **2.2 Redimensionamento (Desktop):** A UI do navegador (barras de ferramentas, painéis) se reajusta corretamente ao redimensionar a janela.
+- [OK] **2.3 Modo Paisagem (Mobile):** A UI se adapta corretamente ao girar o dispositivo para o modo paisagem, sem sobreposição de elementos.
+- [OK] **2.4 Barra de Endereço:** A barra de endereço (megabar) se expande para sugestões sem cobrir conteúdo indevidamente.
+- [N/A] **2.5 Menus Nativos (macOS):** (macOS) O navegador utiliza a barra de menu global no topo da tela, em vez de uma barra de menu dentro da janela.
 
 **3. Consistência Visual e Interação (5 Itens)**
-- [OK] **3.1 Feedback Tátil:** Há feedback visual ou tátil ao tocar em botões.
-- [OK] **3.2 Animações:** As transições de abas são fluidas.
-- [OK] **3.3 Grid de Abas:** A visualização de abas abertas é organizada e legível.
-- [OK] **3.4 Pull-to-refresh:** Puxar o topo da página para recarregar funciona.
-- [OK] **3.5 Acessibilidade:** O tamanho da fonte do navegador respeita o zoom de texto do sistema Android.
+- [OK] **3.1 Tema do SO:** O navegador alterna automaticamente entre o tema claro e escuro ao detectar a mudança no SO.
+- [OK] **3.2 Animações da UI:** Animações (abrir nova aba, abrir menu) são fluidas e sem "engasgos" (jank).
+- [N/A] **3.3 Interação com Trackpad (Desktop):** O scroll de dois dedos e o gesto de "pinça para zoom" são suaves e responsivos.
+- [OK] **3.4 Gestos Nativos (Mobile):** O gesto de "puxar para recarregar" (pull-to-refresh) funciona em páginas web.
+- [OK] **3.5 Aparência de Abas:** As abas têm aparência e comportamento consistentes com o design "Proton" do Firefox em todas as plataformas.
 
-Abaixo estão as capturas de tela coletadas, organizadas por métrica.
-
-#### Galeria M2.1 - Paridade Funcional
-
-| Item do Checklist | Evidência Visual | Descrição |
-| :--- | :---: | :--- |
-| **1.1 Login / Perfil** | ![Conta](/assets/checklist_android/prova1.png) | Tela de conta Mozilla com usuário logado e sincronização ativa. |
-| **1.2 Favoritos** | ![Favoritos](/assets/checklist_android/prova2.png) | Lista de favoritos sincronizados exibida corretamente. |
-| **1.3 Histórico** | ![Histórico](/assets/checklist_android/prova3.png) | Histórico de navegação acessível e organizado por data. |
-| **2.3 Coleções** | ![Coleções](/assets/checklist_android/prova7.png) | Criação de coleção de abas, recurso exclusivo da versão mobile. |
-| **2.5 2º Plano** | ![Notif](/assets/checklist_android/prova8.png) | Áudio reproduzindo em segundo plano com controle via notificação. |
-| **3.1 Mídia** | ![Youtube](/assets/checklist_android/prova9.png) | Reprodução de vídeo em andamento no YouTube. |
-| **3.3 Download** | ![Download](/assets/checklist_android/prova11.png) | Notificação visual de download de imagem concluído com sucesso. |
-| **3.3 Download Efetuado** | ![Busca](/assets/checklist_android/prova10.png) | Imagem instalada. |
-| **4.1 Extensões** | ![Addons](/assets/checklist_android/prova13.png) | Instalação da extensão uBlock Origin via menu de complementos. |
-| **4.2 Modo Leitura** | ![Leitura](/assets/checklist_android/prova14.png) | Artigo carregado com ícone de Modo Leitura disponível na barra. |
-| **4.5 Limpar Dados** | ![Limpeza](/assets/checklist_android/prova17.png) | Pop-up nativo para seleção de intervalo de limpeza de histórico. |
-| **4.5 Privacidade** | ![Privacidade](/assets/checklist_android/prova19.png) | Configurações de privacidade e limpeza de dados (Referência). |
-| **Config. de Sync** | ![Sync](/assets/checklist_android/prova4.png) | Painel de configurações mostrando opções de sincronização de dados. |
-| **Menu Principal** | ![Menu](/assets/checklist_android/prova16.png) | Menu principal do Firefox com todas as opções acessíveis. |
-| **Tela Inicial** | ![Home](/assets/checklist_android/prova6.png) | Home screen com atalhos, favoritos e barra de pesquisa. |
-
-#### Galeria M2.2 - Conformidade da UI
+#### Evidências Visuais M2.2
 
 | Item do Checklist | Evidência Visual | Descrição |
 | :--- | :---: | :--- |
 | **1.2 Menu Contexto** | ![Contexto](/assets/checklist_android/prova18.png) | Menu de contexto ao pressionar link. |
-| **1.4 Notificações** | ![NotifSistema](/assets/checklist_android/prova20.png) | Central de notificações do Android exibindo alertas do sistema. |
-| **1.5 Permissões** | ![Permissoes](/assets/checklist_android/prova21.png) | Integração com o gerenciador de permissões nativo do Android. |
-| **2.1 Renderização** | ![Mobile](/assets/checklist_android/prova5.png) | Busca carregado com viewport correto para mobile. |
-| **2.1 Renderização** | ![Wiki](/assets/checklist_android/prova12.png) | Renderização de fontes e layout na página inicial da Wikipédia. |
-| **2.2 Modo Paisagem** | ![Paisagem](/assets/checklist_android/prova22.png) | Adaptação correta da interface ao virar a tela. |
-| **2.3 Barra Dinâmica** | ![Barra](/assets/checklist_android/prova23.png) | Barra de endereço oculta automaticamente ao rolar a página. |
-| **2.4 Modo Escuro (UI)** | ![FavUI](/assets/checklist_android/prova15.png) | Interface de gerenciamento de favoritos adaptada ao Tema Escuro. |
-| **3.4 Pull-to-Refresh** | ![Recarregar](/assets/checklist_android/prova24.png) | Interface reagindo ao gesto de puxar para recarregar a página. |
+| **1.3 Renderização** | ![Leitura](/assets/checklist_android/prova14.png) | Renderização de fontes (Modo Leitura). |
+| **1.4 Notificações** | ![Notif](/assets/checklist_android/prova8.png) | Notificação nativa (Controle de Mídia). |
+| **1.5 Alertas/Prompts** | ![Permissoes](/assets/checklist_android/prova21.png) | Prompt nativo de permissões. |
+| **2.1 Renderização HiDPI** | ![Mobile](/assets/checklist_android/prova5.png) | Renderização nítida em alta resolução. |
+| **2.1 Renderização HiDPI** | ![Wiki](/assets/checklist_android/prova12.png) | Layout e fontes na Wikipédia. |
+| **2.3 Modo Paisagem** | ![Paisagem](/assets/checklist_android/prova22.png) | Interface adaptada à rotação da tela. |
+| **2.4 Barra Endereço** | ![Barra](/assets/checklist_android/prova23.png) | Barra oculta/compacta ao rolar. |
+| **3.1 Tema do SO** | ![FavUI](/assets/checklist_android/prova15.png) | Tema Escuro aplicado corretamente. |
+| **3.4 Gestos Nativos** | ![Recarregar](/assets/checklist_android/prova24.png) | Gesto "Pull-to-refresh". |
+| **3.5 Aparência Abas** | ![Coleções](/assets/checklist_android/prova7.png) | Design de abas/coleções. |
+| **Geral (Menu)** | ![Menu](/assets/checklist_android/prova16.png) | Menu principal e ícones. |
+| **Geral (Home)** | ![Home](/assets/checklist_android/prova6.png) | Tela inicial e atalhos. |
 
 ## 3. Histórico de Versões
 
