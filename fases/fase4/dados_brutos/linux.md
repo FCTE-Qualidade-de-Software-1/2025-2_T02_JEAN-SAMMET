@@ -6,6 +6,8 @@
 
 ### M1.1 - Consumo de RAM:
 
+Para essa métrica, foi evitado faze vídeo, pois o OBS estava consumindo mais RAM durante a gravação, o que prejudicaria a medição real do consumo de memória.
+
 **Cenário de Carga Leve**
 
 ![Imagem 1](/assets/linux_assets/ram_leve.png)
@@ -142,8 +144,8 @@ Média = 15,087/10 = 1,509s
 
 **Instrução:** Preencha 'OK', 'N/A' ou 'FALHA'.
 
-**Ambiente:** Windows
-**Executor:** Rodrigo M.
+**Ambiente:** Linux
+**Executor:** Lucas Mendonça Arruda
 
 ### Total: 12/15
 
@@ -171,6 +173,7 @@ Média = 15,087/10 = 1,509s
 - [OK] **3.5 Aparência de Abas:** As abas têm aparência e comportamento consistentes com o design "Proton" do Firefox em todas as plataformas.
 **Total 4/5**
 
+Caso o item da checklist esteja em "N/a" ou "Falha" ele não aparecerá na tabela abaixo.
 Abaixo estão as capturas de tela coletadas, organizadas por métrica.
 
 #### Galeria M2.1 - Paridade Funcional
@@ -180,14 +183,20 @@ Abaixo estão as capturas de tela coletadas, organizadas por métrica.
 | **1.1 Login / Perfil** | ![Conta](/assets/linux_assets/1-1_login.png) | Tela de conta Mozilla com usuário logado e sincronização ativa. |
 | **1.2 Favoritos** | ![Favoritos]() | Lista de favoritos sincronizados exibida corretamente. |
 | **1.3 Histórico** | ![Histórico](/assets/linux_assets/4-4_historico.png) | Histórico de navegação sincronizado |
-| **2.3 Fixar aba** | ![Coleções](/assets/linux_assets/2-3_fixar_aba.png) | Criação de coleção de abas, recurso exclusivo da versão mobile. |
+| **2.1 Janela privativa** | ![privado](/assets/linux_assets/2-1_janela_privativa.png) | Tela mostrando aba em guia anônima no firefox. |
+| **2.2 Reabrir aba fechada** | ![Aba fechada](/assets/linux_assets/2-2_reabir_aba.png) | Tela mostrando opção pra reabrir abas fechadas. |
+| **2.3 Fixar aba** | ![Fixar aba](/assets/linux_assets/2-3_fixar_aba.png) | Tela mostrando uma aba fixada no firefox. |
+| **2.4 Mover aba** | ![Mover aba](/assets/linux_assets/2-4_mover_aba.png) | Interface mostrando a aba movendo para uma nova janela |
 | **2.5 Silenciar aba** | ![silenciar aba 1x](/assets/linux_assets/2-5_silenciar_audio.png),  ![silenciar aba 2](/assets/linux_assets/2-5-1_silenciar_audio2.png)| Aba silenciada. |
-| **3.1 Mídia** | ![Youtube]() | Reprodução de vídeo em andamento no YouTube. |
-| **3.3 Download** | ![Download]() | Notificação visual de download de imagem concluído com sucesso. |
-| **3.3 Download Efetuado** | ![Busca]() | Imagem instalada. |
+| **3.1 Mídia** | ![Youtube](/assets/linux_assets/3-1_video.png) | Reprodução de vídeo no YouTube. |
+| **3.2 Submissão de formulário** | ![Formulário]() | Submissão de formulário |
+| **3.3 Download** | ![Download](/assets/linux_assets/3-3_baixar_pdf.png) | Notificação visual de download de imagem. |
+| **3.4 Zoom** | ![Zoom](/assets/linux_assets/2.3-3_Zoom.png) | Interface mostrando zoom. |
 | **3.5 Dropdown** | ![Busca](/assets/linux_assets/3-5_dropdown.png) | Imagem contendo o dropdown do github. |
 | **4.1 Extensões** | ![Addons](/assets/linux_assets/4-1_ublock.png) | Instalação da extensão uBlock Origin via menu de complementos. |
 | **4.2 Captura de tela** | ![Captura](/assets/linux_assets/4-2_captura.png) | Sistema de captura de tela nativa do Firefox. |
+| **4.3 Gerenciador de favoritos** | ![Gerenciador de favoritos 1](/assets/linux_assets/4-3_gerenciar_favoritos.png), ![Gerenciador de favoritos 2](/assets/linux_assets/4-3_gerenciar_favoritos2.png) | Tela mostrando opção de nomear, ver e excluir os favotitos |
+| **4.4 Gerenciador de histórico** | ![Gerenciador de histórico](/assets/linux_assets/4-4_gerenciador_historico.png) | Sistema mostrando o histórico com a ferramenta de pesquisa |
 | **4.5 Limpar Dados** | ![Limpeza](/assets/linux_assets/4-5_limpar_dados.png) | Pop-up nativo para seleção de intervalo de limpeza de histórico. |
 
 
@@ -195,12 +204,18 @@ Abaixo estão as capturas de tela coletadas, organizadas por métrica.
 
 | Item do Checklist | Evidência Visual | Descrição |
 | :--- | :---: | :--- |
+| **1.1 Controle de janela** | ![Janela](/assets/linux_assets/2.1-1controle_janela.png) | O controle de janela do firefox é parecido com o do linux. |
 | **1.2 Menu Contexto** | ![Contexto](/assets/linux_assets/2.1-2_toque_direito.png), ![Contexto2](/assets/linux_assets/2.1-2-1_toque_direito2.png) | Menu de contexto ao pressionar link. |
+| **1.3 Renderização de fonte** | ![Fonte](/assets/linux_assets/2.1-3_fonte.png) | O controle de janela do firefox é parecido com o do linux. |
 | **1.4 Notificações** | ![NotifSistema1](/assets/linux_assets/2.1-4_notificacao.png) | Central de notificações do Android exibindo alertas do sistema. |
 | **1.5 Alerta nativo** | ![Alerta](/assets/linux_assets/2.1-5_alerta_nativo.png) | Integração com o gerenciador de permissões nativo do Android. |
 | **2.1 Renderização** | ![Mobile]() | Busca carregado com viewport correto para mobile. |
-| **2.3 Barra Dinâmica** | ![Barra](/assets/linux_a/assets/linux_assets/2.1-2_toque_direito.pngssets/2.2-4_barra_endereco.png) | Barra de endereço oculta automaticamente ao rolar a página. |
+| **2.2 Redimensionamento** | ![Redimensionamento](/assets/linux_assets/2.2-3_redimensionamento.png) | Interface mostrando o redimensionamento do firefox. |
+| **2.4 Barra Dinâmica** | ![Barra](/assets/linux_a/assets/linux_assets/2.2-4_barra_endereco.png) | Barra de endereço oculta automaticamente ao rolar a página. |
 | **3.1 Tema do Sistema operacional** | ![Tema](/assets/linux_assets/2.3-1_tema_so.png) | Interface mostrando o Tema adaptável. |
+| **3.2 Animações de tela** | ![Animação](/assets/linux_assets/2.3-2_animacao.png) | Interface mostrando a animação de carregar uma página no firefox |
+| **3.3 Interação com trackpad** | ![Trackpad](/assets/linux_assets/2.3-3_Zoom.png) | Interface mostrando zoom utilizando trackpad |
+| **3.5 Aparência de abas** | ![Abas]() | Interface mostrando as abas com bordas arredondadas e com ícones. |
 
 
 ---
