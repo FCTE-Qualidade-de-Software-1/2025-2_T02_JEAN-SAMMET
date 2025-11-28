@@ -31,7 +31,7 @@ Ao final, o executor deve somar o número total de itens marcados como 'OK' e re
 
 ---
 
-### Total: \_\_/20
+### Total: \_\_/19
 
 **1. Gerenciamento de Conta e Sincronização (5 Itens)**
 - [ ] **1.1 Login:** Consegue fazer login em uma conta Firefox.
@@ -47,12 +47,11 @@ Ao final, o executor deve somar o número total de itens marcados como 'OK' e re
 - [ ] **2.4 Mover Aba:** Consegue arrastar uma aba para uma nova janela.
 - [ ] **2.5 Mudo de Aba:** Consegue silenciar o áudio de uma aba específica.
 
-**3. Interação com Conteúdo Web (5 Itens)**
+**3. Interação com Conteúdo Web (4 Itens)**
 - [ ] **3.1 Reprodução de Mídia:** Reproduz vídeo no youtube.
-- [ ] **3.2 Submissão de Formulário:** Consegue preencher campos de texto e submeter um formulário.
-- [ ] **3.3 Download de Arquivo:** Consegue baixar um arquivo pdf e acessá-lo.
-- [ ] **3.4 Zoom:** A função de zoom funciona corretamente.
-- [ ] **3.5 Interação com Dropdown:** Menus dropdown em sites funcionam.
+- [ ] **3.2 Download de Arquivo:** Consegue baixar um arquivo e acessá-lo.
+- [ ] **3.3 Zoom:** A função de zoom funciona corretamente.
+- [ ] **3.4 Interação com Dropdown:** Menus dropdown em sites funcionam.
 
 **4. Recursos Nativos do Navegador (5 Itens)**
 - [ ] **4.1 Instalação de Extensão:** Consegue instalar "uBlock Origin" da loja de addons. (Desktop/Android).
@@ -77,3 +76,4 @@ Ao final, o executor deve somar o número total de itens marcados como 'OK' e re
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1.0 | Criação do template do checklist M2.1 | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 17/11/2025 | | |
 | 1.1 | Adição da Seção 2 (Metodologia de Execução) | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 17/11/2025 | | |
+| 1.2 | Remoção do item 3.2 | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 28/11/2025 | | |

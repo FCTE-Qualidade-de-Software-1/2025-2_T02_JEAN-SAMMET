@@ -90,7 +90,7 @@
 **Ambiente:** Android 14 (One UI)
 **Executor:** Artur Mendonça Arruda
 
-#### Total: 14/20
+#### Total: 17/19
 
 **1. Gerenciamento de Conta e Sincronização (5 Itens)**
 - [OK] **1.1 Login:** Consegue fazer login em uma conta Firefox.
@@ -98,20 +98,22 @@
 - [OK] **1.3 Sinc. Histórico:** Sites visitados em outro dispositivo aparecem.
 - [OK] **1.4 Sinc. Senhas:** Senhas salvas em outro dispositivo são preenchidas.
 - [OK] **1.5 Logout:** Consegue desconectar a conta do navegador.
+**Total 5/5**
 
 **2. Navegação e Gerenciamento de Abas (5 Itens)**
 - [OK] **2.1 Modo Privado:** Consegue abrir uma janela/aba de navegação privativa.
 - [OK] **2.2 Reabrir Aba Fechada:** A função "Reabrir aba fechada" está presente.
 - [OK] **2.3 Fixar Aba:** Consegue "Fixar Aba".
-- [ ] **2.4 Mover Aba:** Consegue arrastar uma aba para uma nova janela.
-- [ ] **2.5 Mudo de Aba:** Consegue silenciar o áudio de uma aba específica.
+- [OK] **2.4 Mover Aba:** Consegue arrastar uma aba para uma nova janela.
+- [FALHA] **2.5 Mudo de Aba:** Consegue silenciar o áudio de uma aba específica.
+**Total 4/5**
 
-**3. Interação com Conteúdo Web (5 Itens)**
+**3. Interação com Conteúdo Web (4 Itens)**
 - [OK] **3.1 Reprodução de Mídia:** Reproduz vídeo no youtube.
-- [OK] **3.2 Submissão de Formulário:** Consegue preencher campos de texto e submeter um formulário.
-- [OK] **3.3 Download de Arquivo:** Consegue baixar um arquivo pdf e acessá-lo.
-- [OK] **3.4 Zoom:** A função de zoom funciona corretamente.
-- [ ] **3.5 Interação com Dropdown:** Menus dropdown em sites funcionam.
+- [OK] **3.2 Download de Arquivo:** Consegue baixar um arquivo e acessá-lo.
+- [OK] **3.3 Zoom:** A função de zoom funciona corretamente.
+- [OK] **3.4 Interação com Dropdown:** Menus dropdown em sites funcionam.
+**Total 4/4**
 
 **4. Recursos Nativos do Navegador (5 Itens)**
 - [OK] **4.1 Instalação de Extensão:** Consegue instalar "uBlock Origin" da loja de addons. (Desktop/Android).
@@ -119,6 +121,7 @@
 - [OK] **4.3 Gerenciador de Favoritos:** Consegue adicionar, nomear e deletar um favorito.
 - [OK] **4.4 Gerenciador de Histórico:** Consegue visualizar e pesquisar o histórico.
 - [OK] **4.5 Limpar Dados:** A função "Limpar dados de navegação" funciona.
+**Total 4/5**
 
 #### Evidências Visuais M2.1
 
@@ -127,19 +130,21 @@
 | **1.1 Login** | ![Conta](/assets/checklist_android/prova1.png) | Tela de conta Mozilla com usuário logado. |
 | **1.2 Sinc. Favoritos** | ![Favoritos](/assets/checklist_android/prova2.png) | Lista de favoritos sincronizados. |
 | **1.3 Sinc. Histórico** | ![Histórico](/assets/checklist_android/prova3.png) | Histórico sincronizado e organizado. |
-| **1.4 Sinc. Senhas** | ![Sync](/assets/checklist_android/prova4.png) | Configurações de sincronização ativa. |
-| **2.1 Modo Privado** | ![Contexto](/assets/checklist_android/prova18.png) | Opção "Abrir em aba privativa" no menu. |
-| **2.2 Reabrir Aba** | ![Histórico](/assets/checklist_android/prova3.png) | Opção "Abas fechadas recentemente". |
-| **2.3 Fixar Aba** | ![Coleções](/assets/checklist_android/prova7.png) | Recurso "Coleções" (equivalente mobile). |
+| **1.4 Sinc. Senhas** | ![Sync](/assets/checklist_android/prova31.png) | Configurações de sincronização ativa. |
+| **1.5 Logout** | ![Logout](/assets/checklist_android/prova4.png) | Tela que mostra navegador sem conta qualquer conectada. |
+| **2.1 Modo Privado** | ![Contexto](/assets/checklist_android/prova32.png) | Pesquisa utilizando modo privado. |
+| **2.2 Reabrir Aba** | ![Histórico](/assets/checklist_android/prova33.png) | Opção "Abas fechadas recentemente". |
+| **2.3 Fixar Aba** | ![Coleções](/assets/checklist_android/prova7.png) | Recurso Coleções equivalente ao mobile. |
+| **2.4 Mover Aba** | ![MvAba](/assets/checklist_android/prova30.png) | Imagem que mostra aba sendo arrastada. |
 | **3.1 Rep. Mídia** | ![Youtube](/assets/checklist_android/prova9.png) | Vídeo reproduzindo no YouTube. |
-| **3.2 Submissão** | ![Form](/assets/checklist_android/prova5.png) | Resultados de busca (submissão efetuada). |
-| **3.3 Download** | ![Download](/assets/checklist_android/prova10.png) | Notificação de download concluído. |
-| **3.3 Download** | ![Busca](/assets/checklist_android/prova11.png) | Interface de busca e download de imagem. |
+| **3.2 Download** | ![Download](/assets/checklist_android/prova10.png) | Notificação de download concluído. |
+| **3.2 Download** | ![Download_feito](/assets/checklist_android/prova11.png) | Resultado do download de imagem. |
+| **3.3 Zoom** | ![Zoom](/assets/checklist_android/prova12.png) | Notificação de download concluído. |
+| **3.4 Interação com Dropdown** | ![Dropdown](/assets/checklist_android/prova25.png) | Notificação de download concluído. |
 | **4.1 Instalação Ext.** | ![Addons](/assets/checklist_android/prova13.png) | Instalação do uBlock Origin. |
 | **4.3 Ger. Favoritos** | ![FavUI](/assets/checklist_android/prova15.png) | Gerenciador de favoritos (UI). |
 | **4.4 Ger. Histórico** | ![Histórico](/assets/checklist_android/prova3.png) | Interface de histórico. |
 | **4.5 Limpar Dados** | ![Limpeza](/assets/checklist_android/prova17.png) | Pop-up para excluir histórico. |
-| **4.5 Limpar Dados** | ![Privacidade](/assets/checklist_android/prova19.png) | Menu de privacidade e limpeza. |
 
 ### M2.2 - Conformidade da UI (Checklist)
 
@@ -176,14 +181,18 @@
 | Item do Checklist | Evidência Visual | Descrição |
 | :--- | :---: | :--- |
 | **1.2 Menu Contexto** | ![Contexto](/assets/checklist_android/prova18.png) | Menu de contexto ao pressionar link. |
-| **1.3 Renderização** | ![Leitura](/assets/checklist_android/prova14.png) | Renderização de fontes (Modo Leitura). |
+| **1.3 Renderização** | ![Leitura](/assets/checklist_android/prova14.png) | Renderização de fontes no modo leitura. |
+| **1.3 Renderização** | ![Confirmacao](/assets/checklist_android/prova34.png) | Prova da fonte ser igual do aparelho. |
 | **1.4 Notificações** | ![Notif](/assets/checklist_android/prova8.png) | Notificação nativa (Controle de Mídia). |
 | **1.5 Alertas/Prompts** | ![Permissoes](/assets/checklist_android/prova21.png) | Prompt nativo de permissões. |
 | **2.1 Renderização HiDPI** | ![Mobile](/assets/checklist_android/prova5.png) | Renderização nítida em alta resolução. |
 | **2.1 Renderização HiDPI** | ![Wiki](/assets/checklist_android/prova12.png) | Layout e fontes na Wikipédia. |
 | **2.3 Modo Paisagem** | ![Paisagem](/assets/checklist_android/prova22.png) | Interface adaptada à rotação da tela. |
-| **2.4 Barra Endereço** | ![Barra](/assets/checklist_android/prova23.png) | Barra oculta/compacta ao rolar. |
-| **3.1 Tema do SO** | ![FavUI](/assets/checklist_android/prova15.png) | Tema Escuro aplicado corretamente. |
+| **2.4 Barra Endereço** | ![Barra](/assets/checklist_android/prova23.png) | Barra oculta superior ao rolar. |
+| **3.1 Tema do SO** | ![TemaClaroApp](/assets/checklist_android/prova26.png) | Firefox adaptado ao tema claro do sistema. |
+| **3.1 Tema do SO** | ![TemaClaroSys](/assets/checklist_android/prova27.png) | Configuração do sistema confirmando o tema claro ativo. |
+| **3.1 Tema do SO** | ![TemaEscuroApp](/assets/checklist_android/prova29.png) | Firefox adaptado automaticamente ao tema escuro. |
+| **3.1 Tema do SO** | ![TemaEscuroSys](/assets/checklist_android/prova28.png) | Configuração do sistema confirmando o tema escuro ativo. |
 | **3.4 Gestos Nativos** | ![Recarregar](/assets/checklist_android/prova24.png) | Gesto "Pull-to-refresh". |
 | **3.5 Aparência Abas** | ![Coleções](/assets/checklist_android/prova7.png) | Design de abas/coleções. |
 | **Geral (Menu)** | ![Menu](/assets/checklist_android/prova16.png) | Menu principal e ícones. |
@@ -195,3 +204,4 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1.0 | Criação do documento e adição das coletas de dados das métricas | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 26/11/2025 | | |
 | 1.1 | Inclusão das evidências visuais do checklist | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 27/11/2025 | | |
+| 1.2 | Correção das imagens e do item 3.2 da métrica 2.1 | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 27/11/2025 | | |
