@@ -20,11 +20,11 @@ O objetivo desta fase é definir [objetivos de medição](#11-objetivo-de-mediç
 
 - **Questão 1.1:** O Firefox oferece uma navegação rápida e responsiva, atendendo às expectativas do usuário final? ([Referente às Partes Interessadas - Usuários](../fases/fase1.md#13-partes-interessadas))
 
-    - **Hipótese 1.1:** Em pelo menos 90% dos testes realizados, o Firefox carrega páginas em menos de 3 segundos e mantém o consumo médio de memória abaixo de 1 GB durante a navegação comum (até 10 abas abertas). A percepção de fluidez pelos usuários é superior a 90% nas avaliações de desempenho.
+    - **Hipótese 1.1:** O Firefox carrega páginas em menos de 3 segundos e mantém o consumo médio de memória abaixo de 1 GB durante a navegação comum com 10 abas abertas.
 
 - **Questão 1.2:** O Firefox mantém desempenho estável e consistente entre diferentes sistemas operacionais e dispositivos? ([Referente à Subcaracterística - Uso de Recursos e Tempo de Resposta](../fases/fase1.md#21-modelo-de-qualidade-de-referência))
 
-    - **Hipótese 1.2:** A variação de desempenho entre sistemas operacionais é inferior a 10% e o tempo de resposta médio permanece dentro dos limites aceitáveis (até 3,5 segundos). Em avaliações subjetivas, pelo menos 90% dos usuários relatam experiência semelhante de desempenho entre plataformas.
+    - **Hipótese 1.2:** O Firefox apresenta desempenho funcional e consistente  entre diferentes sistemas operacionais, mantendo a execução de tarefas em níveis similares.
 
 ### 1.3 Métricas de Eficiência
 
@@ -51,11 +51,11 @@ O objetivo desta fase é definir [objetivos de medição](#11-objetivo-de-mediç
 
 - **Questão 2.1:** O Firefox mantém suas principais funcionalidades e qualidade de uso de forma consistente em diferentes plataformas e dispositivos? 
 
-    - **Hipótese 2.1:** O Firefox preserva 100% das funcionalidades essenciais (favoritos, histórico, extensões, sincronização) em todas as plataformas. A diferença na pontuação média de satisfação entre versões desktop e mobile é inferior a 10%.
+    - **Hipótese 2.1:** O Firefox preserva 100% das funcionalidades essenciais como favoritos, histórico, extensões e sincronização em todas as plataformas. 
 
 - **Questão 2.2:** O Firefox adapta corretamente sua interface e experiência de uso em diferentes dispositivos? 
 
-    - **Hipótese 2.2:** O Firefox apresenta comportamento visual e funcional consistente em 95% dos dispositivos testados, sem distorções de layout ou falhas de interação. Pelo menos 90% dos usuários avaliam positivamente a adaptação da interface em diferentes tamanhos de tela.
+    - **Hipótese 2.2:** O Firefox apresenta uma consistência de interface que garante que todos os elementos essenciais sejam corretamente exibidos e utilizáveis em diferentes dispositivos.
 
 ## 2.3 Métricas de Portabilidade
 
@@ -74,10 +74,11 @@ Abaixo estão as escalas de pontuação para todas as métricas definidas:
 
 #### M1.1 - Consumo de Memória (RAM)
 
+
 | Nível | Pontuação | Desktop (Windows/Linux/macOS) | Mobile (Android) |
 | :--- | :---: | :--- | :--- |
-| **Excelente** | **4** | ≤ 600 MB | ≤ 250 MB |
-| **Bom** | **3** | 601 MB – 1.0 GB | 251 MB – 400 MB |
+| **Excelente** | **4** | ≤ 393 MB | ≤ 250 MB |
+| **Bom** | **3** | 393 MB – 1.0 GB | 251 MB – 400 MB |
 | **Regular** | **2** | 1.01 GB – 2.0 GB | 401 MB – 600 MB |
 | **Insatisfatório** | **1** | > 2.0 GB | > 600 MB |
 
@@ -229,6 +230,7 @@ O ChatGPT atuou exclusivamente como ferramentas de validação e sugestão. Todo
 - REDDIT. **What's a good speedometer 3 score?**. Disponível em: [https://www.reddit.com/r/browsers/comments/1cvtczu/whats_a_good_speedometer_3_score/](https://www.reddit.com/r/browsers/comments/1cvtczu/whats_a_good_speedometer_3_score/). Acesso em: 24 out. 2025.
 - RESEARCHGATE. **Maintainability and Portability Evaluation of the React Native Framework Applying the ISO/IEC 25010**. Disponível em:([https://www.researchgate.net/publication/346166139_Maintainability_and_Portability_Evaluation_of_the_React_Native_Framework_Applying_the_ISOIEC_25010](https://www.researchgate.net/publication/346166139_Maintainability_and_Portability_Evaluation_of_the_React_Native_Framework_Applying_the_ISOIEC_25010)). Acesso em: 24 out. 2025.
 - WEBLOGIC. **Website Performance: Website Speed & Core Web Vitals Explained**. Disponível em: [https://www.weblogic.ie/website-performance/website-speed-core-web-vitals-explained-an-overview/](https://www.weblogic.ie/website-performance/website-speed-core-web-vitals-explained-an-overview/). Acesso em: 24 out. 2025.
+-  Oktavianita, A. D., Arifin, H. D., Fauzi, M. D., & Rifa’i, A. F. (2016). An Analysis of Memory Usage in Web Browser Software. IJID (International Journal on Informatics for Development), 5(2), 21–25. https://doi.org/10.14421/ijid.2016.05204
 
 ## 9. Histórico de Versões
 
@@ -248,3 +250,4 @@ O ChatGPT atuou exclusivamente como ferramentas de validação e sugestão. Todo
 | 1.11   | Adição de rastreabilidade do documento         | [Artur Mendonça Arruda](https://github.com/ArtyMend07)                                         | 23/10/2025 |             |                 |
 | 1.12   | Adição de fontes que justificam níveis de pontuação e atualização da tabela de contribuições         | [Artur Mendonça Arruda](https://github.com/ArtyMend07)                                         | 24/10/2025 |             |                 |
 | 1.13 | Refinamento dos níveis de pontuação com distinção entre Desktop e Mobile | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 27/11/2025 | | |
+| 1.14 | Ajustando hipóteses | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 28/11/2025 | | |
