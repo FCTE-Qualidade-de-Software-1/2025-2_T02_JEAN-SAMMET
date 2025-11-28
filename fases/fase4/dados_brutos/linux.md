@@ -26,7 +26,10 @@ Para essa métrica, foi evitado faze vídeo, pois o OBS estava consumindo mais R
 
 A seguir, tem um vídeo mostrando a coleta da métrica 1.2, rodando o comando javascript no console de cada página listada na seção [2.4 Lista de Sites Padronizados](../fase3/fase3.md#24-lista-de-sites-padronizados) da [Fase 3](../fase3/fase3.md)
 
-**Evidência de Execução (Vídeo):** [LCP]()
+**Evidência de Execução (Vídeo):** [LCP](https://youtu.be/myw58ekH-ys)
+
+
+
 
 Lista dos sites e suas respectivas LCPs em milissegundos:
 
@@ -59,36 +62,41 @@ Média = 15,087/10 = 1,509s
 
 ### M1.3 - Benchmarks:
 
-**Evidência de Execução (Vídeo):** [Assistir Benchmarks no YouTube](https://youtu.be/QU0Z0jzR_Gw)
+**Evidência de Execução do speedometer 3.0:** [Assistir Benchmarks no YouTube](https://youtu.be/V0c8PsPOvjc)
 
 #### Speedometer 3.0
 
-**Teste 1 (20.9)**
+**Teste 1 (11.1)**
 ![Resultado 1](/assets/linux_assets/speedometer1.png)
+![Detalhe 1](/assets/linux_assets/detalhe1.png)
 
 
-**Teste 2 (20)**
+**Teste 2 (11.3)**
 ![Resultado 2](/assets/linux_assets/speedometer2.png)
+![Detalhe 2](/assets/linux_assets/detalhe2.png)
 
 
-**Teste 3 ()**
-![Resultado 3]()
+**Teste 3 (11.2)**
+![Resultado 3](/assets/linux_assets/speedometer3.png)
+![Detalhe 3](/assets/linux_assets/detalhe3.png)
 
 
-- **Pontuação Representativa (Mediana): 0**
+- **Pontuação Representativa (Mediana): 11.2**
 
 #### JetStream 2
 
-**Teste 1 ()**
-![JetStream 1]()
+**Evidência de Execução do JetStream 2:** [Assistir Benchmarks no YouTube]()
 
-**Teste 2 ()**
-![JetStream 2]()
+**Teste 1 (93.799)**
+![JetStream 1](/assets/linux_assets/jetstream1.png)
 
-**Teste 3 ()**
-![JetStream 3]()
+**Teste 2 (114.774)**
+![JetStream 2](/assets/linux_assets/jetstream2.png)
 
-- **Pontuação Representativa (Mediana): 0**
+**Teste 3 (114.929)**
+![JetStream 3](/assets/linux_assets/jetstream3.png)
+
+- **Pontuação Representativa (Mediana): 114.774**
 
 ---
 
