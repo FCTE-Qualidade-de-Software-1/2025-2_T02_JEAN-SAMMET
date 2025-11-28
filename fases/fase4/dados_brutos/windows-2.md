@@ -1,6 +1,7 @@
 # Resultados da Execução da Avaliação
 
-## Plataforma Windows 
+## Plataforma Windows – Coleta 2
+
 
 ## 1. Eficiência
 
@@ -10,7 +11,7 @@
 **Cenário de Carga Leve**
 
 <img width="917" height="516" alt="Captura de tela 2025-11-26 013845" src="https://github.com/user-attachments/assets/6d5fd864-d3e0-411f-963c-eda311c1f501" />
-2.png)
+
 
 - Totalizando um consumo médio de **749 MB**.
 
@@ -61,9 +62,10 @@
 
 **JetStream 2.2**
 
-- Pontuação final obtida: **133.723 pontos**.
-
 <img width="1244" height="302" alt="Captura de tela 2025-11-28 170641" src="https://github.com/user-attachments/assets/de6ffa76-e9d7-4074-a31e-5a85147c135b" />
+
+
+- Pontuação final obtida: **133.723 pontos**.
 
 ---
 
