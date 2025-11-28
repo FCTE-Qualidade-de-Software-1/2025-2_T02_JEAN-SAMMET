@@ -68,20 +68,64 @@ As métricas de portabilidade avaliam a subcaracterística de [Adaptabilidade](.
 
 ### 3. Níveis de Pontuação
 
-Nesta etapa, são estabelecidos os **níveis de pontuação** para cada métrica identificada (M1.1 até M2.2), permitindo avaliar de forma objetiva e comparável a qualidade do Mozilla Firefox quanto à [Eficiência de Desempenho](#1-eficiência-de-desempenho) e [Portabilidade](#2-portabilidade).
+Para garantir uma avaliação justa e precisa, os critérios de pontuação foram definidos considerando as limitações e capacidades de cada plataforma. Enquanto as métricas de tempo de resposta (LCP) e conformidade funcional (Portabilidade) possuem critérios universais — pois a expectativa do usuário é a mesma independente do dispositivo —, as métricas de consumo de recursos (RAM) e desempenho bruto (Benchmarks) possuem escalas adaptadas para diferenciar ambientes Desktop (alta capacidade energética e de hardware) de ambientes Mobile (foco em eficiência energética e arquitetura ARM).
 
-A definição desses níveis busca **converter valores numéricos em interpretações qualitativas** — *Excelente*, *Bom*, *Regular* e *Insatisfatório* — de modo que os resultados obtidos nos testes possam ser analisados de maneira uniforme.
+Abaixo estão as escalas de pontuação para todas as métricas definidas:
 
-A seguir, são apresentadas as escalas de pontuação correspondentes a cada métrica definida:
+#### M1.1 - Consumo de Memória (RAM)
 
-| **Métrica** | **Excelente (4)** | **Bom (3)** | **Regular (2)** | **Insatisfatório (1)** |
-|:------------------------------------------------------|:------------------|:--------------|:----------------|:-----------------------|
-| M1.1 – Consumo de Memória (RAM)                       | ≤ 1,0 GB          | 1,1 – 1,5 GB  | 1,6 – 2,0 GB    | > 2,0 GB               |
-| M1.2 – Tempo de Carregamento de Página                | ≤ 2,0 s           | 2,1 – 3,0 s   | 3,1 – 4,0 s     | > 4,0 s                |
-| M1.3 – Pontuação em Benchmarks (Speedometer / JetStream)| ≥ 90 % da ref.    | 75 % – 89 %   | 60 % – 74 %     | < 60 %                 |
-| M1.4 – Variação de Desempenho entre Plataformas         | ≤ 10 %            | 11 % – 15 %   | 16 % – 20 %     | > 20 %                 |
-| M2.1 – Paridade Funcional entre Plataformas           | 100 %             | 95 % – 99 %   | 85 % – 94 %     | < 85 %                 |
-| M2.2 – Conformidade da Interface do Usuário (UI)        | ≥ 95 %            | 85 % – 94 %   | 70 % – 84 %     | < 70 %                 |
+| Nível | Pontuação | Desktop (Windows/Linux/macOS) | Mobile (Android) |
+| :--- | :---: | :--- | :--- |
+| **Excelente** | **4** | ≤ 600 MB | ≤ 250 MB |
+| **Bom** | **3** | 601 MB – 1.0 GB | 251 MB – 400 MB |
+| **Regular** | **2** | 1.01 GB – 2.0 GB | 401 MB – 600 MB |
+| **Insatisfatório** | **1** | > 2.0 GB | > 600 MB |
+
+#### M1.2 - Tempo de Carregamento (LCP)
+
+| Nível | Pontuação | Tempo (Todos os ambientes) |
+| :--- | :---: | :--- |
+| **Excelente** | **4** | ≤ 2.0 s |
+| **Bom** | **3** | 2.1 s – 3.0 s |
+| **Regular** | **2** | 3.1 s – 4.0 s |
+| **Insatisfatório** | **1** | > 4.0 s |
+
+#### M1.3 - Benchmarks (Speedometer 3.0)
+
+| Nível | Pontuação | Desktop | Mobile |
+| :--- | :---: | :--- | :--- |
+| **Excelente** | **4** | ≥ 15.0 | ≥ 4.0 |
+| **Bom** | **3** | 10.0 – 14.9 | 2.5 – 3.9 |
+| **Regular** | **2** | 5.0 – 9.9 | 1.5 – 2.4 |
+| **Insatisfatório** | **1** | < 5.0 | < 1.5 |
+
+#### M1.4 - Variação de Desempenho (Consistência)
+
+| Nível | Pontuação | Variação (CV %) |
+| :--- | :---: | :--- |
+| **Excelente** | **4** | ≤ 10 % |
+| **Bom** | **3** | 11 % – 15 % |
+| **Regular** | **2** | 16 % – 20 % |
+| **Insatisfatório** | **1** | > 20 % |
+
+#### M2.1 - Paridade Funcional
+
+| Nível | Pontuação | Cobertura Funcional |
+| :--- | :---: | :--- |
+| **Excelente** | **4** | 100 % |
+| **Bom** | **3** | 95 % – 99 % |
+| **Regular** | **2** | 85 % – 94 % |
+| **Insatisfatório** | **1** | < 85 % |
+
+#### M2.2 - Conformidade da Interface (UI)
+
+| Nível | Pontuação | Conformidade (Checklist) |
+| :--- | :---: | :--- |
+| **Excelente** | **4** | ≥ 95 % |
+| **Bom** | **3** | 85 % – 94 % |
+| **Regular** | **2** | 70 % – 84 % |
+| **Insatisfatório** | **1** | < 70 % |
+
 
 ## 4. Critérios de Avaliação e Julgamento
 
@@ -203,3 +247,4 @@ O ChatGPT atuou exclusivamente como ferramentas de validação e sugestão. Todo
 | 1.10   | Adição dos comprobatórios das contribuições     | [Artur Mendonça Arruda](https://github.com/ArtyMend07)                                         | 23/10/2025 |             |                 |
 | 1.11   | Adição de rastreabilidade do documento         | [Artur Mendonça Arruda](https://github.com/ArtyMend07)                                         | 23/10/2025 |             |                 |
 | 1.12   | Adição de fontes que justificam níveis de pontuação e atualização da tabela de contribuições         | [Artur Mendonça Arruda](https://github.com/ArtyMend07)                                         | 24/10/2025 |             |                 |
+| 1.13 | Refinamento dos níveis de pontuação com distinção entre Desktop e Mobile | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 27/11/2025 | | |

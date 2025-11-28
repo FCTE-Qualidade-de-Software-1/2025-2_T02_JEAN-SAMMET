@@ -3,65 +3,123 @@
 **Artefato Vinculado:** [Fase 3: Plano de Execução da Avaliação](../fase3.md)
 **Responsável:** João Filipe de Oliveira Souza
 **Data:** 23/11/2025
-**Versão:** 1.0
+**Versão:** 1.2
 
-## 1\. Objetivo
+## 1. Objetivo
 
-Este documento detalha os procedimentos técnicos para a coleta de métricas de consumo de memória RAM (M1.1) do Mozilla Firefox em ambiente **macOS**, utilizando o **Monitor de Atividade** nativo para garantir a leitura correta da memória física em uso.
+Este documento detalha os procedimentos técnicos para a coleta de todas as métricas definidas na Fase 3. Isso inclui as métricas de Eficiência como RAM, LCP e Benchmarks, além das métricas de Portabilidade, utilizando o Mozilla Firefox em ambiente **macOS**.
 
-## 2\. Pré-requisitos
+## 2. Pré-requisitos
 
 Para executar este guia, o responsável deve garantir:
 
-  * **Software:** Mozilla Firefox Versão 143.0.3 instalada.
-  * **Ferramenta:** Monitor de Atividade (Activity Monitor) — já instalado no macOS.
+* **Software:** Mozilla Firefox instalado.
+* **Ferramenta de RAM:** Monitor de Atividade, que já vem instalado no macOS, ou o Terminal.
+* **Ambiente:** Certifique-se de que o computador está conectado à energia, evitando o modo de economia de bateria durante os testes.
 
-## 3\. Procedimento de Coleta (Métrica M1.1)
+## 3. Procedimento de Coleta: Eficiência (M1)
 
-### Passo 1: Preparação do Ambiente
+### 3.1. Métrica M1.1 - Consumo de Memória RAM
 
-1.  Inicie o Firefox.
-2.  Prepare o cenário de teste conforme definido na [Fase 3](../fase3.md) (Carga Leve ou Carga Pesada).
-3.  Aguarde 60 segundos para estabilização.
-4.  Abra o **Monitor de Atividade** (Command + Espaço \> Digite "Monitor de Atividade").
+O Firefox no macOS utiliza múltiplos processos, como Main, Web Content e GPU. Para medir o consumo total com precisão, recomenda-se o uso do Terminal para somar todos os processos automaticamente.
 
-### Passo 2: Filtragem e Seleção
+**Ferramenta:** Terminal (Zsh).
 
-O Firefox no macOS utiliza múltiplos processos (Main, Web Content, GPU, Extension). Para medir o consumo total:
+1.  **Preparação:**
+    * Inicie o Firefox.
+    * Prepare o cenário de teste, sendo Carga Leve ou Carga Pesada.
+    * Aguarde 60 segundos para estabilização.
 
-1.  Na barra superior do Monitor de Atividade, clique na aba **Memória**.
-2.  No campo de busca (canto superior direito), digite: `firefox`.
-3.  Certifique-se de que a visualização está mostrando todos os processos (Menu **Visualizar** \> **Todos os Processos**).
-4.  Selecione **todas** as linhas listadas resultantes da busca (Clique na primeira linha, segure `Shift` e clique na última).
+2.  **Execução:**
+    * Abra o Terminal, que pode ser encontrado via Spotlight com Command + Espaço.
+    * Copie e execute o seguinte comando:
+    ```zsh
+    ps -A -o rss,comm | grep -i "firefox" | awk '{sum+=$1} END {print sum/1024 " MB"}'
+    ```
 
-### Passo 3: Interpretação e Registro
+3.  **Registro:**
+    * O terminal retornará o valor total em Megabytes.
+    * Registre o valor na Planilha Mestra.
+    * *Nota:* Caso prefira usar a interface gráfica, abra o **Monitor de Atividade**, vá na aba Memória, filtre por `firefox`, selecione todas as linhas e some manualmente a coluna Memória.
 
-Com todas as linhas do Firefox selecionadas, observe o painel inferior ou a soma das colunas.
+### 3.2. Métrica M1.2 - Tempo de Carga (LCP)
 
-1.  **Coluna Alvo:** Utilize a coluna **Memória** (que representa a Memória Real/Physical Footprint).
-2.  **Cálculo:**
-      * Se o Monitor de Atividade não exibir a soma automática da seleção no rodapé, some os valores dos 3 maiores processos listados (geralmente o "Firefox" principal e os maiores "CP Web Content").
-      * *Alternativa via Terminal (Recomendada para precisão):* Se a soma manual for difícil, abra o Terminal e rode:
-        ```zsh
-        ps -A -o rss,comm | grep -i "firefox" | awk '{sum+=$1} END {print sum/1024 " MB"}'
-        ```
-3.  **Registro:** Insira o valor total (em MB) na planilha oficial.
-      * **Link:** [Planilha Mestra de Coleta de Dados (Google Sheets)](https://docs.google.com/spreadsheets/d/1pNws2Jl_TH-EQMOMho54TPvwczGSXf4ntVFK4Xa4p9Y/edit?usp=sharing)
+A coleta é feita diretamente no navegador utilizando as Ferramentas de Desenvolvedor.
 
------
+**Ferramenta:** Firefox DevTools acessível via Command + Option + I.
 
-## 4\. Solução de Problemas (Troubleshooting)
+1.  **Execução:**
+    * Este passo deve ser repetido para os 10 sites padronizados.
+    * Abra o site alvo.
+    * Pressione as teclas **Command + Option + I** para abrir o DevTools.
+    * Clique na aba **Console**.
+    * Cole e execute o seguinte código JavaScript:
+    ```javascript
+    const observer = new PerformanceObserver((list) => {
+      const entries = list.getEntries();
+      const lastEntry = entries[entries.length - 1];
+      console.log("LCP:", lastEntry.startTime);
+    });
+    observer.observe({ type: "largest-contentful-paint", buffered: true });
+    ```
+    * *Nota:* Se o Firefox bloquear a colagem, digite `allow pasting` no console e tente novamente.
 
-  * **Processos não aparecem:**
-    Verifique se o filtro de busca está limpo antes de digitar "firefox" novamente e confirme se o menu **Visualizar** está em "Todos os Processos" e não "Meus Processos".
-  * **Valores oscilando muito:**
-    O macOS faz compressão de memória. Se a coluna "Memória Comprimida" estiver alta, considere registrar o valor de "Memória" + "Memória Comprimida" para uma visão mais justa do impacto no sistema, mas anote essa observação na planilha. Para este teste, o padrão é apenas a coluna **Memória**.
+2.  **Registro:**
+    * Anote o valor retornado em milissegundos.
+    * Utilize o atalho **Command + Shift + 3** para tirar um print da tela inteira, ou **Command + Shift + 4** para selecionar a área do console.
 
------
+### 3.3. Métrica M1.3 - Benchmarks
 
-## 5\. Histórico de Versões
+**Ferramenta:** Navegador Firefox.
 
-| Versão | Descrição | Autor(es) | Data | Revisor(es) | Data de Revisão |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1.0 | Criação do guia técnico para Monitor de Atividade | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 23/11/2025 | | |
-| 1.1 | Correção de hyperlink errado | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 26/11/2025 | | |
+**Regras de Ouro:**
+* Feche outros aplicativos pesados como Xcode, Photoshop ou Docker.
+* Desative o modo "Não Perturbe" ou notificações que possam aparecer na tela e interferir no teste.
+
+1.  **Speedometer 3.0:**
+    * Acesse o site `https://browserbench.org/Speedometer3.0/`.
+    * Execute o teste 3 vezes, reiniciando o navegador completamente com **Command + Q** entre cada teste.
+    * Tire print do resultado final.
+    * Registre a **Mediana**, que é o valor do meio, na planilha.
+
+2.  **JetStream 2:**
+    * Acesse o site `https://browserbench.org/JetStream/`.
+    * Execute o teste 3 vezes, reiniciando o navegador entre cada teste.
+    * Tire print do resultado final.
+    * Registre a **Mediana** na planilha.
+
+---
+
+## 4. Procedimento de Coleta: Portabilidade (M2)
+
+### 4.1. Checklists Manuais M2.1 e M2.2
+
+1.  Baixe os modelos de checklist definidos na Fase 3, nomeados como `checklist_m2.1.md` e `checklist_m2.2.md`.
+2.  Utilize o Firefox no macOS para verificar cada item.
+3.  Preencha com:
+    * **[OK]** se o recurso funciona.
+    * **[FALHA]** se apresentar erro ou comportamento inesperado.
+    * **[N/A]** se o item for exclusivo de ambientes mobile ou touch.
+4.  Atenção especial para itens de UI nativa do macOS, como a barra de menus no topo da tela e os botões de janela tipo semáforo.
+5.  Registre a contagem final na Planilha Mestra.
+
+---
+
+## 5. Solução de Problemas
+
+* **Processos não aparecem no Monitor de Atividade:**
+    * Verifique se o menu **Visualizar** está configurado para "Todos os Processos" e não apenas "Meus Processos".
+* **Valores oscilando muito na RAM:**
+    * O macOS utiliza compressão de memória agressiva. O comando de terminal sugerido utiliza a métrica RSS, que é a memória real ocupada sem compressão, sendo o padrão mais justo para comparação com outros sistemas.
+* **Erro ao colar código no Console:**
+    * O Firefox possui proteção contra Self-XSS. Digite `allow pasting` no console para desbloquear a ação.
+
+---
+
+## 6. Histórico de Versões
+
+| Versão | Descrição | Autor(es) | Data |
+| :--- | :--- | :--- | :--- |
+| 1.0 | Criação do guia técnico para Monitor de Atividade | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 23/11/2025 |
+| 1.1 | Correção de hyperlink errado | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 26/11/2025 |
+| 1.2 | Inclusão dos procedimentos para LCP, Benchmarks e Checklists | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 27/11/2025 |
