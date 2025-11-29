@@ -153,7 +153,7 @@
 **Ambiente:** Android 14 (One UI)
 **Executor:** Artur Mendonça Arruda
 
-#### Total: 10/15
+#### Total: 11/15
 
 **1. Convenções Nativas do SO (5 Itens)**
 - [N/A] **1.1 Controles de Janela:** (Desktop) Botões de Fechar, Minimizar e Maximizar seguem o padrão visual do SO (ex: "semáforo" no macOS, botões à direita no Windows/Linux).

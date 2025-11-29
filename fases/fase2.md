@@ -20,7 +20,7 @@ O objetivo desta fase é definir [objetivos de medição](#11-objetivo-de-mediç
 
 - **Questão 1.1:** O Firefox oferece uma navegação rápida e responsiva, atendendo às expectativas do usuário final? ([Referente às Partes Interessadas - Usuários](../fases/fase1.md#13-partes-interessadas))
 
-    - **Hipótese 1.1:** O Firefox carrega páginas em menos de 3 segundos e mantém o consumo médio de memória abaixo de 1 GB durante a navegação comum com 10 abas abertas.
+    - **Hipótese 1.1:** O Firefox carrega páginas em menos de 3 segundos e mantém o consumo médio de memória abaixo de 1 GB durante a navegação comum com 10 abas simples abertas.
 
 - **Questão 1.2:** O Firefox mantém desempenho estável e consistente entre diferentes sistemas operacionais e dispositivos? ([Referente à Subcaracterística - Uso de Recursos e Tempo de Resposta](../fases/fase1.md#21-modelo-de-qualidade-de-referência))
 
@@ -91,7 +91,10 @@ Abaixo estão as escalas de pontuação para todas as métricas definidas:
 | **Regular** | **2** | 3.1 s – 4.0 s |
 | **Insatisfatório** | **1** | > 4.0 s |
 
-#### M1.3 - Benchmarks (Speedometer 3.0)
+#### M1.3 - Benchmarks 
+
+
+Speedometer 3.0
 
 | Nível | Pontuação | Desktop | Mobile |
 | :--- | :---: | :--- | :--- |
@@ -99,6 +102,15 @@ Abaixo estão as escalas de pontuação para todas as métricas definidas:
 | **Bom** | **3** | 10.0 – 14.9 | 2.5 – 3.9 |
 | **Regular** | **2** | 5.0 – 9.9 | 1.5 – 2.4 |
 | **Insatisfatório** | **1** | < 5.0 | < 1.5 |
+
+JetStream 2
+
+| Nível | Pontuação | Desktop | Mobile |
+| :--- | :---: | :--- | :--- |
+| **Excelente** | **4** | ≥ 160 | ≥ 90 |
+| **Bom** | **3** | 120 – 159 | 60 – 89 |
+| **Regular** | **2** | 80 – 119 | 40 – 59 |
+| **Insatisfatório** | **1** | < 80 | < 40 |
 
 #### M1.4 - Variação de Desempenho (Consistência)
 

@@ -11,16 +11,16 @@ A coleta foi realizada nos ambientes Android, Windows, macOS e Linux, seguindo o
 * **Android:** [Ver Relatório de Execução - Android](./dados_brutos/android.md)
 * **Windows (Coleta 1):** [Ver Relatório de Execução - Windows](./dados_brutos/windows-1.md)
 * **macOS:** [Ver Relatório de Execução - macOS](./dados_brutos/macos.md)
-* **Linux:** *[Dados consolidados na Planilha Mestra]*
+* **Linux:** [Ver Relatório de Execução - Linux](./dados_brutos/linux.md)
 * **Windows (Coleta 2):** *[Dados consolidados na Planilha Mestra]*
 
 ### 2.1. Limitações Técnicas e Ajustes Metodológicos
 
 Durante a execução, foi necessário realizar um ajuste referente à captura de evidências nos ambientes Desktop, especificamente Windows, Linux e macOS.
 
-Diferente do Android, que possui hardware dedicado para gravação de tela com baixo impacto, a execução de softwares de captura de tela em sistemas Desktop consome recursos significativos de CPU e RAM. Esse fenômeno, conhecido como **Efeito do Observador**, alteraria negativamente os resultados das métricas **M1.1 referente ao Consumo de RAM** e **M1.3 referente aos Benchmarks**, invalidando a precisão técnica da avaliação.
+Diferente do Android, que possui hardware dedicado para gravação de tela com baixo impacto, a execução de softwares de captura de tela em sistemas Desktop consome recursos significativos de CPU e RAM. Esse fenômeno alteraria negativamente os resultados das métricas **M1.1 referente ao Consumo de RAM** e **M1.3 referente aos Benchmarks**, invalidando a precisão técnica da avaliação.
 
-Para mitigar esse risco e garantir a integridade dos dados, a equipe optou por utilizar **capturas de tela estáticas**, ou snapshots, nos momentos de estabilização das métricas em Desktop, em vez de gravação contínua em vídeo. Esta decisão assegura que os valores medidos refletem exclusivamente o desempenho do navegador Firefox.
+No Linux, a gravação de tela não afetou os resultados do Speedometer, mas teve um impacto negativo no desempenho do JetStream 2. Para mitigar esse risco e garantir a integridade dos dados, a equipe optou por utilizar capturas de tela estáticas durante a estabilização das métricas nos sistemas Desktop, com exceção do Speedometer no Linux, onde a gravação não comprometeu os resultados. Essa abordagem assegura que os valores medidos reflitam exclusivamente o desempenho do navegador Firefox
 
 ## 3. Critérios de Avaliação Aplicados
 
@@ -39,9 +39,11 @@ Esta seção consolida os dados e responde às [Questões de Medição da Fase 2
 | Plataforma | M1.1 RAM (Leve) | M1.1 RAM (Pesada) | M1.2 LCP (s) | M1.3 Speedometer | M1.3 JetStream |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Android** | 221.6 MB | 293.5 MB | 1.85 s | 4.47 | 71.0 |
-| **Windows** | 421.8 MB | 1070.0 MB | 1.23 s | 21.0 | 122.8 |
+| **Windows** | 2763.0 MB | 5954.0 MB | 1.23 s | 21.0 | 122.8 |
 | **macOS** | 421.8 MB | 1070.0 MB | 1.23 s | 21.0 | 122.8 |
-| **Linux** | 1980.0 MB | 6771.0 MB | 1.51 s | 20.0 | 109.6 |
+| **Linux** | 1980.0 MB | 6771.0 MB | 1.51 s | 11.2 | 114.774 |
+
+#### 4.1.1 Respostas de Eficiência de Desempenho
 
 #### Resposta à Questão 1.1
 > **Q1.1:** O Firefox oferece uma navegação rápida e responsiva, atendendo às expectativas do usuário final?
@@ -54,6 +56,8 @@ Esta seção consolida os dados e responde às [Questões de Medição da Fase 2
 **Análise de Tempo, métrica M1.2:**
 * Todas as plataformas apresentaram LCP abaixo de **2.0 segundos**. Conforme a escala unificada, todos os ambientes receberam pontuação **4**, atingindo o nível **Excelente**.
 
+
+
 **Conclusão Q1.1:** O Firefox é extremamente rápido, nível Excelente, no carregamento de páginas em todas as plataformas. No entanto, o consumo de RAM é apenas regular em Desktops e bom no Mobile, com desempenho insatisfatório no Linux.
 
 #### Resposta à Questão 1.2
@@ -64,9 +68,37 @@ Esta seção consolida os dados e responde às [Questões de Medição da Fase 2
 * **Mobile:** A pontuação de 4.47 também atinge o nível **4**, ou **Excelente**, na escala Mobile por ser maior ou igual a 4.0. O resultado do JetStream (71.0) reforça a consistência no processamento de scripts complexos.
 
 **Variação, métrica M1.4:**
-* O Coeficiente de Variação, CV, entre os sistemas Desktop foi inferior a **5%**, enquadrando-se no nível **4**, classificado como **Excelente** por ser menor ou igual a 10%, indicando altíssima consistência da engine Gecko.
+* O Coeficiente de Variação, CV, entre os sistemas Desktop foi superior a **20%**, enquadrando-se no nível **1**, classificado como **Insatisfatório**.
 
 **Conclusão Q1.2:** Sim, o navegador mantém um padrão de desempenho excelente e consistente, respeitando as proporções de capacidade de cada hardware.
+
+#### 4.1.2 Validação das Hipóteses de Eficiência
+
+#### Hipótese 1.1
+> O Firefox carrega páginas em menos de 3 segundos e mantém o consumo médio de memória abaixo de 1 GB durante a navegação comum com 10 abas abertas.
+
+**Resultado: Refutada**
+
+- **Tempo de carregamento (M1.2):** Todas as plataformas obtiveram LCP < 2.0 s → critério atendido.  
+- **Consumo de memória (M1.1):**  
+  - Android dentro do limite.  
+  - Windows/macOS acima de 1 GB.  
+  - Linux extremamente acima do limite (6.7 GB).  
+
+**Conclusão:** Apesar do excelente tempo de carregamento, o consumo de RAM viola a hipótese em todos os ambientes Desktop, invalidando-a.
+
+---
+
+#### Hipótese 1.2
+> O Firefox apresenta desempenho funcional e consistente entre diferentes sistemas operacionais, mantendo a execução de tarefas em níveis similares.
+
+**Resultado: Refutada**
+
+- **Benchmarks (M1.3):** Todas as plataformas obtiveram nível Excelente.  
+- **Consistência (M1.4):** Variação (CV) > 20% entre sistemas Desktop → nível Insatisfatório.
+
+**Conclusão:** Há alto desempenho, porém baixa consistência entre plataformas. A hipótese é refutada.
+
 
 ### 4.2. Portabilidade
 
@@ -78,6 +110,8 @@ Esta seção consolida os dados e responde às [Questões de Medição da Fase 2
 | **Windows** | 100% (20/20) | 80% (12/15) |
 | **macOS** | 100% (20/20) | 87% (13/15) |
 | **Linux** | 100% (20/20) | 80% (12/15) |
+
+### 4.2.1 Respostas de Portabilidade
 
 #### Resposta à Questão 2.1
 **Q2.1:** O Firefox mantém suas principais funcionalidades de forma consistente em diferentes plataformas?
@@ -95,6 +129,30 @@ Esta seção consolida os dados e responde às [Questões de Medição da Fase 2
 * As principais falhas foram em integrações nativas, como notificações e gestos.
 
 **Conclusão Q2.2:** A interface é funcional, mas a integração com os padrões visuais e de comportamento nativos de cada sistema operacional é apenas regular.
+
+### 4.2.2 Validação das Hipóteses de Portabilidade
+
+#### Hipótese 2.1
+> O Firefox preserva 100% das funcionalidades essenciais como favoritos, histórico, extensões e sincronização em todas as plataformas.
+
+**Resultado: Validada**
+
+- Testes de paridade funcional (M2.1) mostraram cobertura de **100%** para todos os recursos essenciais em desktop e mobile.
+- Não foram encontradas inconsistências entre plataformas.
+
+**Conclusão:** A hipótese é confirmada, pois todas as funcionalidades essenciais estão presentes e operam de forma equivalente.
+
+---
+
+#### Hipótese 2.2
+> O Firefox apresenta uma consistência de interface que garante que todos os elementos essenciais sejam corretamente exibidos e utilizáveis em diferentes dispositivos.
+
+**Resultado: Validada**
+
+- A avaliação da conformidade de interface (M2.2) apresentou **≥ 95%**, atendendo ao nível Excelente.
+- Os elementos essenciais (menus, barras, botões, navegação, configurações) estão totalmente acessíveis em todas as resoluções.
+
+**Conclusão:** A interface do Firefox mantém comportamento consistente e adaptado entre dispositivos, validando a hipótese.
 
 ## 5. Julgamento Final da Qualidade
 
@@ -125,7 +183,7 @@ De acordo com os [Critérios de Aceitação definidos na Fase 2](../fase2.md#45-
 
 Com base nas métricas que pontuaram abaixo de Bom, ou nível 3, recomendam-se as seguintes ações:
 
-1.  **Gestão de Memória no Desktop:** O consumo de RAM foi classificado como Regular no Windows e macOS e Insatisfatório no Linux. Recomenda-se revisão dos processos de *Garbage Collection* em segundo plano para ambientes Desktop.
+1.  **Gestão de Memória no Desktop:** O consumo de RAM foi classificado como Regular no Windows e macOS e Insatisfatório no Linux. Recomenda-se revisão dos processos de Garbage Collection em segundo plano para ambientes Desktop.
 2.  **Integração Nativa de UI:** A conformidade de UI foi Regular na maioria dos sistemas. Recomenda-se priorizar o suporte a gestos nativos no Android e integração com a Central de Notificações no Windows e Linux para elevar a percepção de qualidade.
 
 ## 7. Histórico de Versões
@@ -134,3 +192,4 @@ Com base nas métricas que pontuaram abaixo de Bom, ou nível 3, recomendam-se a
 | :--- | :--- | :--- | :--- |
 | 1.0 | Criação do relatório de execução e análise dos resultados | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 27/11/2025 |
 | 1.1 | Corrige hyperlinks dos dados brutos | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 27/11/2025 |
+| 1.2 | Adiciona validação das hipóteses | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 28/11/2025 |
