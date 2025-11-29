@@ -18,9 +18,20 @@ O Mozilla Firefox é um navegador multiplataforma, de código aberto, amplamente
 Navegue pelas seções abaixo para conhecer as fases e os detalhes da nossa avaliação.
 
 -   [**Fase 1:** Definição do Modelo de Qualidade e Escopo](fases/fase1.md)
--   [**Fase 2:** Definição de Objetivos de Medição e Métricas (Metodologia GQM)](fases/fase2.md)
-
-*(Mais links para outras fases e documentos serão adicionados aqui conforme o projeto avança.)*
+-   [**Fase 2:** Definição de Objetivos de Medição e Métricas (Metodologia GQM)](fases/fase2.md)
+-   [**Fase 3:** Preparação e Tratamento de Dados](fases/fase3/fase3.md)
+  - [Checklist da Métrica 2.1](fases/fase3/checklists/checklist_m2.1.md)
+  - [Checklist da Métrica 2.2)](fases/fase3/checklists/checklist_m2.2.md)
+  - [Guias técnicos — Android](fases/fase3/guias_tecnicos/guia_de_coleta_android.md)
+  - [Guias técnicos — Linux](fases/fase3/guias_tecnicos/guia_de_coleta_linux.md)
+  - [Guias técnicos — macOS](fases/fase3/guias_tecnicos/guia_de_coleta_macos.md)
+  - [Guias técnicos — Windows](fases/fase3/guias_tecnicos/guia_de_coleta_windows.md)
+-   [**Fase 4:** Coleta, Análise e Conclusão de Dados](fases/fase4/fase4.md)
+  - [Dados brutos — Android](fases/fase4/dados_brutos/android.md)
+  - [Dados brutos — Linux](fases/fase4/dados_brutos/linux.md)
+  - [Dados brutos — macOS](fases/fase4/dados_brutos/macos.md)
+  - [Dados brutos — Windows (coleta 1)](fases/fase4/dados_brutos/windows-1.md)
+  - [Dados brutos — Windows (coleta 2)](fases/fase4/dados_brutos/windows-2.md)
 
 ---
 
