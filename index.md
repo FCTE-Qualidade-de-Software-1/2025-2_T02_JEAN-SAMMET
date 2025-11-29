@@ -51,7 +51,7 @@ Abaixo apresentamos a narrativa completa da nossa avaliação.
 
 - [Entrega 1 — v1.0 (Fase 1)](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/releases/tag/v1.0)
 - [Entrega 2 — v2.0 (Fase 2)](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/releases/tag/v2.0)
-- [Entrega 3 — v3.0 (Fase 3 e 4)](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/releases/tag/v3.0)
+- [Entrega 3 — v3.0 (Fase 3 e 4)](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/releases/tag/3.0)
 
 ---
 
