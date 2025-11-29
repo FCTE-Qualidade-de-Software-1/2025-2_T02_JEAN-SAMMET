@@ -140,7 +140,7 @@ Campos marcados com N/a removem o item da lista total
 
 | Plataforma | M2.1 Paridade Funcional | M2.2 Conformidade UI |
 | :--- | :--- | :--- |
-| **Android** | 100% (19/19) | 100% (12/15) |
+| **Android** | 89% (17/19) | 100% (12/15) |
 | **Windows** coleta 1 | 100% (19/19) | 100% (12/12) |
 | **Windows** coleta 2 | 100% (19/19) | 100% (12/12) |
 | **macOS** | 100% (19/19) | 100% (13/15) |
@@ -177,7 +177,7 @@ P_{M2.1} = \frac{20}{5} = 4
 
 **Análise da Hipótese**
 
-O Firefox manteve todas as funcionalidades essenciais plenamente operacionais em Android, Windows, macOS e Linux. Não foram encontradas inconsistências ou falhas de execução entre as plataformas. Com base nos testes de paridade funcional, a Hipótese 2.1 está validada, pois os recursos essenciais estão disponíveis e funcionam de forma consistente em todos os ambientes
+O Firefox manteve todas as funcionalidades essenciais plenamente operacionais em Android, Windows, macOS e Linux. Não foram encontradas inconsistências ou falhas de execução entre as plataformas. entretanto, a Hipótese 2.1 está refutada, pq não conclui 100% como havia dito
 
 ---
 
@@ -251,7 +251,7 @@ Esta tabela reflete as contribuições para a elaboração desta **Execução e 
 | `[231033737]` | **[Artur Mendonça Arruda](https://github.com/ArtyMend07)** | Documentação da fase 4, Dados brutos (android)| https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/f241fd1c485bdf295c992bfe589c285f397d5a45, https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/b7a18424dc45f7e0225d356653de2d69a204e3fb | 30% |
 | `[221007608]` | **[Nayra Silva Nery](https://github.com/NayraNery127)** | | | |
 | `[231035141]` | **[João Filipe de Oliveira Souza](https://github.com/Joao151104)**| | | |
-| `[231035464]` | **[Lucas Mendonça Arruda](https://github.com/lucasarruda9)** | | | 20% |
+| `[231035464]` | **[Lucas Mendonça Arruda](https://github.com/lucasarruda9)** | Adicionei hipótese e retomei para o objetivo, assim como as formulas adicionadas | | 30% |
 | `[180108875]` | **[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88)** | | | |
 | | **Total** | | | **50%** |
 
