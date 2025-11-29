@@ -56,9 +56,11 @@ O Android recebeu 4 pontos na carga leve e 4 na carga pesada ajustada. O Windows
 
 Somando as cargas leves e pesadas, a consolidação da métrica resulta do cálculo:
 
+$$
 \[
 P_{M1.1} = \frac{4+4+1+1+3+3+3+3+2+1}{10} = 25/10 = 2,5
 \]
+$$
 
 A métrica é classificada como Boa, visto que o valor consolidado considera tanto os cenários de carga leve quanto os de carga pesada, já ajustados pelo fator redutor. Esse resultado também leva em conta o impacto das medições mais elevadas, como a coleta 1 do Windows e o Linux, que influenciaram a média final.
 
@@ -68,9 +70,11 @@ Quanto ao tempo de carregamento (M1.2), todas as plataformas registraram valores
 
 A consolidação da métrica resulta do cálculo:
 
+$$
 \[
 P_{M1.2} = \frac{16}{4} = 4
 \]
+$$
 
 a métrica é classificada como Excelente, pois todas as plataformas apresentaram valores de LCP abaixo de 2 segundos, permanecendo dentro do limite máximo definido para o nível mais alto de desempenho.
 
@@ -85,9 +89,11 @@ Nos testes de Speedometer 3.0 e JetStream 2, o Android obteve pontuação Excele
 
 A consolidação da métrica M1.3 considerando todas as plataformas resulta na média das pontuações:
 
+$$
 \[
 P_{M1.3} = \frac{4 + 3 + 4 + 4 + 4 + 3 + 4 + 4 + 3 + 4}{10} = \frac{37}{10} = 3,7
 \]
+$$
 
 A pontuação final da métrica M1.3 é classificada como Excelente, refletindo o bom desempenho médio entre dispositivos móveis e desktops, considerando as barreiras de hardware dos mesmos.
 
@@ -99,9 +105,11 @@ Ao analisar a variação entre plataformas (M1.4), verificou-se que o desempenho
 Ambos os coeficientes ultrapassam o limite de 20%, o que coloca tanto o Speedometer quanto o JetStream 2 no Insatisfatório.  
 Isso mostra que os diferentes sistemas operacionais não apresentaram consistência nos resultados dos benchmarks, já que o desempenho variou muito entre as plataformas avaliadas. 
 
+$$
 \[
 P_{M1.4} = \frac{2}{2} = 1
 \]
+$$
 
 Por exceder o limite de variação aceitável em ambos os benchmarks, a métrica é classificada como insatisfatória:
 
@@ -153,9 +161,11 @@ Campos marcados com N/a removem o item da lista total
 
  Em todos os ambientes, o Firefox atingiu **100% de cobertura**. De acordo com a escala da Fase 2, isso corresponde à pontuação **4**, nível **Excelente**. Apenas o android não chegou no mesmo nível, alcançando o nível regular.
 
+$$
 \[
 P_{M2.1} = \frac{18}{5} = 3.6
 \]
+$$
 
 **Conclusão Q2.1:** A paridade funcional é total para desktops, sendo quase total para android.
 
@@ -164,9 +174,11 @@ P_{M2.1} = \frac{18}{5} = 3.6
 
 O Firefox manteve a fidelidade às convenções de cada sistema operacional, garantindo que as funcionalidades principais estejam disponíveis de forma consistente. A interface do navegador segue os padrões nativos de cada plataforma, o que facilita a adaptação e uso por usuários acostumados com o sistema, permitindo que naveguem sem dificuldade e associem rapidamente os elementos da UI ao comportamento esperado.
 
+$$
 \[
 P_{M2.1} = \frac{20}{5} = 4
 \]
+$$
 
 **Conclusão Q2.2:** O Firefox demonstra excelente adaptação da interface e consistência funcional entre os sistemas operacionais avaliados. Os usuários conseguem navegar e utilizar os recursos do navegador de forma intuitiva, aproveitando os padrões nativos de cada plataforma, o que garante uma experiência familiar e sem dificuldades de associação.
 
@@ -200,26 +212,36 @@ Utilizando as pontuações atribuídas de 1 a 4 nas análises acima:
 
 Para cada característica, calcula-se a média ponderada das métricas:
 
+$$
 \[
 IQ_c = \frac{\sum (P_i \times w_i)}{\sum w_i}
 \]
+$$
 
 - **IQc Eficiência:**  
-  Métricas: RAM (2,5), LCP (4,0), Benchmarks (3,7), Variação (1,0)  
-  \[
-  IQc_{\text{Eficiência}} = \frac{2,5 + 4,0 + 3,7 + 1,0}{4} = 2,8
-  \]
+  Métricas: RAM (2,5), LCP (4,0), Benchmarks (3,7), Variação (1,0)
+  
+$$
+IQc_{\text{Eficiência}} = \frac{2.5 + 4.0 + 3.7 + 1.0}{4} = 2.8
+$$
 
-- **IQc Portabilidade:**  
-  Métricas: Paridade Funcional (3,6), Conformidade UI (4,0)  
-  \[
-  IQc_{\text{Portabilidade}} = \frac{3,6 + 4,0}{2} = 3,8
-  \]
+
+- **IQc Portabilidade:**
+  
+  Métricas: Paridade Funcional (3,6), Conformidade UI (4,0)
+  
+$$
+\[
+IQc_{\text{Portabilidade}} = \frac{3,6 + 4,0}{2} = 3,8
+\]
+$$
 
 ### 5.2. Índice Global de Qualidade (IQG)
 
 $$
-IQ_c = \frac{\sum (P_i \times w_i)}{\sum w_i}
+\[
+IQG = \frac{2,8 + 3,8}{2} = 3.3
+\]
 $$
 
 ### 5.3. Veredito
@@ -250,7 +272,7 @@ Esta tabela reflete as contribuições para a elaboração desta **Execução e 
 | :--- | :--- | :--- | :--- | :--- |
 | `[231033737]` | **[Artur Mendonça Arruda](https://github.com/ArtyMend07)** | Documentação da fase 4, Dados brutos (android)| https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/f241fd1c485bdf295c992bfe589c285f397d5a45, https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/b7a18424dc45f7e0225d356653de2d69a204e3fb | 30% |
 | `[221007608]` | **[Nayra Silva Nery](https://github.com/NayraNery127)** | | | |
-| `[231035141]` | **[João Filipe de Oliveira Souza](https://github.com/Joao151104)**| | | |
+| `[231035141]` | **[João Filipe de Oliveira Souza](https://github.com/Joao151104)**| Dados Brutos (macos )| | 30% |
 | `[231035464]` | **[Lucas Mendonça Arruda](https://github.com/lucasarruda9)** | Adicionei hipótese e retomei para o objetivo, assim como as formulas adicionadas | | 30% |
 | `[180108875]` | **[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88)** | | | |
 | | **Total** | | | **50%** |
@@ -264,3 +286,4 @@ Esta tabela reflete as contribuições para a elaboração desta **Execução e 
 | 1.2 | Adiciona validação das hipóteses | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 28/11/2025 |
 | 1.3 | Adiciona declaração de uso de I.A | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 28/11/2025 |
 | 1.4 | Adiciona resposta para objetivos de medição | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 28/11/2025 |
+| 1.5 | Correção das formulas matematicas | [João Filipe de Oliveira Souza](https://github.com/Joao151104)  | 29/11/2025|
