@@ -1,6 +1,6 @@
 # Resultados da Execução da Avaliação
 
-## Plataforma Windows (Coleta 1)
+## Plataforma MacOs
 
 ## 1. Eficiência
 
