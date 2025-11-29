@@ -235,7 +235,9 @@ Com base nas métricas que pontuaram abaixo de Bom, ou nível 3, recomendam-se a
 1.  **Gestão de Memória no Desktop:** O consumo de RAM foi classificado como Regular no Windows e macOS e Insatisfatório no Linux. Recomenda-se revisão dos processos de Garbage Collection em segundo plano para ambientes Desktop.
 
 
-## 7. 
+## 7. Declaração de Uso de Inteligência Artificial
+
+A elaboração desta fase de execução e análise de resultados contou com o suporte estratégico das ferramentas ChatGPT e Google Gemini que atuaram muito além da simples revisão textual. Os modelos foram fundamentais para acelerar a curva de aprendizado de integrantes da equipe que não possuíam familiaridade prévia com funcionalidades avançadas do Firefox permitindo que a verificação dos itens da checklist de paridade funcional e conformidade de interface fosse realizada com muito mais eficiência e precisão técnica. Além disso a inteligência artificial desempenhou um papel crucial no planejamento cronológico das coletas ao complementar os dados da fase anterior com instruções práticas de configuração de ambiente como o passo a passo específico para habilitar a depuração remota via USB no Android 14 o que destravou etapas críticas do cronograma. Por fim as ferramentas auxiliaram no refinamento analítico dos dados sugerindo correções na interpretação das métricas de estresse como a aplicação de fatores de suavização para os cenários de carga pesada o que garantiu um cálculo do índice de qualidade mais justo e representativo do comportamento real do software.
 
 ## 8. Histórico de Versões
 
@@ -244,3 +246,4 @@ Com base nas métricas que pontuaram abaixo de Bom, ou nível 3, recomendam-se a
 | 1.0 | Criação do relatório de execução e análise dos resultados | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 27/11/2025 |
 | 1.1 | Corrige hyperlinks dos dados brutos | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 27/11/2025 |
 | 1.2 | Adiciona validação das hipóteses | [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 28/11/2025 |
+| 1.3 | Adiciona declaração de uso de I.A | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 28/11/2025 |
