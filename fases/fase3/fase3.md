@@ -236,7 +236,7 @@ Esta tabela reflete as contribuições para a elaboração deste **Plano de Exec
 | `[231033737]` | **[Artur Mendonça Arruda](https://github.com/ArtyMend07)** | Checklists, guias técnicos, documentação da fase 3 | https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/e8c338d5245e6b42f60d36c53297af62cc8fb0bd, https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/b9b29af716742823fedc7dc895f4ab7232fb3389, https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/1e0bc20eb7a3b57b806bf81a56d6a55a027c5daf| 35% |
 | `[221007608]` | **[Nayra Silva Nery](https://github.com/NayraNery127)** | | | |
 | `[231035141]` | **[João Filipe de Oliveira Souza](https://github.com/Joao151104)**| | | |
-| `[231035464]` | **[Lucas Mendonça Arruda](https://github.com/lucasarruda9)** | | | 20% |
+| `[231035464]` | **[Lucas Mendonça Arruda](https://github.com/lucasarruda9)** | Adicionei cronograma, revisei e ajustei textos | | 30% |
 | `[180108875]` | **[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88)** | | | |
 | | **Total** | | | **55%** |
 
