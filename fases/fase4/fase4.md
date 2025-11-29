@@ -151,13 +151,13 @@ Campos marcados com N/a removem o item da lista total
 #### Resposta à Questão 2.1
 **Q2.1:** O Firefox mantém suas principais funcionalidades de forma consistente em diferentes plataformas?
 
- Em todos os ambientes, o Firefox atingiu **100% de cobertura**. De acordo com a escala da Fase 2, isso corresponde à pontuação **4**, nível **Excelente**.
+ Em todos os ambientes, o Firefox atingiu **100% de cobertura**. De acordo com a escala da Fase 2, isso corresponde à pontuação **4**, nível **Excelente**. Apenas o android não chegou no mesmo nível, alcançando o nível regular.
 
 \[
-P_{M2.1} = \frac{20}{5} = 4
+P_{M2.1} = \frac{18}{5} = 3.6
 \]
 
-**Conclusão Q2.1:** A paridade funcional é total.
+**Conclusão Q2.1:** A paridade funcional é total para desktops, sendo quase total para android.
 
 #### Resposta à Questão 2.2
 **Q2.2:** O Firefox adapta corretamente sua interface e experiência de uso em diferentes dispositivos?
@@ -177,7 +177,7 @@ P_{M2.1} = \frac{20}{5} = 4
 
 **Análise da Hipótese**
 
-O Firefox manteve todas as funcionalidades essenciais plenamente operacionais em Android, Windows, macOS e Linux. Não foram encontradas inconsistências ou falhas de execução entre as plataformas. entretanto, a Hipótese 2.1 está refutada, pq não conclui 100% como havia dito
+O Firefox manteve todas as funcionalidades essenciais plenamente operacionais em Android, Windows, macOS e Linux. Não foram encontradas inconsistências ou falhas de execução entre as plataformas. entretanto, a Hipótese 2.1 está refutada, por que não cobre 100% das funcionalidades em dispositivos androids.
 
 ---
 
@@ -211,20 +211,20 @@ IQ_c = \frac{\sum (P_i \times w_i)}{\sum w_i}
   \]
 
 - **IQc Portabilidade:**  
-  Métricas: Paridade Funcional (4,0), Conformidade UI (2,0)  
+  Métricas: Paridade Funcional (3,6), Conformidade UI (4,0)  
   \[
-  IQc_{\text{Portabilidade}} = \frac{4,0 + 2,0}{2} = 3,0
+  IQc_{\text{Portabilidade}} = \frac{3,6 + 4,0}{2} = 3,8
   \]
 
 ### 5.2. Índice Global de Qualidade (IQG)
 
 \[
-IQG = \frac{2,8 + 3,0}{2} = 2.9
+IQG = \frac{2,8 + 3,8}{2} = 3.3
 \]
 
 ### 5.3. Veredito
 
-De acordo com os [Critérios de Aceitação definidos na Fase 2](../fase2.md#45-critérios-de-aceitação), o software Mozilla Firefox obteve um **IQG de 2.9**.
+De acordo com os [Critérios de Aceitação definidos na Fase 2](../fase2.md#45-critérios-de-aceitação), o software Mozilla Firefox obteve um **IQG de 3.3**.
 
 **Resultado Final:** **ACEITO**,
 
