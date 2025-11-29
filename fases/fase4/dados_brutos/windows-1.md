@@ -61,7 +61,7 @@
 **Ambiente:** Windows
 **Executor:** Rodrigo M.
 
-#### Total: 20/20
+#### Total: 19/19
 
 **1. Gerenciamento de Conta e Sincronização (5 Itens)**
 - [OK] **1.1 Login:** Consegue fazer login em uma conta Firefox.
@@ -79,13 +79,12 @@
 - [OK] **2.5 Mudo de Aba:** Consegue silenciar o áudio de uma aba específica.
 **Total 5/5**
 
-**3. Interação com Conteúdo Web (5 Itens)**
+**3. Interação com Conteúdo Web (4 Itens)**
 - [OK] **3.1 Reprodução de Mídia:** Reproduz vídeo no youtube.
-- [OK] **3.2 Submissão de Formulário:** Consegue preencher campos de texto e submeter um formulário.
-- [OK] **3.3 Download de Arquivo:** Consegue baixar um arquivo pdf e acessá-lo.
-- [OK] **3.4 Zoom:** A função de zoom funciona corretamente.
-- [OK] **3.5 Interação com Dropdown:** Menus dropdown em sites funcionam.
-**Total 5/5**
+- [OK] **3.2 Download de Arquivo:** Consegue baixar um arquivo e acessá-lo.
+- [OK] **3.3 Zoom:** A função de zoom funciona corretamente.
+- [OK] **3.4 Interação com Dropdown:** Menus dropdown em sites funcionam.
+**Total 4/4**
 
 **4. Recursos Nativos do Navegador (5 Itens)**
 - [OK] **4.1 Instalação de Extensão:** Consegue instalar "uBlock Origin" da loja de addons. (Desktop/Android).
