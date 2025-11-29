@@ -242,6 +242,19 @@ O objetivo de medir a eficiência de desempenho foi parcialmente atingido. O Fir
 
 A elaboração desta fase de execução e análise de resultados contou com o suporte estratégico das ferramentas ChatGPT e Google Gemini que atuaram muito além da simples revisão textual. Os modelos foram fundamentais para acelerar a curva de aprendizado de integrantes da equipe que não possuíam familiaridade prévia com funcionalidades avançadas do Firefox permitindo que a verificação dos itens da checklist de paridade funcional e conformidade de interface fosse realizada com muito mais eficiência e precisão técnica. Além disso a inteligência artificial desempenhou um papel crucial no planejamento cronológico das coletas ao complementar os dados da fase anterior com instruções práticas de configuração de ambiente como o passo a passo específico para habilitar a depuração remota via USB no Android 14 o que destravou etapas críticas do cronograma. Por fim as ferramentas auxiliaram no refinamento analítico dos dados sugerindo correções na interpretação das métricas de estresse como a aplicação de fatores de suavização para os cenários de carga pesada o que garantiu um cálculo do índice de qualidade mais justo e representativo do comportamento real do software.
 
+## 9. Tabela de Contribuição
+
+Esta tabela reflete as contribuições para a elaboração desta **Execução e Análise de Resultados (Fase 4)**.
+
+| Matrícula | Integrante | Principais Contribuições | Comprovação | Contribuição |
+| :--- | :--- | :--- | :--- | :--- |
+| `[231033737]` | **[Artur Mendonça Arruda](https://github.com/ArtyMend07)** | Documentação da fase 4, Dados brutos (android)| https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/f241fd1c485bdf295c992bfe589c285f397d5a45, https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/b7a18424dc45f7e0225d356653de2d69a204e3fb | 30% |
+| `[221007608]` | **[Nayra Silva Nery](https://github.com/NayraNery127)** | | | |
+| `[231035141]` | **[João Filipe de Oliveira Souza](https://github.com/Joao151104)**| | | |
+| `[231035464]` | **[Lucas Mendonça Arruda](https://github.com/lucasarruda9)** | | | 20% |
+| `[180108875]` | **[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88)** | | | |
+| | **Total** | | | **50%** |
+
 ## 9. Histórico de Versões
 
 | Versão | Descrição | Autor(es) | Data |
