@@ -218,9 +218,9 @@ IQ_c = \frac{\sum (P_i \times w_i)}{\sum w_i}
 
 ### 5.2. Índice Global de Qualidade (IQG)
 
-\[
-IQG = \frac{2,8 + 3,8}{2} = 3.3
-\]
+$$
+IQ_c = \frac{\sum (P_i \times w_i)}{\sum w_i}
+$$
 
 ### 5.3. Veredito
 
