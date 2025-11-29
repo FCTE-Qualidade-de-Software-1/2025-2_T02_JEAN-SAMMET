@@ -27,10 +27,28 @@ Para centralizar a coleta de dados da Fase 4, a equipe utilizará uma Planilha M
 | **Rodrigo Mattos de F. A. Bezerra**| Windows (Coleta 1) |
 | **Nayra Silva Nery** | Windows (Coleta 2) |
 
-### 2.2. Ferramentas e Guias Técnicos Padronizados
+### 2.2. Especificação de Recursos e Ambiente
 
-Para evitar inconsistências na execução dos comandos (ex: parâmetros errados no terminal), foram criados Guias de Coleta individuais. **Todo executor deve ler o guia correspondente ao seu SO antes de iniciar.**
+Para garantir a validade técnica e a reprodutibilidade dos testes (Critério C2), foram definidos os requisitos mínimos de hardware, software e o perfil técnico necessário para os avaliadores.
 
+#### 2.2.1. Hardware e Software do Ambiente de Teste
+Os dispositivos utilizados para a coleta devem atender às seguintes especificações mínimas para evitar gargalos de hardware que não sejam causados pelo navegador:
+
+* **Objeto de Avaliação (Software):** Mozilla Firefox Versão 143.0.3.
+* **Conexão de Rede:** Internet estável com banda larga mínima de 10 Mbps para garantir o carregamento da massa de dados.
+* **Especificações por Plataforma:**
+    * **Windows:** Windows 10 ou 11 (64-bit), Mínimo de 8GB de RAM, Processador Intel i5/AMD Ryzen 5 ou superior. Permissão de Administrador ativa.
+    * **Linux:** Ubuntu 22.04 LTS ou superior, Mínimo de 8GB de RAM. Acesso ao terminal `bash` ou `zsh`.
+    * **macOS:** macOS Monterey (12.0) ou superior. Mínimo de 8GB de RAM.
+    * **Android:** Android 10 ou superior. Mínimo de 4GB de RAM, com o modo de  depuração USB ativado.
+
+#### 2.2.2. Perfil do Avaliador
+Dada a complexidade das ferramentas de coleta, o executor do teste deve possuir:
+* Conhecimento intermediário em linha de comando, seja terminal CMD ou PowerShell, para execução de scripts de monitoramento.
+* Capacidade de configuração de ambiente de desenvolvimento Android e manipulação de ferramentas de desenvolvedor do navegador.
+
+#### 2.2.3. Ferramentas de Coleta Padronizadas
+Para evitar inconsistências na execução, foram criados Guias Técnicos específicos vinculados às ferramentas nativas de cada SO.
 
 | Ambiente | Ferramenta Principal (RAM) | Link para o Guia Técnico de Execução |
 | :--- | :--- | :--- |
@@ -38,11 +56,6 @@ Para evitar inconsistências na execução dos comandos (ex: parâmetros errados
 | **Linux**| `top` / `ps` | **[Ver Guia Técnico - Linux](./guias_tecnicos/guia_de_coleta_linux.md)** |
 | **macOS** | Monitor de Atividade | **[Ver Guia Técnico - macOS](./guias_tecnicos/guia_de_coleta_macos.md)** |
 | **Android** | `adb shell` | **[Ver Guia Técnico - Android](./guias_tecnicos/guia_de_coleta_android.md)** |
-
-*Nota: As ferramentas de LCP (DevTools) e Benchmarks (BrowserBench) são padrão para todos os ambientes e estão detalhadas nas seções [2.3](#23-cenários-de-teste-eficiência---m1) e [2.4](#24-lista-de-sites-padronizados-m11-e-m12) deste documento.*
-
-
-O requisito crítico para **Windows** é que a ferramenta `typeperf` deve ser executada a partir de um prompt de comando como **Administrador** ou por um usuário no grupo "Performance Log Users". Esta exigência é necessária para que o sistema operacional permita o acesso aos contadores de processo.
 
 ### 2.3. Cenários de Teste (Eficiência - M1)
 
@@ -149,7 +162,7 @@ Onde:
 
 ### 2.4. Lista de Sites Padronizados (M1.1 e M1.2)
 
-Para garantir que os testes de "Carga Pesada" (método [M1.1](#m11-consumo-de-ram)) e "LCP" (método [M1.2](#m12-tempo-de-carga-lcp)) sejam comparáveis entre os executores, todos deverão utilizar a seguinte lista de 10 sites.
+Para garantir que os testes de carga pesada (método [M1.1](#m11-consumo-de-ram)) e LCP (método [M1.2](#m12-tempo-de-carga-lcp)) sejam comparáveis entre os executores, todos deverão utilizar a seguinte lista de 10 sites.
 
 * `https://www.youtube.com` (logado e reproduzindo um vídeo 1080p)
 * `https://www.amazon.com.br` (em uma página de produto)
@@ -231,6 +244,8 @@ Esta tabela reflete as contribuições para a elaboração deste **Plano de Exec
 
 ## 4. Declaração de Uso de Inteligência Artificial
 
+A elaboração desta fase contou com o auxílio dos modelos de linguagem ChatGPT e Google Gemini que foram empregados como ferramentas complementares de revisão para verificar se a ordem cronológica das seções apresentava uma lógica consistente e se o estilo de escrita estava adequado ao contexto técnico do documento. Além do suporte na detecção e correção de erros gramaticais e ortográficos esses recursos serviram para validar a fluidez do texto mas todo o conteúdo passou por uma análise crítica rigorosa por parte dos integrantes do grupo. Foram realizadas revisões humanas tanto durante a escrita quanto após a finalização do artefato garantindo que a tecnologia atuasse apenas como um instrumento de apoio para o aprimoramento da qualidade final do trabalho.
+
 
 ## 5. Referências
 
@@ -254,3 +269,4 @@ Esta tabela reflete as contribuições para a elaboração deste **Plano de Exec
 | 1.4 | Atualização da seção 2.2 (Ferramentas), para conter os guias de coleta de cada SO | [Artur Mendonça Arruda](https://github.com/ArtyMend07)| 23/11/2025 | | |
 | 1.5 | Adicionando cronograma na documentação| [Lucas Mendonça Arruda](https://github.com/lucasarruda9) | 26/11/2025 | | |
 | 1.6 | Adição de rastreabilidade no cronograma da documentação  | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 27/11/2025 | | |
+| 1.6 | Detalhamento de especificação de recursos e ambiente, e adiciona declaração de uso de I.A  | [Artur Mendonça Arruda](https://github.com/ArtyMend07) | 28/11/2025 | | |

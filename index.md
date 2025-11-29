@@ -8,30 +8,50 @@ O Mozilla Firefox é um navegador multiplataforma, de código aberto, amplamente
 
 ## Características de Qualidade (ISO/IEC 25010)
 
+Para guiar nossa avaliação, selecionamos características críticas baseadas na norma ISO/IEC 25010:
+
 -   **Eficiência:** Capacidade do navegador de fornecer respostas rápidas e utilizar os recursos do sistema de forma racional.
 -   **Portabilidade:** Facilidade de instalação, adaptação e uso do navegador em diferentes plataformas e arquiteturas.
 
 ---
 
-## Documentação do Projeto
+## Documentação do Projeto (Ciclo de Avaliação)
 
-Navegue pelas seções abaixo para conhecer as fases e os detalhes da nossa avaliação.
+Abaixo apresentamos a narrativa completa da nossa avaliação.
 
--   [**Fase 1:** Definição do Modelo de Qualidade e Escopo](fases/fase1.md)
--   [**Fase 2:** Definição de Objetivos de Medição e Métricas (Metodologia GQM)](fases/fase2.md)
--   [**Fase 3:** Preparação e Tratamento de Dados](fases/fase3/fase3.md)
-  - [Checklist da Métrica 2.1](fases/fase3/checklists/checklist_m2.1.md)
-  - [Checklist da Métrica 2.2)](fases/fase3/checklists/checklist_m2.2.md)
-  - [Guias técnicos — Android](fases/fase3/guias_tecnicos/guia_de_coleta_android.md)
-  - [Guias técnicos — Linux](fases/fase3/guias_tecnicos/guia_de_coleta_linux.md)
-  - [Guias técnicos — macOS](fases/fase3/guias_tecnicos/guia_de_coleta_macos.md)
-  - [Guias técnicos — Windows](fases/fase3/guias_tecnicos/guia_de_coleta_windows.md)
--   [**Fase 4:** Coleta, Análise e Conclusão de Dados](fases/fase4/fase4.md)
-  - [Dados brutos — Android](fases/fase4/dados_brutos/android.md)
-  - [Dados brutos — Linux](fases/fase4/dados_brutos/linux.md)
-  - [Dados brutos — macOS](fases/fase4/dados_brutos/macos.md)
-  - [Dados brutos — Windows (coleta 1)](fases/fase4/dados_brutos/windows-1.md)
-  - [Dados brutos — Windows (coleta 2)](fases/fase4/dados_brutos/windows-2.md)
+### 1. Planejamento e Definição
+* [**Fase 1:** Definição do Modelo de Qualidade e Escopo](fases/fase1.md)
+    * *Definição do produto, partes interessadas e priorização das características de qualidade (MoSCoW).*
+* [**Fase 2:** Definição de Objetivos de Medição e Métricas (Metodologia GQM)](fases/fase2.md)
+    * *Desdobramento dos objetivos em perguntas e métricas quantificáveis para avaliar a Eficiência e Portabilidade.*
+
+### 2. Preparação e Execução
+* [**Fase 3:** Elaboração do Plano de Avaliação](fases/fase3/fase3.md)
+    * *Desenvolvimento dos guias técnicos e checklists para garantir a reprodutibilidade dos testes.*
+    * **Artefatos de Apoio:**
+        * [Checklist da Métrica 2.1](fases/fase3/checklists/checklist_m2.1.md)
+        * [Checklist da Métrica 2.2](fases/fase3/checklists/checklist_m2.2.md)
+        * [Guias técnicos — Android](fases/fase3/guias_tecnicos/guia_de_coleta_android.md)
+        * [Guias técnicos — Linux](fases/fase3/guias_tecnicos/guia_de_coleta_linux.md)
+        * [Guias técnicos — macOS](fases/fase3/guias_tecnicos/guia_de_coleta_macos.md)
+        * [Guias técnicos — Windows](fases/fase3/guias_tecnicos/guia_de_coleta_windows.md)
+
+* [**Fase 4:** Execução da Avaliação](fases/fase4/fase4.md)
+    * *Consolidação dos dados coletados, análise dos resultados frente aos critérios estabelecidos e veredito final.*
+    * **Evidências (Dados Brutos):**
+        * [Dados brutos — Android](fases/fase4/dados_brutos/android.md)
+        * [Dados brutos — Linux](fases/fase4/dados_brutos/linux.md)
+        * [Dados brutos — macOS](fases/fase4/dados_brutos/macos.md)
+        * [Dados brutos — Windows (coleta 1)](fases/fase4/dados_brutos/windows-1.md)
+        * [Dados brutos — Windows (coleta 2)](fases/fase4/dados_brutos/windows-2.md)
+
+---
+
+## Releases
+
+- [Entrega 1 — v1.0 (Fase 1)](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/releases/tag/v1.0)
+- [Entrega 2 — v2.0 (Fase 2)](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/releases/tag/v2.0)
+- [Entrega 3 — v3.0 (Fase 3 e 4)](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/releases/tag/v3.0)
 
 ---
 
@@ -72,4 +92,12 @@ Navegue pelas seções abaixo para conhecer as fases e os detalhes da nossa aval
       </td>
     </tr>
   </table>
+</div>
+
+---
+<div align="center">
+
+**Projeto da Disciplina de Qualidade de Software 1 - FGA/UnB**
+**Versão Atual:** 3.0 | **Data de Atualização:** 28/11/2025
+
 </div>
