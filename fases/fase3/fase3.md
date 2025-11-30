@@ -124,11 +124,11 @@ Para avaliar o desempenho sintético bruto, dois benchmarks padronizados serão 
 
  **Fórmula**:
  
-$$
-[
-CV(%) = \frac{\sigma}{\mu} \times 100
-]
-$$
+
+CV(\%) = \frac{\sigma}{\mu} \times 100
+
+
+
 Onde:
 
 * **σ** = desvio padrão das pontuações (por benchmark)
