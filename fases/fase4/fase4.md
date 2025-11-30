@@ -148,10 +148,10 @@ Campos marcados com N/a removem o item da lista total
 
 | Plataforma | M2.1 Paridade Funcional | M2.2 Conformidade UI |
 | :--- | :--- | :--- |
-| **Android** | 89% (17/19) | 100% (12/15) |
+| **Android** | 89% (17/19) | 100% (12/12) |
 | **Windows** coleta 1 | 100% (19/19) | 100% (12/12) |
 | **Windows** coleta 2 | 100% (19/19) | 100% (12/12) |
-| **macOS** | 100% (19/19) | 100% (13/15) |
+| **macOS** | 100% (19/19) | 100% (13/13) |
 | **Linux** | 100% (19/19) | 100% (12/12) |
 
 ### 4.2.1 Respostas de Portabilidade
