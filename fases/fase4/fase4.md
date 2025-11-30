@@ -272,9 +272,9 @@ Esta tabela reflete as contribuições para a elaboração desta **Execução e 
 | :--- | :--- | :--- | :--- | :--- |
 | `[231033737]` | **[Artur Mendonça Arruda](https://github.com/ArtyMend07)** | Documentação da fase 4, Dados brutos (android)| https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/f241fd1c485bdf295c992bfe589c285f397d5a45, https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/commit/b7a18424dc45f7e0225d356653de2d69a204e3fb | 30% |
 | `[221007608]` | **[Nayra Silva Nery](https://github.com/NayraNery127)** | | | |
-| `[231035141]` | **[João Filipe de Oliveira Souza](https://github.com/Joao151104)**| Dados Brutos (macos )| | 30% |
+| `[231035141]` | **[João Filipe de Oliveira Souza](https://github.com/Joao151104)**| Dados Brutos (macos )| | 20% |
 | `[231035464]` | **[Lucas Mendonça Arruda](https://github.com/lucasarruda9)** | Adicionei hipótese e retomei para o objetivo, assim como as formulas adicionadas | | 30% |
-| `[180108875]` | **[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88)** | | | |
+| `[180108875]` | **[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88)** | Dados brutos (windows - coleta 1) | | 20% |
 | | **Total** | | | **50%** |
 
 ## 9. Histórico de Versões

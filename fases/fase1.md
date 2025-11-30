@@ -173,7 +173,7 @@ Os resultados dessa avaliação interessam toda a comunidade que utiliza o naveg
 | `[Matrícula]` | **[João Filipe de Oliveira Souza](https://github.com/joao151104)** |Desenvolvimento da estrutura inicial do projeto | | `20%` |
 | `[231035464]` | **[Lucas Mendonça Arruda](https://github.com/lucasarruda9)** | Contribuiu com a adição das partes interessadas, arquitetura alinhada com escopo, classificação do tipo de produto e ajustes na organização e estrutura do documento.| [Pull Request #5](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/5), [Pull Request #8](https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/8)| `30%` |
 | `[Matrícula]` | **[Nayra Silva Nery](https://github.com/NayraNery127)** | | | `%` |
-| `[180108875]` | **[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88)** | Adição do propósito da avaliação e usos pretendidos | `[https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/3]` | `15%` |
+| `[180108875]` | **[Rodrigo Mattos de F. A. Bezerra](https://github.com/Rodrigomfab88)** | Adição do propósito da avaliação e usos pretendidos | `[https://github.com/FCTE-Qualidade-de-Software-1/2025-2_T02_JEAN-SAMMET/pull/3]` | `20%` |
 | | **Total** | | | **100%** |
 
 ## 5. Declaração de Uso de Inteligência Artificial
