@@ -115,7 +115,6 @@ Para avaliar o desempenho sintético bruto, dois benchmarks padronizados serão 
 4.  Reiniciar o Firefox.
 5.  Acessar e executar: `https://browserbench.org/JetStream/`
 6.  Registrar a pontuação final na [Planilha Mestra](#21-artefatos-de-coleta-e-divisão-de-tarefas) e salvar um screenshot como evidência.
-Aqui está **todo o conteúdo formatado em Markdown**, limpo, organizado e pronto para colocar no relatório ou na planilha de procedimentos:
 
  **M1.4 — Variação de Desempenho entre Plataformas (GQM)**
 
@@ -124,11 +123,12 @@ Aqui está **todo o conteúdo formatado em Markdown**, limpo, organizado e pront
  **Definição da Métrica**
 
  **Fórmula**:
-
+ 
+$$
 [
 CV(%) = \frac{\sigma}{\mu} \times 100
 ]
-
+$$
 Onde:
 
 * **σ** = desvio padrão das pontuações (por benchmark)
